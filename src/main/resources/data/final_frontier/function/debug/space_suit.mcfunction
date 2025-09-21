@@ -1,0 +1,1 @@
+give @a clock[custom_name=[{"text":"Space Helmet","italic":false}],attribute_modifiers=[{type:armor,slot:head,amount:0,operation:add_value,id:"1756398866415"}],equippable={slot:head},max_stack_size=1,item_model="minecraft:glass"]
