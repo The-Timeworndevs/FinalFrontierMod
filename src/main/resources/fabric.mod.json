@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "final_frontier",
+	"version": "${version}",
+	"name": "Final Frontier",
+	"description": "Space, the final frontier...\\nAdds space and space exploration!",
+	"authors": [
+		"VoxelDragon6 (Lead)",
+		"Genesect_EX (Inspiration)"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/final_frontier/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.timeworndevs.final_frontier.FinalFrontier"
+		],
+		"client": [
+			"net.timeworndevs.final_frontier.FinalFrontierClient"
+		],
+		"fabric-datagen": [
+			"net.timeworndevs.final_frontier.FinalFrontierDataGenerator"
+		]
+	},
+	"mixins": [
+		"final_frontier.mixins.json",
+		{
+			"config": "final_frontier.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
