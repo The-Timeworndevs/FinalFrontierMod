@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.timeworndevs.final_frontier.FinalFrontier"
+			"net.timeworndevs.final_frontier.Main"
 		],
 		"client": [
-			"net.timeworndevs.final_frontier.FinalFrontierClient"
+			"net.timeworndevs.final_frontier.Client"
 		],
 		"fabric-datagen": [
-			"net.timeworndevs.final_frontier.FinalFrontierDataGenerator"
+			"net.timeworndevs.final_frontier.DataGen"
 		]
 	},
 	"mixins": [
