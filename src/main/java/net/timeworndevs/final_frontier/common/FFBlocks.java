@@ -2,6 +2,8 @@ package net.timeworndevs.final_frontier.common;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ColoredFallingBlock;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -9,6 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.ColorCode;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.timeworndevs.final_frontier.Main;
 
@@ -41,7 +45,8 @@ public class FFBlocks {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Main.MOD_ID, name));
     }
 
-    public static final Block LIGHT_REGOLITH = register()
+    public static final Block HIGHLANDS_REGOLITH = register("highlands_regolith", (properties)->new ColoredFallingBlock(new ColorCode(7566195), properties), AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block MARIA_REGOLITH = register("maria_regolith", (properties)->new ColoredFallingBlock(new ColorCode(5329233), properties), AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.GRAY), true);
 
     //public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
     //public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);

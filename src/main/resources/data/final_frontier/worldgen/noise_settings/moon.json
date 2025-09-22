@@ -430,7 +430,7 @@
                 "then_run": {
                   "type": "minecraft:block",
                   "result_state": {
-                    "Name": "minecraft:gray_concrete_powder"
+                    "Name": "final_frontier:maria_regolith"
                   }
                 }
               }
@@ -466,7 +466,7 @@
                 "then_run": {
                   "type": "minecraft:block",
                   "result_state": {
-                    "Name": "minecraft:light_gray_concrete_powder"
+                    "Name": "final_frontier:highlands_regolith"
                   }
                 }
               }
