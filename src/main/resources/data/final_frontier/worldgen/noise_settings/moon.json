@@ -1,7 +1,7 @@
 {
   "aquifers_enabled": false,
   "default_block": {
-    "Name": "minecraft:smooth_basalt"
+    "Name": "final_frontier:moonstone"
   },
   "default_fluid": {
     "Name": "minecraft:air"
@@ -489,7 +489,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:blackstone"
+            "Name": "final_frontier:subcinder"
           }
         }
       }

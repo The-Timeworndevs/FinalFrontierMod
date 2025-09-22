@@ -2,7 +2,7 @@
   "type": "minecraft:forest_rock",
   "config": {
     "state": {
-      "Name": "minecraft:smooth_basalt"
+      "Name": "final_frontier:moonstone"
     }
   }
 }
