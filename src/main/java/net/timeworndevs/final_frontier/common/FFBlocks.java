@@ -2,7 +2,7 @@ package net.timeworndevs.final_frontier.common;
 
 public class FFBlocks {
 
-    public static void register() {
+    public static void init() {
 
     }
 

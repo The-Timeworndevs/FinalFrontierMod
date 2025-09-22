@@ -18,15 +18,15 @@ public class Main implements ModInitializer {
 		LOGGER.info("It's time to blast off!");
 
 		LOGGER.info("Registering Blocks");
-		FFBlocks.register();
+		FFBlocks.init();
 		LOGGER.info("Registered Blocks");
 
 		LOGGER.info("Registering Items");
-		FFItems.register();
+		FFItems.init();
 		LOGGER.info("Registered Items");
 
 		LOGGER.info("Registering Tabs");
-		FFCreativeItemTabs.register();
+		FFCreativeItemTabs.init();
 		LOGGER.info("Registered Tabs");
 	}
 }

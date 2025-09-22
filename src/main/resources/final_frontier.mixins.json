@@ -3,7 +3,6 @@
 	"package": "net.timeworndevs.final_frontier.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
