@@ -25,8 +25,8 @@ public class EntityGravityMixin extends Entity {
         return 0.013;
     }
 
-    @ModifyReturnValue(method = "getSafeFallDistance()I", at = @At("RETURN"))
-    public int getSafeFallDistance$setFallChanges(int original) {
+    @ModifyReturnValue(method = "getUnsafeFallDistance", at = @At("RETURN"))
+    public double getSafeFallDistance$setFallChanges(double original) {
         return 18;
     }
 
