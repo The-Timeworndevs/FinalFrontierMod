@@ -25,11 +25,6 @@ public class EntityGravityMixin extends Entity {
         return 0.013;
     }
 
-    @ModifyReturnValue(method = "getUnsafeFallDistance", at = @At("RETURN"))
-    public double getSafeFallDistance$setFallChanges(double original) {
-        return 18;
-    }
-
     @Override
     protected void initDataTracker(DataTracker.Builder builder) {
 
