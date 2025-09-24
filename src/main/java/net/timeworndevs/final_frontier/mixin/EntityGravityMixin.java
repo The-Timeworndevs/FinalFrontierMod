@@ -1,18 +1,19 @@
 package net.timeworndevs.final_frontier.mixin;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.entity.LivingEntity;
-import net.timeworndevs.final_frontier.Main;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
 public class EntityGravityMixin {
-    @Inject(method = "tick", at = @At("TAIL"))
-    public void tick$GravitySetterMixin(CallbackInfo ci) {
-        if () {
+    @ModifyReturnValue(method = "getGravity", at = @At("RETURN"))
+    public double getGravity$setGravityChanges(double original) {
+        return 0.013;
+    }
 
-        }
+    @ModifyReturnValue(method = "getSafeFallDistance()I", at = @At("RETURN"))
+    public int getSafeFallDistance$setFallChanges(int original) {
+        return 18;
     }
 }
