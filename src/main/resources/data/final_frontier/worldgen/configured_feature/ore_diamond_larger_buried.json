@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "minecraft:deepslate_iron_ore"
+          "Name": "minecraft:deepslate_diamond_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
