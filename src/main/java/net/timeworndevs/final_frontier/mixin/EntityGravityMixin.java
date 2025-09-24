@@ -11,8 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class EntityGravityMixin {
     @Inject(method = "tick", at = @At("TAIL"))
     public void tick$GravitySetterMixin(CallbackInfo ci) {
-        while (true) {
-            Main.LOGGER.info("This Mixin is running per entity tick");
+        if () {
+
         }
     }
 }
