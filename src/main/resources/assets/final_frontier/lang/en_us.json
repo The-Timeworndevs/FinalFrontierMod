@@ -3,8 +3,16 @@
   "block.final_frontier.maria_regolith": "Lunar Maria Regolith",
   "block.final_frontier.moonstone": "Moonstone",
   "block.final_frontier.moonstone_iron_ore": "Moonstone Iron Ore",
+  "block.final_frontier.moonstone_gold_ore": "Moonstone Gold Ore",
+  "block.final_frontier.moonstone_copper_ore": "Moonstone Copper Ore",
+  "block.final_frontier.moonstone_diamond_ore": "Moonstone Diamond Ore",
   "block.final_frontier.subcinder": "Subcinder",
   "block.final_frontier.subcinder_iron_ore": "Subcinder Iron Ore",
+  "block.final_frontier.subcinder_gold_ore": "Subcinder Gold Ore",
+  "block.final_frontier.subcinder_copper_ore": "Subcinder Copper Ore",
+  "block.final_frontier.subcinder_diamond_ore": "Subcinder Diamond Ore",
 
-  "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks"
+  "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
+
+  "death.attack.depressurization": "%s suffered explosive decompression"
 }

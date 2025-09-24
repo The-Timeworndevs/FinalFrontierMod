@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "minecraft:copper_ore"
+          "Name": "final_frontier:moonstone_copper_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "minecraft:deepslate_copper_ore"
+          "Name": "final_frontier:subcinder_copper_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
