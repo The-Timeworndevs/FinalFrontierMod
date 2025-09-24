@@ -3,6 +3,7 @@
 	"package": "net.timeworndevs.final_frontier.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+      "EntityGravityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
