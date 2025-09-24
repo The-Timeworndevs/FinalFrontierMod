@@ -21,12 +21,12 @@ public class EntityGravityMixin extends Entity {
     }
 
     @ModifyReturnValue(method = "getGravity", at = @At("RETURN"))
-    public static double getGravity$setGravityChanges(double original) {
+    public double getGravity$setGravityChanges(double original) {
         return 0.013;
     }
 
     @ModifyReturnValue(method = "getSafeFallDistance()I", at = @At("RETURN"))
-    public static int getSafeFallDistance$setFallChanges(int original) {
+    public int getSafeFallDistance$setFallChanges(int original) {
         return 18;
     }
 
