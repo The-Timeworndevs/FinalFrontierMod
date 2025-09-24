@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(LivingEntity.class)
-public class EntityGravityMixin extends Entity {
+public abstract class EntityGravityMixin extends Entity {
 
     public EntityGravityMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -25,23 +25,4 @@ public class EntityGravityMixin extends Entity {
         return 0.013;
     }
 
-    @Override
-    protected void initDataTracker(DataTracker.Builder builder) {
-
-    }
-
-    @Override
-    public boolean damage(ServerWorld world, DamageSource source, float amount) {
-        return false;
-    }
-
-    @Override
-    protected void readCustomData(ReadView view) {
-
-    }
-
-    @Override
-    protected void writeCustomData(WriteView view) {
-
-    }
 }
