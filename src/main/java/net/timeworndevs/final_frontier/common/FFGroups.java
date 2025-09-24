@@ -23,8 +23,10 @@ public class FFGroups {
         ItemGroupEvents.modifyEntriesEvent(FF_BUILDING_BLOCKS_KEY).register((entries)-> {
             entries.add(FFBlocks.HIGHLANDS_REGOLITH.asItem());
             entries.add(FFBlocks.MARIA_REGOLITH.asItem());
-            entries.add(FFBlocks.MOONSTONE);
-            entries.add(FFBlocks.SUBCINDER);
+            entries.add(FFBlocks.MOONSTONE.asItem());
+            entries.add(FFBlocks.MOONSTONE_IRON_ORE.asItem());
+            entries.add(FFBlocks.SUBCINDER.asItem());
+            entries.add(FFBlocks.SUBCINDER_IRON_ORE.asItem());
         });
 
     }

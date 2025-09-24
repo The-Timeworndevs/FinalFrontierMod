@@ -2,7 +2,9 @@
   "block.final_frontier.highlands_regolith": "Lunar Highlands Regolith",
   "block.final_frontier.maria_regolith": "Lunar Maria Regolith",
   "block.final_frontier.moonstone": "Moonstone",
+  "block.final_frontier.moonstone_iron_ore": "Moonstone Iron Ore",
   "block.final_frontier.subcinder": "Subcinder",
+  "block.final_frontier.subcinder_iron_ore": "Subcinder Iron Ore",
 
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks"
 }

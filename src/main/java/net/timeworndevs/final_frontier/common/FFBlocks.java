@@ -47,9 +47,11 @@ public class FFBlocks {
     public static final Block HIGHLANDS_REGOLITH = register("highlands_regolith", (properties)->new ColoredFallingBlock(new ColorCode(7566195), properties), AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.LIGHT_GRAY), true);
     public static final Block MARIA_REGOLITH = register("maria_regolith", (properties)->new ColoredFallingBlock(new ColorCode(5329233), properties), AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.GRAY), true);
     public static final Block MOONSTONE = register("moonstone", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6), true);
+    public static final Block MOONSTONE_IRON_ORE = register("moonstone_iron_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(3, 3), true);
     //public static final Block KOMATIITE = register("komatiite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6), true);
     //public static final Block PYROXINITE = register("pyroxinite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6), true);
     public static final Block SUBCINDER = register("subcinder", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(6,3), true);
+    public static final Block SUBCINDER_IRON_ORE = register("subcinder_iron_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f), true);
 
     //public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
     //public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);

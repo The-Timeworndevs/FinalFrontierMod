@@ -30,18 +30,9 @@
 
     ],
     [
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
+      "final_frontier:plentiful_copper",
       "final_frontier:plentiful_iron",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_gold",
       "final_frontier:plentiful_gold",
-      "minecraft:ore_copper",
-      "minecraft:ore_copper_large",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_diamond_large",
       "final_frontier:plentiful_diamond",
       "final_frontier:plentiful_diamond_buried"
     ],
