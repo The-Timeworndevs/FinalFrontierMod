@@ -11,10 +11,14 @@ import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(LivingEntity.class)
 public abstract class EntityGravityMixin extends Entity {
+
+    @Shadow
+    protected abstract double getGravity();
 
     public EntityGravityMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -22,7 +26,8 @@ public abstract class EntityGravityMixin extends Entity {
 
     @ModifyReturnValue(method = "getGravity", at = @At("RETURN"))
     public double getGravity$setGravityChanges(double original) {
-        return 0.013;
+
+        return this.getGravity();
     }
 
 }
