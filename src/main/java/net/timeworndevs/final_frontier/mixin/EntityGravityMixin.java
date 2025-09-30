@@ -26,7 +26,6 @@ public abstract class EntityGravityMixin extends Entity {
 
     @ModifyReturnValue(method = "getGravity", at = @At("RETURN"))
     public double getGravity$setGravityChanges(double original) {
-
         return this.getGravity();
     }
 
