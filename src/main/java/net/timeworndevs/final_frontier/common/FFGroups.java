@@ -24,6 +24,7 @@ public class FFGroups {
             entries.add(FFBlocks.HIGHLANDS_REGOLITH.asItem());
             entries.add(FFBlocks.MARIA_REGOLITH.asItem());
             entries.add(FFBlocks.MOONSTONE.asItem());
+            entries.add(FFBlocks.KOMATIITE.asItem());
             entries.add(FFBlocks.MOONSTONE_IRON_ORE.asItem());
             entries.add(FFBlocks.MOONSTONE_GOLD_ORE.asItem());
             entries.add(FFBlocks.MOONSTONE_COPPER_ORE.asItem());
@@ -33,6 +34,7 @@ public class FFGroups {
             entries.add(FFBlocks.SUBCINDER_GOLD_ORE.asItem());
             entries.add(FFBlocks.SUBCINDER_COPPER_ORE.asItem());
             entries.add(FFBlocks.SUBCINDER_DIAMOND_ORE.asItem());
+            entries.add(FFBlocks.PYROXENITE.asItem());
         });
 
     }

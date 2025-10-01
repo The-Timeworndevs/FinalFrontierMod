@@ -33,7 +33,9 @@
       "final_frontier:plentiful_iron",
       "final_frontier:plentiful_gold",
       "final_frontier:plentiful_diamond",
-      "final_frontier:plentiful_diamond_buried"
+      "final_frontier:plentiful_diamond_buried",
+      "final_frontier:komatiite_blob",
+      "final_frontier:pyroxenite_blob"
     ],
     [
     ],

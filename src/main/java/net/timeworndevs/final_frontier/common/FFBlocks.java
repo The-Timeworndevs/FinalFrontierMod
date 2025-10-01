@@ -51,13 +51,13 @@ public class FFBlocks {
     public static final Block MOONSTONE_GOLD_ORE = register("moonstone_gold_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(3, 3).requiresTool(), true);
     public static final Block MOONSTONE_COPPER_ORE = register("moonstone_copper_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(3, 3).requiresTool(), true);
     public static final Block MOONSTONE_DIAMOND_ORE = register("moonstone_diamond_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(3, 3).requiresTool(), true);
-    //public static final Block KOMATIITE = register("komatiite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6), true);
-    //public static final Block PYROXINITE = register("pyroxinite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6), true);
+    public static final Block KOMATIITE = register("komatiite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f, 6).requiresTool(), true);
     public static final Block SUBCINDER = register("subcinder", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(6,3).requiresTool(), true);
     public static final Block SUBCINDER_IRON_ORE = register("subcinder_iron_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f).requiresTool(), true);
     public static final Block SUBCINDER_GOLD_ORE = register("subcinder_gold_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f).requiresTool(), true);
     public static final Block SUBCINDER_COPPER_ORE = register("subcinder_copper_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f).requiresTool(), true);
     public static final Block SUBCINDER_DIAMOND_ORE = register("subcinder_diamond_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f).requiresTool(), true);
+    public static final Block PYROXENITE = register("pyroxenite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.TUFF).strength(1.5f, 6).requiresTool(), true);
 
     //public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
     //public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
