@@ -24,6 +24,6 @@ public abstract class EntityGravityMixin extends Entity {
     public double getGravity$setGravityChanges(double original) {
         return this.getGravity();
     }
-     */
+    */
 
 }
