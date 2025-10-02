@@ -2,7 +2,16 @@
   "replace": false,
   "values": [
     "final_frontier:moonstone",
-    "final_frontier:komatitite",
-    "final_frontier:subcinder"
+    "final_frontier:moonstone_iron_ore",
+    "final_frontier:moonstone_gold_ore",
+    "final_frontier:moonstone_copper_ore",
+    "final_frontier:moonstone_diamond_ore",
+    "final_frontier:komatiite",
+    "final_frontier:subcinder",
+    "final_frontier:subcinder_iron_ore",
+    "final_frontier:subcinder_gold_ore",
+    "final_frontier:subcinder_copper_ore",
+    "final_frontier:subcinder_diamond_ore",
+    "final_frontier:pyroxenite"
   ]
 }

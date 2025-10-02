@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "final_frontier:moonstone_gold_ore",
+    "final_frontier:subcinder_gold_ore",
+    "final_frontier:moonstone_diamond_ore",
+    "final_frontier:subcinder_diamond_ore"
+  ]
+}

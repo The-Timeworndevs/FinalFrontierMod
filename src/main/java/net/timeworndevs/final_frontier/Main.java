@@ -13,13 +13,13 @@ import org.slf4j.LoggerFactory;
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "final_frontier";
 
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final Logger LOGGER = LoggerFactory.getLogger("Final Frontier");
 
 
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("It's time to blast off!");
+		LOGGER.info("3.. 2.. 1.. We have ignition.");
 
 		LOGGER.info("Registering Blocks");
 		FFBlocks.init();

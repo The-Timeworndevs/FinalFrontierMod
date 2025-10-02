@@ -16,5 +16,8 @@
 
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
 
+  "biome.final_frontier.lunar_maria": "Lunar Maria",
+  "biome.final_frontier.lunar_highlands": "Lunar Highlands",
+
   "death.attack.depressurization": "%s suffered explosive decompression"
 }
