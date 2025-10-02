@@ -14,27 +14,41 @@ import net.timeworndevs.final_frontier.Main;
 public class FFGroups {
 
     public static final RegistryKey<ItemGroup> FF_BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Main.MOD_ID, "building_blocks"));
-    public static final ItemGroup FF_BUILDING_BLOCKS = FabricItemGroup.builder().icon(()-> new ItemStack(FFBlocks.HIGHLANDS_REGOLITH.asItem())).displayName(Text.translatable("itemGroup.final_frontier.ff_building_blocks")).build();
+    public static final ItemGroup FF_BUILDING_BLOCKS = FabricItemGroup.builder().icon(()-> new ItemStack(FFBlocks.PYROXENITE.asItem())).displayName(Text.translatable("itemGroup.final_frontier.ff_building_blocks")).build();
+    public static final RegistryKey<ItemGroup> FF_NATURAL_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Main.MOD_ID, "natural_blocks"));
+    public static final ItemGroup FF_NATURAL_BLOCKS = FabricItemGroup.builder().icon(()-> new ItemStack(FFBlocks.HIGHLANDS_REGOLITH.asItem())).displayName(Text.translatable("itemGroup.final_frontier.ff_natural_blocks")).build();
+    public static final RegistryKey<ItemGroup> FF_MATERIALS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Main.MOD_ID, "materials"));
+    public static final ItemGroup FF_MATERIALS = FabricItemGroup.builder().icon(()-> new ItemStack(FFItems.KEVLAR_FABRIC)).displayName(Text.translatable("itemGroup.final_frontier.ff_materials")).build();
 
     public static  void init() {
 
         Registry.register(Registries.ITEM_GROUP, FF_BUILDING_BLOCKS_KEY, FF_BUILDING_BLOCKS);
+        Registry.register(Registries.ITEM_GROUP, FF_NATURAL_BLOCKS_KEY, FF_NATURAL_BLOCKS);
+        Registry.register(Registries.ITEM_GROUP, FF_MATERIALS_KEY, FF_MATERIALS);
 
-        ItemGroupEvents.modifyEntriesEvent(FF_BUILDING_BLOCKS_KEY).register((entries)-> {
+        ItemGroupEvents.modifyEntriesEvent(FF_BUILDING_BLOCKS_KEY).register((entries) -> {
+
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(FF_NATURAL_BLOCKS_KEY).register((entries)-> {
             entries.add(FFBlocks.HIGHLANDS_REGOLITH.asItem());
             entries.add(FFBlocks.MARIA_REGOLITH.asItem());
             entries.add(FFBlocks.MOONSTONE.asItem());
-            entries.add(FFBlocks.KOMATIITE.asItem());
             entries.add(FFBlocks.MOONSTONE_IRON_ORE.asItem());
             entries.add(FFBlocks.MOONSTONE_GOLD_ORE.asItem());
             entries.add(FFBlocks.MOONSTONE_COPPER_ORE.asItem());
             entries.add(FFBlocks.MOONSTONE_DIAMOND_ORE.asItem());
+            entries.add(FFBlocks.KOMATIITE.asItem());
             entries.add(FFBlocks.SUBCINDER.asItem());
             entries.add(FFBlocks.SUBCINDER_IRON_ORE.asItem());
             entries.add(FFBlocks.SUBCINDER_GOLD_ORE.asItem());
             entries.add(FFBlocks.SUBCINDER_COPPER_ORE.asItem());
             entries.add(FFBlocks.SUBCINDER_DIAMOND_ORE.asItem());
             entries.add(FFBlocks.PYROXENITE.asItem());
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(FF_MATERIALS_KEY).register((entries) -> {
+            entries.add(FFItems.KEVLAR_FABRIC);
         });
 
     }

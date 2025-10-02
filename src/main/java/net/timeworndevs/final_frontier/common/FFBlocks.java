@@ -59,7 +59,7 @@ public class FFBlocks {
     public static final Block SUBCINDER_DIAMOND_ORE = register("subcinder_diamond_ore", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.BASALT).strength(3, 4.5f).requiresTool(), true);
     public static final Block PYROXENITE = register("pyroxenite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.TUFF).strength(1.5f, 6).requiresTool(), true);
 
-    //public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
     //public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
 
     public static void init() {

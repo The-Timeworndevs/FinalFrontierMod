@@ -14,7 +14,11 @@
   "block.final_frontier.subcinder_diamond_ore": "Subcinder Diamond Ore",
   "block.final_frontier.pyroxenite": "Pyroxenite",
 
+  "item.final_frontier.kevlar_fabric": "Kevlar Fabric",
+
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
+  "itemGroup.final_frontier.ff_natural_blocks": "Final Frontier Natural Blocks",
+  "itemGroup.final_frontier.ff_materials": "Final Frontier Materials",
 
   "biome.final_frontier.lunar_maria": "Lunar Maria",
   "biome.final_frontier.lunar_highlands": "Lunar Highlands",

@@ -25,7 +25,7 @@ public class FFItems {
         return item;
     }
 
-    //public static final Item KEVLAR_FABRIC = register("kevlar_fabric", Item::new, new Item.Settings().fireproof());
+    public static final Item KEVLAR_FABRIC = register("kevlar_fabric", Item::new, new Item.Settings().fireproof());
 
     public static void init(){
 
