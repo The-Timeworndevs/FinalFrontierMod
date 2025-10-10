@@ -60,7 +60,22 @@ public class FFBlocks {
     public static final Block PYROXENITE = register("pyroxenite", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.TUFF).strength(1.5f, 6).requiresTool(), true);
 
     public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
-    //public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block LIGHT_GRAY_KEVLAR_BLOCK = register("light_gray_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block GRAY_KEVLAR_BLOCK = register("gray_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block BLACK_KEVLAR_BLOCK = register("black_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block BROWN_KEVLAR_BLOCK = register("brown_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block RED_KEVLAR_BLOCK = register("red_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block ORANGE_KEVLAR_BLOCK = register("orange_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block YELLOW_KEVLAR_BLOCK = register("yellow_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block LIME_KEVLAR_BLOCK = register("lime_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block GREEN_KEVLAR_BLOCK = register("green_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block LIGHT_BLUE_KEVLAR_BLOCK = register("light_blue_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block CYAN_KEVLAR_BLOCK = register("cyan_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block BLUE_KEVLAR_BLOCK = register("blue_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block PURPLE_KEVLAR_BLOCK = register("purple_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block MAGENTA_KEVLAR_BLOCK = register("magenta_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
+    public static final Block PINK_KEVLAR_BLOCK = register("pink_kevlar_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).strength(08f, 08f), true);
 
     public static void init() {
 
