@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import java.util.OptionalDouble;
 
 @Mixin(DimensionType.class)
-public record DimensionTypeGravityMixin(double gravity, double safeFall) implements DimensionTypeGravity {
+public class DimensionTypeGravityMixin implements DimensionTypeGravity {
 
 
     @Override
