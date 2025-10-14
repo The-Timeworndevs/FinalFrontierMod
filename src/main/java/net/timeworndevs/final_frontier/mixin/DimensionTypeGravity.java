@@ -4,6 +4,6 @@ import java.util.OptionalDouble;
 
 public interface DimensionTypeGravity {
 
-    double gravity();
-    double safeFall();
+    double final_frontier$gravity();
+    double final_frontier$safeFall();
 }

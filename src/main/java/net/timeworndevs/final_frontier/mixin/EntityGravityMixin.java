@@ -19,11 +19,9 @@ public abstract class EntityGravityMixin extends Entity {
         super(type, world);
     }
 
-    /*
     @ModifyReturnValue(method = "getGravity", at = @At("RETURN"))
-    public double getGravity$setGravityChanges(double original) {
-        return this.getGravity();
+    public double fina_frontier$getGravity(double original) {
+        return 0.08;
     }
-    */
 
 }

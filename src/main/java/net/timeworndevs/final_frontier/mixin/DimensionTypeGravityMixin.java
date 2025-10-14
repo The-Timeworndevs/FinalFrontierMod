@@ -11,12 +11,12 @@ public class DimensionTypeGravityMixin implements DimensionTypeGravity {
 
 
     @Override
-    public double gravity() {
-        return this.gravity();
+    public double final_frontier$gravity() {
+        return this.final_frontier$gravity();
     }
 
     @Override
-    public double safeFall() {
-        return this.safeFall();
+    public double final_frontier$safeFall() {
+        return this.final_frontier$safeFall();
     }
 }
