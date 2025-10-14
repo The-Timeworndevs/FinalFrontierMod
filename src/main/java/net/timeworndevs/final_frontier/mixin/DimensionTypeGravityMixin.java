@@ -1,10 +1,8 @@
 package net.timeworndevs.final_frontier.mixin;
 
 import net.minecraft.world.dimension.DimensionType;
+import net.timeworndevs.final_frontier.duck.DimensionTypeGravity;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.Inject;
-
-import java.util.OptionalDouble;
 
 @Mixin(DimensionType.class)
 public class DimensionTypeGravityMixin implements DimensionTypeGravity {

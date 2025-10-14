@@ -1,6 +1,4 @@
-package net.timeworndevs.final_frontier.mixin;
-
-import java.util.OptionalDouble;
+package net.timeworndevs.final_frontier.duck;
 
 public interface DimensionTypeGravity {
 
