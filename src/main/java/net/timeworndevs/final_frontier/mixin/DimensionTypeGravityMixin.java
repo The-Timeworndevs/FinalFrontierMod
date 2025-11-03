@@ -1,6 +1,6 @@
 package net.timeworndevs.final_frontier.mixin;
 
-import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.level.dimension.DimensionType;
 import net.timeworndevs.final_frontier.duck.DimensionTypeGravity;
 import org.spongepowered.asm.mixin.Mixin;
 

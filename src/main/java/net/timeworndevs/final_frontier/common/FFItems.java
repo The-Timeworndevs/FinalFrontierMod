@@ -1,31 +1,30 @@
 package net.timeworndevs.final_frontier.common;
 
 
-import net.minecraft.entity.mob.PiglinEntity;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.timeworndevs.final_frontier.Main;
 
 import java.util.function.Function;
 
 public class FFItems {
 
-    public static Item register(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
+    public static Item register(String name, Function<Item.Properties, Item> factory, Item.Properties settings) {
 
-        RegistryKey<Item> itemkey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Main.MOD_ID, name));
+        ResourceKey<Item> itemkey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, name));
 
-        Item item = factory.apply(settings.registryKey(itemkey));
+        Item item = factory.apply(settings.setId(itemkey));
 
-        Registry.register(Registries.ITEM, itemkey, item);
+        Registry.register(BuiltInRegistries.ITEM, itemkey, item);
 
         return item;
     }
 
-    public static final Item KEVLAR_FABRIC = register("kevlar_fabric", Item::new, new Item.Settings().fireproof());
+    public static final Item KEVLAR_FABRIC = register("kevlar_fabric", Item::new, new Item.Properties().fireResistant());
 
     public static void init(){
 

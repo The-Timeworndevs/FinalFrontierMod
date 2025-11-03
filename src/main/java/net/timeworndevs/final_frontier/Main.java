@@ -2,8 +2,6 @@ package net.timeworndevs.final_frontier;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.world.gen.feature.OreFeature;
-import net.minecraft.world.gen.feature.ReplaceBlobsFeature;
 import net.timeworndevs.final_frontier.common.FFBlocks;
 import net.timeworndevs.final_frontier.common.FFGroups;
 import net.timeworndevs.final_frontier.common.FFItems;
