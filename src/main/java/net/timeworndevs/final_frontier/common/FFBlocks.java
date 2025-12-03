@@ -59,23 +59,23 @@ public class FFBlocks {
     public static final Block SUBCINDER_DIAMOND_ORE = register("subcinder_diamond_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3, 4.5f).requiresCorrectToolForDrops(), true);
     public static final Block PYROXENITE = register("pyroxenite", Block::new, BlockBehaviour.Properties.of().sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops(), true);
 
-    public static final Block KEVLAR_BLOCK = register("kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block WHITE_KEVLAR_BLOCK = register("white_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block LIGHT_GRAY_KEVLAR_BLOCK = register("light_gray_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block GRAY_KEVLAR_BLOCK = register("gray_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block BLACK_KEVLAR_BLOCK = register("black_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block BROWN_KEVLAR_BLOCK = register("brown_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block RED_KEVLAR_BLOCK = register("red_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block ORANGE_KEVLAR_BLOCK = register("orange_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block YELLOW_KEVLAR_BLOCK = register("yellow_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block LIME_KEVLAR_BLOCK = register("lime_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block GREEN_KEVLAR_BLOCK = register("green_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block LIGHT_BLUE_KEVLAR_BLOCK = register("light_blue_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block CYAN_KEVLAR_BLOCK = register("cyan_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block BLUE_KEVLAR_BLOCK = register("blue_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block PURPLE_KEVLAR_BLOCK = register("purple_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block MAGENTA_KEVLAR_BLOCK = register("magenta_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
-    public static final Block PINK_KEVLAR_BLOCK = register("pink_kevlar_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block DURAFABRIC_BLOCK = register("durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block WHITE_DURAFABRIC_BLOCK = register("white_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block LIGHT_GRAY_DURAFABRIC_BLOCK = register("light_gray_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block GRAY_DURAFABRIC_BLOCK = register("gray_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block BLACK_DURAFABRIC_BLOCK = register("black_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block BROWN_DURAFABRIC_BLOCK = register("brown_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block RED_DURAFABRIC_BLOCK = register("red_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block ORANGE_DURAFABRIC_BLOCK = register("orange_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block YELLOW_DURAFABRIC_BLOCK = register("yellow_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block LIME_DURAFABRIC_BLOCK = register("lime_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block GREEN_DURAFABRIC_BLOCK = register("green_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block LIGHT_BLUE_DURAFABRIC_BLOCK = register("light_blue_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block CYAN_DURAFABRIC_BLOCK = register("cyan_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block BLUE_DURAFABRIC_BLOCK = register("blue_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block PURPLE_DURAFABRIC_BLOCK = register("purple_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block MAGENTA_DURAFABRIC_BLOCK = register("magenta_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
+    public static final Block PINK_DURAFABRIC_BLOCK = register("pink_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f), true);
 
     public static void init() {
 
