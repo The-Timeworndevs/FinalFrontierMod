@@ -1,1 +1,0 @@
-execute as @s run dialog show @s final_frontier:planet_selector

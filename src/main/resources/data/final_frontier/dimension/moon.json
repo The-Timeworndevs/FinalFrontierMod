@@ -2,7 +2,6 @@
   "type": "final_frontier:moon",
   "generator": {
     "type": "minecraft:noise",
-    "settings":"final_frontier:moon",
     "biome_source": {
       "biomes": [
         {
@@ -31,6 +30,7 @@
         }
       ],
       "type": "minecraft:multi_noise"
-    }
+    },
+    "settings": "final_frontier:moon"
   }
 }

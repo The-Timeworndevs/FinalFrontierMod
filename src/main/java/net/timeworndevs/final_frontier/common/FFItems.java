@@ -13,11 +13,13 @@ import java.util.function.Function;
 
 public class FFItems {
 
+
+
     public static Item register(String name, Function<Item.Properties, Item> factory, Item.Properties settings) {
 
         ResourceKey<Item> itemkey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, name));
 
-        Item item = factory.apply(settings.setId(itemkey));
+        Item item = factory.apply(settings);
 
         Registry.register(BuiltInRegistries.ITEM, itemkey, item);
 

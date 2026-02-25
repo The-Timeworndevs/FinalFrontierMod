@@ -13,6 +13,7 @@ import net.timeworndevs.final_frontier.Main;
 
 public class FFGroups {
 
+
     public static final ResourceKey<CreativeModeTab> FF_BUILDING_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, "building_blocks"));
     public static final CreativeModeTab FF_BUILDING_BLOCKS = FabricItemGroup.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK.asItem())).title(Component.translatable("itemGroup.final_frontier.ff_building_blocks")).build();
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, "natural_blocks"));
