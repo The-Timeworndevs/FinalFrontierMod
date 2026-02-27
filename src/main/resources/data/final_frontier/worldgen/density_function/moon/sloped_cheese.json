@@ -9,24 +9,24 @@
         "type": "minecraft:mul",
         "argument1": {
           "type": "minecraft:add",
-          "argument1": "minecraft:overworld/depth",
+          "argument1": "final_frontier:moon/depth",
           "argument2": {
             "type": "minecraft:mul",
-            "argument1": "minecraft:overworld/jaggedness",
+            "argument1": "final_frontier:moon/jaggedness",
             "argument2": {
               "type": "minecraft:half_negative",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "minecraft:jagged",
+                "noise": "final_frontier:jagged",
                 "xz_scale": 1500.0,
                 "y_scale": 0.0
               }
             }
           }
         },
-        "argument2": "minecraft:overworld/factor"
+        "argument2": "final_frontier:moon/factor"
       }
     }
   },
-  "argument2": "minecraft:overworld/base_3d_noise"
+  "argument2": "final_frontier:moon/base_3d_noise"
 }
