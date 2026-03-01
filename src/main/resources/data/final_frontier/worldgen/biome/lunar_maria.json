@@ -1,5 +1,5 @@
 {
-  "temperature": 0,
+  "temperature": 2,
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
@@ -8,8 +8,58 @@
     "water_color": 0,
     "water_fog_color": 0
   },
-  "spawners": {},
   "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+    ],
+    "axolotls": [
+
+    ],
+    "creature": [
+
+    ],
+    "underground_water_creature": [
+
+    ],
+    "water_ambient": [
+
+    ],
+    "water_creature": [
+      
+    ]
+  },
   "carvers": {},
-  "features": []
+  "features": [
+    [
+
+    ],
+    [
+    ],
+    [
+      "final_frontier:subcinder_deposit"
+    ],
+    [
+    ],
+    [
+
+    ],
+    [
+      "final_frontier:moon_copper",
+      "final_frontier:moon_iron",
+      "final_frontier:moon_gold",
+      "final_frontier:moon_diamond",
+      "final_frontier:moon_diamond_buried",
+      "final_frontier:komatiite_blob",
+      "final_frontier:pyroxenite_blob"
+    ],
+    [
+    ],
+    [],
+    [
+    ],
+    [
+    ],
+    [
+    ]
+  ]
 }

@@ -47,6 +47,7 @@ public class FFBlocks {
         return ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, name));
     }
 
+    //Natural Blocks
     public static final Block HIGHLANDS_REGOLITH = register("highlands_regolith", (properties)->new ColoredFallingBlock(new ColorRGBA(7566195), properties), BlockBehaviour.Properties.of().sound(SoundType.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.LIGHT_GRAY), true);
     public static final Block MARIA_REGOLITH = register("maria_regolith", (properties)->new ColoredFallingBlock(new ColorRGBA(5329233), properties), BlockBehaviour.Properties.of().sound(SoundType.SAND).strength(0.5f, 0.5f).mapColor(DyeColor.GRAY), true);
     public static final Block MOONSTONE = register("moonstone", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
@@ -62,6 +63,11 @@ public class FFBlocks {
     public static final Block SUBCINDER_DIAMOND_ORE = register("subcinder_diamond_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3, 4.5f).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
     public static final Block PYROXENITE = register("pyroxenite", Block::new, BlockBehaviour.Properties.of().sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_BROWN), true);
 
+    //Building Blocks
+    public static final Block POLISHED_MOONSTONE = register("polished_moonstone", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).mapColor(DyeColor.GRAY), true);
+    public static final Block MOONSTONE_BRICKS = register("moonstone_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).mapColor(DyeColor.GRAY), true);
+
+    //Colored Blocks
     public static final Block DURAFABRIC_BLOCK = register("durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(MapColor.SAND), true);
     public static final Block WHITE_DURAFABRIC_BLOCK = register("white_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(DyeColor.WHITE), true);
     public static final Block LIGHT_GRAY_DURAFABRIC_BLOCK = register("light_gray_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(DyeColor.LIGHT_GRAY), true);
@@ -79,6 +85,9 @@ public class FFBlocks {
     public static final Block PURPLE_DURAFABRIC_BLOCK = register("purple_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(DyeColor.PURPLE), true);
     public static final Block MAGENTA_DURAFABRIC_BLOCK = register("magenta_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(DyeColor.MAGENTA), true);
     public static final Block PINK_DURAFABRIC_BLOCK = register("pink_durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(DyeColor.PINK), true);
+
+
+    //Functional Blocks
 
     public static void init() {
 

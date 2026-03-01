@@ -12,6 +12,8 @@
     "final_frontier:subcinder_gold_ore",
     "final_frontier:subcinder_copper_ore",
     "final_frontier:subcinder_diamond_ore",
-    "final_frontier:pyroxenite"
+    "final_frontier:pyroxenite",
+    "final_frontier:moonstone_bricks",
+    "final_frontier:polished_moonstone"
   ]
 }

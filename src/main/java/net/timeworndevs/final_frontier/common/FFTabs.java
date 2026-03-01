@@ -11,7 +11,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.timeworndevs.final_frontier.Main;
 
-public class FFGroups {
+public class FFTabs {
 
 
     public static final ResourceKey<CreativeModeTab> FF_BUILDING_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Main.MOD_ID, "building_blocks"));
@@ -28,6 +28,9 @@ public class FFGroups {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_MATERIALS_KEY, FF_MATERIALS);
 
         ItemGroupEvents.modifyEntriesEvent(FF_BUILDING_BLOCKS_KEY).register((entries) -> {
+            entries.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
+            entries.accept(FFBlocks.MOONSTONE_BRICKS.asItem());
+            entries.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
@@ -47,6 +50,7 @@ public class FFGroups {
             entries.accept(FFBlocks.PURPLE_DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
+
         });
 
         ItemGroupEvents.modifyEntriesEvent(FF_NATURAL_BLOCKS_KEY).register((entries)-> {

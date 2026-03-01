@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0,
+    "size": 18,
+    "targets": [
+      {
+        "state": {
+          "Name": "final_frontier:moonstone_copper_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "final_frontier:moonstone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "final_frontier:subcinder_copper_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "final_frontier:subcinder_ore_replaceables"
+        }
+      }
+    ]
+  }
+}

@@ -330,7 +330,7 @@
       }
     }
   },
-  "ore_veins_enabled": true,
+  "ore_veins_enabled": false,
   "sea_level": 0,
   "spawn_target": [
     {
