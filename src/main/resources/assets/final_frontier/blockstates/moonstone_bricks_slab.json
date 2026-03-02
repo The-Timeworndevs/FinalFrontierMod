@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/moonstone_bricks_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/moonstone_bricks"
+    },
+    "type=top": {
+      "model": "final_frontier:block/moonstone_bricks_slab_top"
+    }
+  }
+}

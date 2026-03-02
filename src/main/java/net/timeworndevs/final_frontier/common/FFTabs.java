@@ -28,9 +28,28 @@ public class FFTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_MATERIALS_KEY, FF_MATERIALS);
 
         ItemGroupEvents.modifyEntriesEvent(FF_BUILDING_BLOCKS_KEY).register((entries) -> {
+            entries.accept(FFBlocks.MOONSTONE.asItem());
+            entries.accept(FFBlocks.MOONSTONE_STAIRS.asItem());
+            entries.accept(FFBlocks.MOONSTONE_SLAB.asItem());
             entries.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
+            entries.accept(FFBlocks.POLISHED_MOONSTONE_STAIRS.asItem());
+            entries.accept(FFBlocks.POLISHED_MOONSTONE_SLAB.asItem());
             entries.accept(FFBlocks.MOONSTONE_BRICKS.asItem());
-            entries.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
+            entries.accept(FFBlocks.CRACKED_MOONSTONE_BRICKS.asItem());
+            entries.accept(FFBlocks.MOONSTONE_BRICKS_STAIRS.asItem());
+            entries.accept(FFBlocks.MOONSTONE_BRICKS_SLAB.asItem());
+            entries.accept(FFBlocks.CHISELED_POLISHED_MOONSTONE.asItem());
+            entries.accept(FFBlocks.SUBCINDER.asItem());
+            entries.accept(FFBlocks.SUBCINDER_STAIRS.asItem());
+            entries.accept(FFBlocks.SUBCINDER_SLAB.asItem());
+            entries.accept(FFBlocks.POLISHED_SUBCINDER.asItem());
+            entries.accept(FFBlocks.POLISHED_SUBCINDER_STAIRS.asItem());
+            entries.accept(FFBlocks.POLISHED_SUBCINDER_SLAB.asItem());
+            entries.accept(FFBlocks.SUBCINDER_BRICKS.asItem());
+            entries.accept(FFBlocks.CRACKED_SUBCINDER_BRICKS.asItem());
+            entries.accept(FFBlocks.SUBCINDER_BRICKS_STAIRS.asItem());
+            entries.accept(FFBlocks.SUBCINDER_BRICKS_SLAB.asItem());
+            entries.accept(FFBlocks.CHISELED_POLISHED_SUBCINDER.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
@@ -50,7 +69,6 @@ public class FFTabs {
             entries.accept(FFBlocks.PURPLE_DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
-
         });
 
         ItemGroupEvents.modifyEntriesEvent(FF_NATURAL_BLOCKS_KEY).register((entries)-> {

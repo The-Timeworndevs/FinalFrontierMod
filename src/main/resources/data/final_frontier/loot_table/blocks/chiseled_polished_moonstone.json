@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "final_frontier:moonstone_bricks"
+          "name": "final_frontier:chiseled_polished_moonstone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "final_frontier:blocks/moonstone_bricks"
+  "random_sequence": "final_frontier:blocks/chiseled_polished_moonstone"
 }

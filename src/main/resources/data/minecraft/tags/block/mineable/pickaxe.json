@@ -14,6 +14,12 @@
     "final_frontier:subcinder_diamond_ore",
     "final_frontier:pyroxenite",
     "final_frontier:moonstone_bricks",
-    "final_frontier:polished_moonstone"
+    "final_frontier:cracked_moonstone_bricks",
+    "final_frontier:polished_moonstone",
+    "final_frontier:chiseled_polished_moonstone",
+    "final_frontier:subcinder_bricks",
+    "final_frontier:cracked_subcinder_bricks",
+    "final_frontier:polished_subcinder",
+    "final_frontier:chiseled_polished_subcinder"
   ]
 }

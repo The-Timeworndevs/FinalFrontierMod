@@ -9,9 +9,7 @@ import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.ColoredFallingBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.timeworndevs.final_frontier.Main;
@@ -55,8 +53,8 @@ public class FFBlocks {
     public static final Block MOONSTONE_GOLD_ORE = register("moonstone_gold_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
     public static final Block MOONSTONE_COPPER_ORE = register("moonstone_copper_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
     public static final Block MOONSTONE_DIAMOND_ORE = register("moonstone_diamond_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
-    public static final Block KOMATIITE = register("komatiite", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops(), true);
-    public static final Block SUBCINDER = register("subcinder", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN), true);
+    public static final Block KOMATIITE = register("komatiite", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN), true);
+    public static final Block SUBCINDER = register("subcinder", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
     public static final Block SUBCINDER_IRON_ORE = register("subcinder_iron_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3, 4.5f).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
     public static final Block SUBCINDER_GOLD_ORE = register("subcinder_gold_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3, 4.5f).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
     public static final Block SUBCINDER_COPPER_ORE = register("subcinder_copper_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3, 4.5f).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
@@ -64,8 +62,27 @@ public class FFBlocks {
     public static final Block PYROXENITE = register("pyroxenite", Block::new, BlockBehaviour.Properties.of().sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_BROWN), true);
 
     //Building Blocks
-    public static final Block POLISHED_MOONSTONE = register("polished_moonstone", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).mapColor(DyeColor.GRAY), true);
-    public static final Block MOONSTONE_BRICKS = register("moonstone_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).mapColor(DyeColor.GRAY), true);
+    public static final Block MOONSTONE_STAIRS = register("moonstone_stairs",(properties)-> new StairBlock(MOONSTONE.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block MOONSTONE_SLAB = register("moonstone_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block POLISHED_MOONSTONE = register("polished_moonstone", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block POLISHED_MOONSTONE_STAIRS = register("polished_moonstone_stairs",(properties)-> new StairBlock(POLISHED_MOONSTONE.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block POLISHED_MOONSTONE_SLAB = register("polished_moonstone_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block MOONSTONE_BRICKS = register("moonstone_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block CRACKED_MOONSTONE_BRICKS = register("cracked_moonstone_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block MOONSTONE_BRICKS_STAIRS = register("moonstone_bricks_stairs",(properties)-> new StairBlock(MOONSTONE_BRICKS.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block MOONSTONE_BRICKS_SLAB = register("moonstone_bricks_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block CHISELED_POLISHED_MOONSTONE = register("chiseled_polished_moonstone", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+
+    public static final Block SUBCINDER_STAIRS = register("subcinder_stairs",(properties)-> new StairBlock(SUBCINDER.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block SUBCINDER_SLAB = register("subcinder_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block POLISHED_SUBCINDER = register("polished_subcinder", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
+    public static final Block POLISHED_SUBCINDER_STAIRS = register("polished_subcinder_stairs",(properties)-> new StairBlock(POLISHED_SUBCINDER.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block POLISHED_SUBCINDER_SLAB = register("polished_subcinder_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block SUBCINDER_BRICKS = register("subcinder_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
+    public static final Block CRACKED_SUBCINDER_BRICKS = register("cracked_subcinder_bricks", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
+    public static final Block SUBCINDER_BRICKS_STAIRS = register("subcinder_bricks_stairs",(properties)-> new StairBlock(SUBCINDER_BRICKS.defaultBlockState(), properties), BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block SUBCINDER_BRICKS_SLAB = register("subcinder_bricks_slab", SlabBlock::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops().mapColor(DyeColor.LIGHT_GRAY), true);
+    public static final Block CHISELED_POLISHED_SUBCINDER = register("chiseled_polished_subcinder", Block::new, BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops().mapColor(DyeColor.GRAY), true);
 
     //Colored Blocks
     public static final Block DURAFABRIC_BLOCK = register("durafabric_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(08f, 08f).mapColor(MapColor.SAND), true);
