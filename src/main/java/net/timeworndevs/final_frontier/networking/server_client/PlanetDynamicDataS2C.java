@@ -18,7 +18,7 @@ public record PlanetDynamicDataS2C(HashMap<String, Planet.DynamicData> dynamicDa
     public static final StreamCodec<FriendlyByteBuf, PlanetDynamicDataS2C> PACKET_CODEC = CustomPacketPayload.codec(PlanetDynamicDataS2C::write, PlanetDynamicDataS2C::new);
 
     private PlanetDynamicDataS2C(FriendlyByteBuf buffer) {
-        this((HashMap<String, Planet.DynamicData>) buffer.readMap(FriendlyByteBuf::readUtf, Planet.DynamicData::new), buffer.readResourceKey(Registries.DIMENSION), buffer.readInt());
+        this((HashMap<String, Planet.DynamicData>) buffer.readMap(FriendlyByteBuf::readUtf, Planet.DynamicData::new), buffer.readResourceKey(Registries.DIMENSION));
     }
 
     private void write(FriendlyByteBuf buffer) {
