@@ -1,5 +1,6 @@
 package net.timeworndevs.final_frontier.planet;
 
+import net.minecraft.network.FriendlyByteBuf;
 import org.jetbrains.annotations.NotNull;
 
 public class Planet implements Comparable<Planet>{
@@ -12,10 +13,22 @@ public class Planet implements Comparable<Planet>{
     private double getCloudRotationRate;
     private int cloudLevel;
 
-
-
     @Override
     public int compareTo(@NotNull Planet o) {
         return 0;
+    }
+
+    public static void writeDynamicData(FriendlyByteBuf buffer, DynamicData data) {
+        buffer.writeInt(data.cloudLevel);
+    }
+
+    public DynamicData getDynamicData() {
+        return new DynamicData(cloudLevel);
+    }
+
+    public record DynamicData(int cloudLevel) {
+        public DynamicData(FriendlyByteBuf buffer) {
+            this(buffer.readInt());
+        }
     }
 }

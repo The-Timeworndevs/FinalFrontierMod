@@ -50,5 +50,27 @@ public class PlanetData {
         buffer.writeDouble(data.gravity);
     }
 
-    
+    public boolean isSky() {
+        return isSky;
+    }
+
+    public boolean overrideSky() {
+        return overrideSky;
+    }
+
+    public boolean hasClouds() {
+        return hasClouds;
+    }
+
+    public boolean hasWeather() {
+        return hasWeather;
+    }
+
+    public boolean hasOxygen() {
+        return hasOxygen;
+    }
+
+    public double gravity() {
+        return gravity;
+    }
 }
