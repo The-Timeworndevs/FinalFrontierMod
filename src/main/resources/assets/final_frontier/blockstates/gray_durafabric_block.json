@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "final_frontier:block/gray_kevlar_block"
+      "model": "final_frontier:block/gray_durafabric_block"
     }
   }
 }

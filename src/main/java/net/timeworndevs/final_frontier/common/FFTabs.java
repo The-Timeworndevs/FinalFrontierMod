@@ -39,6 +39,8 @@ public class FFTabs {
             entries.accept(FFBlocks.MOONSTONE_BRICKS_STAIRS.asItem());
             entries.accept(FFBlocks.MOONSTONE_BRICKS_SLAB.asItem());
             entries.accept(FFBlocks.CHISELED_POLISHED_MOONSTONE.asItem());
+            entries.accept(FFBlocks.KOMATIITE.asItem());
+            entries.accept(FFBlocks.POLISHED_KOMATIITE.asItem());
             entries.accept(FFBlocks.SUBCINDER.asItem());
             entries.accept(FFBlocks.SUBCINDER_STAIRS.asItem());
             entries.accept(FFBlocks.SUBCINDER_SLAB.asItem());
