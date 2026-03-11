@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "final_frontier:moonstone_wall",
+    "final_frontier:polished_moonstone_wall",
+    "final_frontier:moonstone_bricks_wall",
+    "final_frontier:komatiite_wall",
+    "final_frontier:polished_komatiite_wall",
+    "final_frontier:subcinder_wall",
+    "final_frontier:polished_subcinder_wall",
+    "final_frontier:subcinder_bricks_wall",
+    "final_frontier:pyroxenite_wall",
+    "final_frontier:polished_pyroxenite_wall"
+  ]
+}

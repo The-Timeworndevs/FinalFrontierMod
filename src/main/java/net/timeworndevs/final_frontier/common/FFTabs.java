@@ -52,6 +52,8 @@ public class FFTabs {
             entries.accept(FFBlocks.SUBCINDER_BRICKS_STAIRS.asItem());
             entries.accept(FFBlocks.SUBCINDER_BRICKS_SLAB.asItem());
             entries.accept(FFBlocks.CHISELED_POLISHED_SUBCINDER.asItem());
+            entries.accept(FFBlocks.PYROXENITE.asItem());
+            entries.accept(FFBlocks.POLISHED_PYROXENITE.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
             entries.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
