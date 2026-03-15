@@ -31,13 +31,16 @@ public class FFTabs {
             entries.accept(FFBlocks.MOONSTONE.asItem());
             entries.accept(FFBlocks.MOONSTONE_STAIRS.asItem());
             entries.accept(FFBlocks.MOONSTONE_SLAB.asItem());
+            entries.accept(FFBlocks.MOONSTONE_WALL.asItem());
             entries.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
             entries.accept(FFBlocks.POLISHED_MOONSTONE_STAIRS.asItem());
             entries.accept(FFBlocks.POLISHED_MOONSTONE_SLAB.asItem());
+            entries.accept(FFBlocks.POLISHED_MOONSTONE_WALL.asItem());
             entries.accept(FFBlocks.MOONSTONE_BRICKS.asItem());
             entries.accept(FFBlocks.CRACKED_MOONSTONE_BRICKS.asItem());
             entries.accept(FFBlocks.MOONSTONE_BRICKS_STAIRS.asItem());
             entries.accept(FFBlocks.MOONSTONE_BRICKS_SLAB.asItem());
+            entries.accept(FFBlocks.MOONSTONE_BRICKS_WALL.asItem());
             entries.accept(FFBlocks.CHISELED_POLISHED_MOONSTONE.asItem());
             entries.accept(FFBlocks.KOMATIITE.asItem());
             entries.accept(FFBlocks.POLISHED_KOMATIITE.asItem());
