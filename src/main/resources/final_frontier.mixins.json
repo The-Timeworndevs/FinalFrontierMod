@@ -1,14 +1,12 @@
 {
-	"required": true,
-	"package": "net.timeworndevs.final_frontier.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "EntityGravityMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "net.tws.final_frontier.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }
