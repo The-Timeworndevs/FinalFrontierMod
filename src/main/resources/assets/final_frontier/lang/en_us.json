@@ -46,13 +46,16 @@
   "block.final_frontier.polished_komatiite": "Polished Komatiite",
   "block.final_frontier.subcinder_stairs": "Subcinder Stairs",
   "block.final_frontier.subcinder_slab": "Subcinder Slab",
+  "block.final_frontier.subcinder_wall": "Subcinder Wall",
   "block.final_frontier.polished_subcinder": "Polished Subcinder",
   "block.final_frontier.polished_subcinder_stairs": "Polished Subcinder Stairs",
   "block.final_frontier.polished_subcinder_slab": "Polished Subcinder Slab",
+  "block.final_frontier.polished_subcinder_wall": "Polished Subcinder Wall",
   "block.final_frontier.subcinder_bricks": "Subcinder Bricks",
   "block.final_frontier.cracked_subcinder_bricks": "Cracked Subcinder Bricks",
   "block.final_frontier.subcinder_bricks_stairs": "Subcinder Bricks Stairs",
   "block.final_frontier.subcinder_bricks_slab": "Subcinder Bricks Slab",
+  "block.final_frontier.subcinder_bricks_wall": "Subcinder Bricks Wall",
   "block.final_frontier.chiseled_polished_subcinder": "Chiseled Polished Subcinder",
   "block.final_frontier.polished_pyroxenite": "Polished Pyroxenite",
 
@@ -60,6 +63,7 @@
 
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
   "itemGroup.final_frontier.ff_natural_blocks": "Final Frontier Natural Blocks",
+  "itemGroup.final_frontier.ff_colored_blocks": "Final Frontier Colored Blocks",
   "itemGroup.final_frontier.ff_materials": "Final Frontier Materials",
 
   "biome.final_frontier.lunar_maria": "Lunar Maria",

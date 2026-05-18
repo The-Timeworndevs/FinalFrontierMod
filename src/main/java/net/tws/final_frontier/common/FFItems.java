@@ -10,6 +10,6 @@ public class FFItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FFMain.MODID);
 
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder().alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+    public static final DeferredItem<Item> DURAFABRIC = ITEMS.registerSimpleItem("durafabric", new Item.Properties());
 
 }
