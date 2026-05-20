@@ -1,7 +1,6 @@
 package net.tws.final_frontier.common;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
@@ -16,13 +15,17 @@ public class FFBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(FFMain.MODID);
 
+
+    //Block Registry
+
     //Natural Blocks
     public static final DeferredBlock<Block> HIGHLANDS_REGOLITH = BLOCKS.register("highlands_regolith", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)) {
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
             return null;
         }
-    });    public static final DeferredBlock<Block> MARIA_REGOLITH = BLOCKS.register("maria_regolith", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)) {
+    });
+    public static final DeferredBlock<Block> MARIA_REGOLITH = BLOCKS.register("maria_regolith", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)) {
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
             return null;
