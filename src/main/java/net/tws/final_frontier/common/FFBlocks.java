@@ -3,6 +3,8 @@ package net.tws.final_frontier.common;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.crafting.BlastingRecipe;
+import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -15,10 +17,13 @@ public class FFBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(FFMain.MODID);
 
-
     //Block Registry
 
     //Natural Blocks
+
+    public static final DeferredBlock<Block> BAUXITE_ORE = BLOCKS.registerSimpleBlock("bauxite_ore", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> DEEPSLATE_BAUXITE_ORE = BLOCKS.registerSimpleBlock("deepslate_bauxite_ore", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops());
+
     public static final DeferredBlock<Block> HIGHLANDS_REGOLITH = BLOCKS.register("highlands_regolith", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)) {
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
@@ -36,12 +41,14 @@ public class FFBlocks {
     public static final DeferredBlock<Block> MOONSTONE_GOLD_ORE = BLOCKS.registerSimpleBlock("moonstone_gold_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> MOONSTONE_COPPER_ORE = BLOCKS.registerSimpleBlock("moonstone_copper_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> MOONSTONE_DIAMOND_ORE = BLOCKS.registerSimpleBlock("moonstone_diamond_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> MOONSTONE_BAUXITE_ORE = BLOCKS.registerSimpleBlock("moonstone_bauxite_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> KOMATIITE = BLOCKS.registerSimpleBlock("komatiite", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> SUBCINDER = BLOCKS.registerSimpleBlock("subcinder", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> SUBCINDER_IRON_ORE = BLOCKS.registerSimpleBlock("subcinder_iron_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> SUBCINDER_GOLD_ORE = BLOCKS.registerSimpleBlock("subcinder_gold_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> SUBCINDER_COPPER_ORE = BLOCKS.registerSimpleBlock("subcinder_copper_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> SUBCINDER_DIAMOND_ORE = BLOCKS.registerSimpleBlock("subcinder_diamond_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> SUBCINDER_BAUXITE_ORE = BLOCKS.registerSimpleBlock("subcinder_bauxite_ore", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> PYROXENITE = BLOCKS.registerSimpleBlock("pyroxenite", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops());
 
     //Building Blocks
@@ -96,6 +103,10 @@ public class FFBlocks {
     //Item Registry
 
     //Natural Blocks
+
+    public static final DeferredItem<BlockItem> BAUXITE_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("bauxite_ore", BAUXITE_ORE);
+    public static final DeferredItem<BlockItem> DEEPSLATE_BAUXITE_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("deepslate_bauxite_ore", DEEPSLATE_BAUXITE_ORE);
+
     public static final DeferredItem<BlockItem> HIGHLANDS_REGOLITH_ITEM = FFItems.ITEMS.registerSimpleBlockItem("highlands_regolith", HIGHLANDS_REGOLITH);
     public static final DeferredItem<BlockItem> MARIA_REGOLITH_ITEM = FFItems.ITEMS.registerSimpleBlockItem("maria_regolith", MARIA_REGOLITH);
     public static final DeferredItem<BlockItem> MOONSTONE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("moonstone", MOONSTONE);
@@ -103,12 +114,14 @@ public class FFBlocks {
     public static final DeferredItem<BlockItem> MOONSTONE_GOLD_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("moonstone_gold_ore", MOONSTONE_GOLD_ORE);
     public static final DeferredItem<BlockItem> MOONSTONE_COPPER_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("moonstone_copper_ore", MOONSTONE_COPPER_ORE);
     public static final DeferredItem<BlockItem> MOONSTONE_DIAMOND_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("moonstone_diamond_ore", MOONSTONE_DIAMOND_ORE);
+    public static final DeferredItem<BlockItem> MOONSTONE_BAUXITE_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("moonstone_bauxite_ore", MOONSTONE_BAUXITE_ORE);
     public static final DeferredItem<BlockItem> KOMATIITE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("komatiite", KOMATIITE);
     public static final DeferredItem<BlockItem> SUBCINDER_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder", SUBCINDER);
     public static final DeferredItem<BlockItem> SUBCINDER_IRON_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder_iron_ore", SUBCINDER_IRON_ORE);
     public static final DeferredItem<BlockItem> SUBCINDER_GOLD_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder_gold_ore", SUBCINDER_GOLD_ORE);
     public static final DeferredItem<BlockItem> SUBCINDER_COPPER_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder_copper_ore", SUBCINDER_COPPER_ORE);
     public static final DeferredItem<BlockItem> SUBCINDER_DIAMOND_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder_diamond_ore", SUBCINDER_DIAMOND_ORE);
+    public static final DeferredItem<BlockItem> SUBCINDER_BAUXITE_ORE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("subcinder_bauxite_ore", SUBCINDER_BAUXITE_ORE);
     public static final DeferredItem<BlockItem> PYROXENITE_ITEM = FFItems.ITEMS.registerSimpleBlockItem("pyroxenite", PYROXENITE);
 
     //Building Blocks

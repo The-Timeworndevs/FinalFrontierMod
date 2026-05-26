@@ -59,6 +59,8 @@ public class FFTabs {
             .withTabsBefore(FF_BUILDING_BLOCKS.getKey())
             .icon(() -> FFBlocks.MARIA_REGOLITH_ITEM.get().getDefaultInstance())
             .displayItems(((parameters, output) -> {
+                output.accept(FFBlocks.BAUXITE_ORE_ITEM.get());
+                output.accept(FFBlocks.DEEPSLATE_BAUXITE_ORE_ITEM.get());
                 output.accept(FFBlocks.HIGHLANDS_REGOLITH_ITEM.get());
                 output.accept(FFBlocks.MARIA_REGOLITH_ITEM.get());
                 output.accept(FFBlocks.MOONSTONE_ITEM.get());
@@ -66,12 +68,14 @@ public class FFTabs {
                 output.accept(FFBlocks.MOONSTONE_GOLD_ORE_ITEM.get());
                 output.accept(FFBlocks.MOONSTONE_COPPER_ORE_ITEM.get());
                 output.accept(FFBlocks.MOONSTONE_DIAMOND_ORE_ITEM.get());
+                output.accept(FFBlocks.MOONSTONE_BAUXITE_ORE_ITEM.get());
                 output.accept(FFBlocks.KOMATIITE_ITEM.get());
                 output.accept(FFBlocks.SUBCINDER_ITEM.get());
                 output.accept(FFBlocks.SUBCINDER_IRON_ORE_ITEM.get());
                 output.accept(FFBlocks.SUBCINDER_GOLD_ORE_ITEM.get());
                 output.accept(FFBlocks.SUBCINDER_COPPER_ORE_ITEM.get());
                 output.accept(FFBlocks.SUBCINDER_DIAMOND_ORE_ITEM.get());
+                output.accept(FFBlocks.SUBCINDER_BAUXITE_ORE_ITEM.get());
                 output.accept(FFBlocks.PYROXENITE_ITEM.get());
             }))
             .build());
@@ -105,10 +109,8 @@ public class FFTabs {
             .icon(() -> FFItems.DURAFABRIC.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(FFItems.DURAFABRIC.get());
+                output.accept(FFItems.RAW_BAUXITE.get());
+                output.accept(FFItems.ALUMINUM_NUGGET.get());
+                output.accept(FFItems.ALUMINUM_INGOT.get());
             }).build());
-
-    public static void addCreativeTab(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-        }
-    }
 }
