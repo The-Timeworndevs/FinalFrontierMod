@@ -19,7 +19,7 @@
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "final_frontier:subcinder_ore_replacebles"
+          "tag": "final_frontier:subcinder_ore_replaceables"
         }
       }
     ]

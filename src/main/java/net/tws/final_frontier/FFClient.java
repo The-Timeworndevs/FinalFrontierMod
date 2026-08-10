@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = FFMain.MODID, dist = Dist.CLIENT)
+@Mod(value = FinalFrontier.MODID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = FFMain.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = FinalFrontier.MODID, value = Dist.CLIENT)
 public class FFClient {
     public FFClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
@@ -25,7 +25,7 @@ public class FFClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        FFMain.LOGGER.info("HELLO FROM CLIENT SETUP");
-        FFMain.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        FinalFrontier.LOGGER.info("HELLO FROM CLIENT SETUP");
+        FinalFrontier.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }

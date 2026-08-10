@@ -10,12 +10,14 @@
   "block.final_frontier.moonstone_copper_ore": "Moonstone Copper Ore",
   "block.final_frontier.moonstone_diamond_ore": "Moonstone Diamond Ore",
   "block.final_frontier.moonstone_bauxite_ore": "Moonstone Bauxite Ore",
+  "block.final_frontier.moonstone_quartz_ore": "Moonstone Quartz Ore",
   "block.final_frontier.subcinder": "Subcinder",
   "block.final_frontier.subcinder_iron_ore": "Subcinder Iron Ore",
   "block.final_frontier.subcinder_gold_ore": "Subcinder Gold Ore",
   "block.final_frontier.subcinder_copper_ore": "Subcinder Copper Ore",
   "block.final_frontier.subcinder_diamond_ore": "Subcinder Diamond Ore",
   "block.final_frontier.subcinder_bauxite_ore": "Subcinder Bauxite Ore",
+  "block.final_frontier.subcinder_quartz_ore": "Subcinder Quartz Ore",
   "block.final_frontier.pyroxenite": "Pyroxenite",
   "block.final_frontier.durafabric_block": "Block Of Durafabric",
   "block.final_frontier.white_durafabric_block": "White Durafabric",
@@ -73,8 +75,8 @@
   "itemGroup.final_frontier.ff_colored_blocks": "Final Frontier Colored Blocks",
   "itemGroup.final_frontier.ff_materials": "Final Frontier Materials",
 
-  "biome.final_frontier.lunar_maria": "Lunar Maria",
-  "biome.final_frontier.lunar_highlands": "Lunar Highlands",
+  "biome.final_frontier.lunar_maria": "[FF] Lunar Maria",
+  "biome.final_frontier.lunar_highlands": "[FF] Lunar Highlands",
 
   "death.attack.depressurization": "%s suffered explosive decompression"
 }

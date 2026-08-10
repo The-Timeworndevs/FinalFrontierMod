@@ -1,20 +1,15 @@
 package net.tws.final_frontier;
 
-import net.minecraft.data.Main;
-import net.tws.final_frontier.common.FFBlocks;
-import net.tws.final_frontier.common.FFItems;
-import net.tws.final_frontier.common.FFTabs;
+import net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent;
+import net.tws.final_frontier.common.init.FFBlocks;
+import net.tws.final_frontier.common.init.FFDataMaps;
+import net.tws.final_frontier.common.init.FFItems;
+import net.tws.final_frontier.common.init.FFTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -23,29 +18,27 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(FFMain.MODID)
-public class FFMain {
+@Mod(FinalFrontier.MODID)
+public class FinalFrontier {
     public static final String MODID = "final_frontier";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public FFMain(IEventBus modEventBus, ModContainer modContainer) {
+    public FinalFrontier(IEventBus modEventBus, ModContainer modContainer) {
 
         modEventBus.addListener(this::commonSetup);
 
-        FFBlocks.BLOCKS.register(modEventBus);
-        FFItems.ITEMS.register(modEventBus);
-        FFTabs.CREATIVE_TABS.register(modEventBus);
+        FFBlocks.register(modEventBus);
+        FFItems.register(modEventBus);
+        FFTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, FFConfig.SPEC);
     }
+
+
 
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM COMMON SETUP");

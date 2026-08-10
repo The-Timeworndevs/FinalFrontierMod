@@ -44,11 +44,13 @@
 
     ],
     [
-      "final_frontier:moon_copper",
-      "final_frontier:moon_iron",
-      "final_frontier:moon_gold",
-      "final_frontier:moon_diamond",
-      "final_frontier:moon_diamond_buried",
+      "final_frontier:moon_ore_copper",
+      "final_frontier:moon_ore_iron",
+      "final_frontier:moon_ore_gold",
+      "final_frontier:moon_ore_diamond",
+      "final_frontier:moon_ore_diamond_buried",
+      "final_frontier:moon_ore_quartz",
+      "final_frontier:moon_ore_bauxite",
       "final_frontier:komatiite_blob",
       "final_frontier:pyroxenite_blob"
     ],

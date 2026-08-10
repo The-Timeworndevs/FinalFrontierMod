@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.tws.final_frontier.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "EntityGravityMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
