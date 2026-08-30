@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "minecraft:acacia_slab",
+                  "block": "final_frontier:subcinder_bricks_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
