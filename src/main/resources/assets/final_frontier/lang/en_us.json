@@ -1,6 +1,6 @@
 {
-  "block.final_frontier.bauxite_ore": "Bauxite Ore",
-  "block.final_frontier.deepslate_bauxite_ore": "Deepslate Bauxite Ore",
+  "block.final_frontier.alumina_ore": "Alumina Ore",
+  "block.final_frontier.deepslate_alumina_ore": "Deepslate Alumina Ore",
   "block.final_frontier.highlands_regolith": "Lunar Highlands Regolith",
   "block.final_frontier.maria_regolith": "Lunar Maria Regolith",
   "block.final_frontier.moonstone": "Moonstone",
@@ -9,16 +9,17 @@
   "block.final_frontier.moonstone_gold_ore": "Moonstone Gold Ore",
   "block.final_frontier.moonstone_copper_ore": "Moonstone Copper Ore",
   "block.final_frontier.moonstone_diamond_ore": "Moonstone Diamond Ore",
-  "block.final_frontier.moonstone_bauxite_ore": "Moonstone Bauxite Ore",
+  "block.final_frontier.moonstone_alumina_ore": "Moonstone Alumina Ore",
   "block.final_frontier.moonstone_quartz_ore": "Moonstone Quartz Ore",
   "block.final_frontier.subcinder": "Subcinder",
   "block.final_frontier.subcinder_iron_ore": "Subcinder Iron Ore",
   "block.final_frontier.subcinder_gold_ore": "Subcinder Gold Ore",
   "block.final_frontier.subcinder_copper_ore": "Subcinder Copper Ore",
   "block.final_frontier.subcinder_diamond_ore": "Subcinder Diamond Ore",
-  "block.final_frontier.subcinder_bauxite_ore": "Subcinder Bauxite Ore",
+  "block.final_frontier.subcinder_alumina_ore": "Subcinder Alumina Ore",
   "block.final_frontier.subcinder_quartz_ore": "Subcinder Quartz Ore",
   "block.final_frontier.pyroxenite": "Pyroxenite",
+  "block.final_frontier.alumina_block": "Block Of Alumina",
   "block.final_frontier.durafabric_block": "Block Of Durafabric",
   "block.final_frontier.white_durafabric_block": "White Durafabric",
   "block.final_frontier.light_gray_durafabric_block": "Light Gray Durafabric",
@@ -66,7 +67,7 @@
   "block.final_frontier.polished_pyroxenite": "Polished Pyroxenite",
 
   "item.final_frontier.durafabric": "Durafabric",
-  "item.final_frontier.raw_bauxite": "Raw Bauxite",
+  "item.final_frontier.raw_alumina": "Raw Alumina",
   "item.final_frontier.aluminum_nugget": "Aluminum Nugget",
   "item.final_frontier.aluminum_ingot": "Aluminum Ingot",
 
@@ -77,6 +78,8 @@
 
   "biome.final_frontier.lunar_maria": "[FF] Lunar Maria",
   "biome.final_frontier.lunar_highlands": "[FF] Lunar Highlands",
+  "biome.final_frontier.lunar_maria_empty": "[FF] Empty Lunar Maria",
+  "biome.final_frontier.lunar_highlands_empty": "[FF] Empty Lunar Highlands",
 
   "death.attack.depressurization": "%s suffered explosive decompression"
 }

@@ -51,6 +51,7 @@ public class FFTabs {
                 output.accept(FFBlocks.SUBCINDER_BRICKS_WALL.asItem().getDefaultInstance());
                 output.accept(FFBlocks.PYROXENITE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.POLISHED_PYROXENITE.asItem().getDefaultInstance());
+                output.accept(FFBlocks.ALUMINA_BLOCK.asItem().getDefaultInstance());
             }))
             .build());
 
@@ -59,8 +60,8 @@ public class FFTabs {
             .withTabsBefore(FF_BUILDING_BLOCKS.getKey())
             .icon(() -> FFBlocks.MARIA_REGOLITH.asItem().getDefaultInstance())
             .displayItems(((parameters, output) -> {
-                output.accept(FFBlocks.BAUXITE_ORE.asItem().getDefaultInstance());
-                output.accept(FFBlocks.DEEPSLATE_BAUXITE_ORE.asItem().getDefaultInstance());
+                output.accept(FFBlocks.ALUMINA_ORE.asItem().getDefaultInstance());
+                output.accept(FFBlocks.DEEPSLATE_ALUMINA_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.HIGHLANDS_REGOLITH.asItem().getDefaultInstance());
                 output.accept(FFBlocks.MARIA_REGOLITH.asItem().getDefaultInstance());
                 output.accept(FFBlocks.MOONSTONE.asItem().getDefaultInstance());
@@ -68,7 +69,7 @@ public class FFTabs {
                 output.accept(FFBlocks.MOONSTONE_GOLD_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.MOONSTONE_COPPER_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.MOONSTONE_DIAMOND_ORE.asItem().getDefaultInstance());
-                output.accept(FFBlocks.MOONSTONE_BAUXITE_ORE.asItem().getDefaultInstance());
+                output.accept(FFBlocks.MOONSTONE_ALUMINA_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.MOONSTONE_QUARTZ_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.KOMATIITE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.SUBCINDER.asItem().getDefaultInstance());
@@ -76,7 +77,7 @@ public class FFTabs {
                 output.accept(FFBlocks.SUBCINDER_GOLD_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.SUBCINDER_COPPER_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.SUBCINDER_DIAMOND_ORE.asItem().getDefaultInstance());
-                output.accept(FFBlocks.SUBCINDER_BAUXITE_ORE.asItem().getDefaultInstance());
+                output.accept(FFBlocks.SUBCINDER_ALUMINA_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.SUBCINDER_QUARTZ_ORE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.PYROXENITE.asItem().getDefaultInstance());
             }))
@@ -111,7 +112,7 @@ public class FFTabs {
             .icon(() -> FFItems.DURAFABRIC.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(FFItems.DURAFABRIC.get());
-                output.accept(FFItems.RAW_BAUXITE.get());
+                output.accept(FFItems.RAW_ALUMINA.get());
                 output.accept(FFItems.ALUMINUM_NUGGET.get());
                 output.accept(FFItems.ALUMINUM_INGOT.get());
             }).build());

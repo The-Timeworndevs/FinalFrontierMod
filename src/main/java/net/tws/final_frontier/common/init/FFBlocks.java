@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tws.final_frontier.FinalFrontier;
 
@@ -25,8 +24,8 @@ public class FFBlocks {
 
     //Natural Blocks
 
-    public static final DeferredBlock<Block> BAUXITE_ORE = registerBlock("bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> DEEPSLATE_BAUXITE_ORE = registerBlock("deepslate_bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ALUMINA_ORE = registerBlock("alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DEEPSLATE_ALUMINA_ORE = registerBlock("deepslate_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
@@ -54,7 +53,7 @@ public class FFBlocks {
     public static final DeferredBlock<Block> MOONSTONE_GOLD_ORE = registerBlock("moonstone_gold_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> MOONSTONE_COPPER_ORE = registerBlock("moonstone_copper_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> MOONSTONE_DIAMOND_ORE = registerBlock("moonstone_diamond_ore", (properties)-> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> MOONSTONE_BAUXITE_ORE = registerBlock("moonstone_bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MOONSTONE_ALUMINA_ORE = registerBlock("moonstone_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> MOONSTONE_QUARTZ_ORE = registerBlock("moonstone_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> KOMATIITE = registerBlock("komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SUBCINDER = registerBlock("subcinder", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops()));
@@ -62,7 +61,7 @@ public class FFBlocks {
     public static final DeferredBlock<Block> SUBCINDER_GOLD_ORE = registerBlock("subcinder_gold_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SUBCINDER_COPPER_ORE = registerBlock("subcinder_copper_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SUBCINDER_DIAMOND_ORE = registerBlock("subcinder_diamond_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> SUBCINDER_BAUXITE_ORE = registerBlock("subcinder_bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> SUBCINDER_ALUMINA_ORE = registerBlock("subcinder_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SUBCINDER_QUARTZ_ORE = registerBlock("subcinder_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> PYROXENITE = registerBlock("pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
@@ -96,6 +95,7 @@ public class FFBlocks {
     public static final DeferredBlock<SlabBlock> SUBCINDER_BRICKS_SLAB = registerBlock("subcinder_bricks_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> SUBCINDER_BRICKS_WALL = registerBlock("subcinder_bricks_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> POLISHED_PYROXENITE = registerBlock("polished_pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ALUMINA_BLOCK = registerBlock("alumina_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     //Colored Blocks
     public static final DeferredBlock<Block> DURAFABRIC_BLOCK = registerBlock("durafabric_block", (properties) -> new Block(properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));

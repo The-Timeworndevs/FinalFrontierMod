@@ -2,7 +2,7 @@
   "type": "lithostitched:add_features",
   "biomes": "#minecraft:is_overworld",
   "features": [
-    "final_frontier:ore_bauxite"
+    "final_frontier:ore_alumina"
   ],
   "step": "underground_ores"
 }

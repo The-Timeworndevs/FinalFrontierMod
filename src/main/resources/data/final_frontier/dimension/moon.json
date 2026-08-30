@@ -27,6 +27,30 @@
             "depth": 0,
             "offset": 0
           }
+        },
+        {
+          "biome": "final_frontier:lunar_maria_empty",
+          "parameters": {
+            "temperature": 1,
+            "humidity": 0,
+            "continentalness": -1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "final_frontier:lunar_highlands_empty",
+          "parameters": {
+            "temperature": 1,
+            "humidity": 0,
+            "continentalness": 0.64,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         }
       ],
       "type": "minecraft:multi_noise"
