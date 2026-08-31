@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "c:aluminum_ingots"
+    },
+    "A": {
+      "item": "final_frontier:aluminum_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "final_frontier:aluminum_block"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "aluminum_ingot",
+  "ingredients": [
+    {
+      "item": "final_frontier:aluminum_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "final_frontier:aluminum_ingot"
+  }
+}

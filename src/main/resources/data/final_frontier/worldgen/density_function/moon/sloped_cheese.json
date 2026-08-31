@@ -11,15 +11,18 @@
           "type": "minecraft:add",
           "argument1": "final_frontier:moon/depth",
           "argument2": {
-            "type": "minecraft:mul",
-            "argument1": "final_frontier:moon/jaggedness",
-            "argument2": {
-              "type": "minecraft:half_negative",
-              "argument": {
-                "type": "minecraft:noise",
-                "noise": "final_frontier:jagged",
-                "xz_scale": 1500.0,
-                "y_scale": 0.0
+            "type": "minecraft:flat_cache",
+            "argument": {
+              "type": "minecraft:mul",
+              "argument1": "final_frontier:moon/jaggedness",
+              "argument2": {
+                "type": "minecraft:half_negative",
+                "argument": {
+                  "type": "minecraft:noise",
+                  "noise": "final_frontier:jagged",
+                  "xz_scale": 1500.0,
+                  "y_scale": 0.0
+                }
               }
             }
           }

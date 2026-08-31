@@ -52,6 +52,7 @@ public class FFTabs {
                 output.accept(FFBlocks.PYROXENITE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.POLISHED_PYROXENITE.asItem().getDefaultInstance());
                 output.accept(FFBlocks.ALUMINA_BLOCK.asItem().getDefaultInstance());
+                output.accept(FFBlocks.ALUMINUM_BLOCK.asItem().getDefaultInstance());
             }))
             .build());
 

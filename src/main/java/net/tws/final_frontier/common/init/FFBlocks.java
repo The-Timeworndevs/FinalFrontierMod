@@ -24,8 +24,8 @@ public class FFBlocks {
 
     //Natural Blocks
 
-    public static final DeferredBlock<Block> ALUMINA_ORE = registerBlock("alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> DEEPSLATE_ALUMINA_ORE = registerBlock("deepslate_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ALUMINA_ORE = registerBlock("alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DEEPSLATE_ALUMINA_ORE = registerBlock("deepslate_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
@@ -70,32 +70,41 @@ public class FFBlocks {
     public static final DeferredBlock<StairBlock> MOONSTONE_STAIRS = registerBlock("moonstone_stairs", (properties) -> new StairBlock(MOONSTONE.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> MOONSTONE_SLAB = registerBlock("moonstone_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> MOONSTONE_WALL = registerBlock("moonstone_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> CHISELED_POLISHED_MOONSTONE = registerBlock("chiseled_polished_moonstone", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> POLISHED_MOONSTONE = registerBlock("polished_moonstone", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> POLISHED_MOONSTONE_STAIRS = registerBlock("polished_moonstone_stairs", (properties) -> new StairBlock(POLISHED_MOONSTONE.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> POLISHED_MOONSTONE_SLAB = registerBlock("polished_moonstone_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> POLISHED_MOONSTONE_WALL = registerBlock("polished_moonstone_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> MOONSTONE_BRICKS = registerBlock("moonstone_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> CRACKED_MOONSTONE_BRICKS = registerBlock("cracked_moonstone_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> MOONSTONE_BRICKS_STAIRS = registerBlock("moonstone_bricks_stairs", (properties) -> new StairBlock(MOONSTONE_BRICKS.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> MOONSTONE_BRICKS_SLAB = registerBlock("moonstone_bricks_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> MOONSTONE_BRICKS_WALL = registerBlock("moonstone_bricks_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> POLISHED_KOMATIITE = registerBlock("polished_komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<StairBlock> SUBCINDER_STAIRS = registerBlock("subcinder_stairs", (properties) -> new StairBlock(SUBCINDER.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> SUBCINDER_SLAB = registerBlock("subcinder_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> SUBCINDER_WALL = registerBlock("subcinder_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> CHISELED_POLISHED_SUBCINDER = registerBlock("chiseled_polished_subcinder", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> POLISHED_SUBCINDER = registerBlock("polished_subcinder", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> POLISHED_SUBCINDER_STAIRS = registerBlock("polished_subcinder_stairs", (properties) -> new StairBlock(POLISHED_SUBCINDER.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> POLISHED_SUBCINDER_SLAB = registerBlock("polished_subcinder_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> POLISHED_SUBCINDER_WALL = registerBlock("polished_subcinder_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> SUBCINDER_BRICKS = registerBlock("subcinder_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> CRACKED_SUBCINDER_BRICKS = registerBlock("cracked_subcinder_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<StairBlock> SUBCINDER_BRICKS_STAIRS = registerBlock("subcinder_bricks_stairs", (properties) -> new StairBlock(SUBCINDER_BRICKS.get().defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> SUBCINDER_BRICKS_SLAB = registerBlock("subcinder_bricks_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> SUBCINDER_BRICKS_WALL = registerBlock("subcinder_bricks_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> POLISHED_PYROXENITE = registerBlock("polished_pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> ALUMINA_BLOCK = registerBlock("alumina_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> ALUMINA_BLOCK = registerBlock("alumina_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ALUMINUM_BLOCK = registerBlock("aluminum_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.METAL).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     //Colored Blocks
     public static final DeferredBlock<Block> DURAFABRIC_BLOCK = registerBlock("durafabric_block", (properties) -> new Block(properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));

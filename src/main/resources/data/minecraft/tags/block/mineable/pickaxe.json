@@ -1,15 +1,23 @@
 {
   "replace": false,
   "values": [
+
+    "final_frontier:alumina_ore",
+    "final_frontier:deepslate_alumina_ore",
+
     "final_frontier:moonstone_iron_ore",
     "final_frontier:moonstone_gold_ore",
     "final_frontier:moonstone_copper_ore",
     "final_frontier:moonstone_diamond_ore",
+    "final_frontier:moonstone_alumina_ore",
+    "final_frontier:moonstone_quartz_ore",
 
     "final_frontier:subcinder_iron_ore",
     "final_frontier:subcinder_gold_ore",
     "final_frontier:subcinder_copper_ore",
     "final_frontier:subcinder_diamond_ore",
+    "final_frontier:subcinder_alumina_ore",
+    "final_frontier:subcinder_quartz_ore",
 
     "final_frontier:moonstone",
     "final_frontier:moonstone_stairs",
@@ -30,7 +38,6 @@
 
     "final_frontier:komatiite",
     "final_frontier:polished_komatiite",
-
 
     "final_frontier:subcinder",
     "final_frontier:subcinder_stairs",
@@ -53,7 +60,8 @@
     "final_frontier:pyroxenite",
     "final_frontier:polished_pyroxenite",
 
-    "final_frontier:alumina_block"
+    "final_frontier:alumina_block",
+    "final_frontier:aluminum_block"
 
   ]
 }
