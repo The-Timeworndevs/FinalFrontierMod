@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class EntityGravityMixin {
 
     @Inject(method = "getGravity", at = @At("RETURN"), cancellable = true)
-    private void applyGravityMultiplier(CallbackInfoReturnable<Double> cir) {
-        cir.setReturnValue(cir.getReturnValue() + 0.08d * FFUtils.getGravityMultiplier(((Entity)(Object) this).level()));
+    private void scaleGravity(CallbackInfoReturnable<Double> cir) {
+        cir.setReturnValue(cir.getReturnValue() * FFUtils.getGravityMultiplier(((Entity) (Object) this).level()));
     }
 }

@@ -8,6 +8,10 @@ import java.util.Objects;
 public class FFUtils {
 
     public static double getGravityMultiplier(Level level) {
-        return Objects.requireNonNullElse(level.dimensionTypeRegistration().getData(FFDataMaps.GRAVITY_MULTIPLIER), 0.0D);
+        Double datamapValue = level.dimensionTypeRegistration().getData(FFDataMaps.GRAVITY_MULTIPLIER);
+        if (datamapValue == null) {
+            return 1.0D;
+        }
+        return datamapValue;
     }
 }

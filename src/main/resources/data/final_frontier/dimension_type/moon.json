@@ -5,8 +5,11 @@
       "can_sleep": "when_dark",
       "can_set_spawn": "always",
       "explodes": false
-    }
+    },
+    "minecraft:visual/ambient_light_color": "#0a0a0a"
   },
+  "default_clock": "minecraft:overworld",
+  "timelines": "#minecraft:in_overworld",
   "has_skylight": true,
   "has_ceiling": false,
   "has_ender_dragon_fight": false,

@@ -1,6 +1,8 @@
 {
     "values": [
         "final_frontier:lunar_maria",
-        "final_frontier:lunar_highlands"
+        "final_frontier:lunar_highlands",
+        "final_frontier:lunar_maria_empty",
+        "final_frontier:lunar_highlands_empty"
     ]
 }
