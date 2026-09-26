@@ -73,7 +73,7 @@ public class FFTabs {
         output.accept(FFBlocks.PYROXENITE.asItem());
     }).build();
     public static final ResourceKey<CreativeModeTab> FF_COLORED_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_colored_blocks"));
-    public static final CreativeModeTab FF_COLORED_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK)).title(Component.translatable("itemGroup.final_frontier.ff_colored_blocks")).displayItems((parameters, output) -> {
+    public static final CreativeModeTab FF_COLORED_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
 
         output.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.WHITE_DURAFABRIC_BLOCK.asItem());
@@ -94,7 +94,7 @@ public class FFTabs {
         output.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
     }).build();
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));
-    public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.DURAFABRIC)).title(Component.translatable("itemGroup.final_frontier.ff_colored_blocks")).displayItems((parameters, output) -> {
+    public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.DURAFABRIC)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
         output.accept(FFItems.DURAFABRIC);
         output.accept(FFItems.RAW_ALUMINA);
         output.accept(FFItems.ALUMINUM_NUGGET);
