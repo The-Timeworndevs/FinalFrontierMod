@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "net.tws.final_frontier.mixin",
+	"package": "net.tws.final_frontier.client.mixin",
 	"compatibilityLevel": "JAVA_25",
-	"mixins": [
-		"ExampleMixin"
+	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
