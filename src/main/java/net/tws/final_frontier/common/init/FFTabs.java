@@ -49,6 +49,7 @@ public class FFTabs {
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
     }).build();
+
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
     public static final CreativeModeTab FF_NATURAL_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.HIGHLANDS_REGOLITH)).title(Component.translatable("itemGroup.final_frontier.ff_natural_blocks")).displayItems((parameters, output) -> {
         output.accept(FFBlocks.ALUMINA_ORE.asItem());
@@ -72,9 +73,9 @@ public class FFTabs {
         output.accept(FFBlocks.SUBCINDER_QUARTZ_ORE.asItem());
         output.accept(FFBlocks.PYROXENITE.asItem());
     }).build();
+
     public static final ResourceKey<CreativeModeTab> FF_COLORED_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_colored_blocks"));
     public static final CreativeModeTab FF_COLORED_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
-
         output.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.WHITE_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.LIGHT_GRAY_DURAFABRIC_BLOCK.asItem());
@@ -93,6 +94,7 @@ public class FFTabs {
         output.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
     }).build();
+
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));
     public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.DURAFABRIC)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
         output.accept(FFItems.DURAFABRIC);
@@ -107,7 +109,6 @@ public class FFTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_NATURAL_BLOCKS_KEY, FF_NATURAL_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_COLORED_BLOCKS_KEY, FF_COLORED_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_MATERIALS_KEY, FF_MATERIALS);
-
 
         Main.LOGGER.info("Tab Registry Successful");
     }

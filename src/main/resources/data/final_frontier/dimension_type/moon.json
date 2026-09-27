@@ -6,7 +6,7 @@
       "can_set_spawn": "always",
       "explodes": false
     },
-    "minecraft:visual/ambient_light_color": "#0a0a0a"
+    "minecraft:visual/ambient_light_color": "#090909"
   },
   "default_clock": "minecraft:overworld",
   "timelines": "#minecraft:in_overworld",
