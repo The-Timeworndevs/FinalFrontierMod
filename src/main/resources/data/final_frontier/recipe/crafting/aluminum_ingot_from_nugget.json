@@ -3,13 +3,12 @@
   "category": "misc",
   "group": "aluminum_ingot",
   "key": {
-    "#": {
-      "item": "final_frontier:aluminum_nugget"
-    }
+    "#": "final_frontier:aluminum_nugget",
+    "A": "#c:aluminum_nuggets"
   },
   "pattern": [
     "###",
-    "###",
+    "#A#",
     "###"
   ],
   "result": {

@@ -5,7 +5,7 @@
   "experience": 0.1,
   "group": "coal",
   "ingredient": {
-    "tag": "c:alumina_ores"
+    "tag": "#c:alumina_ores"
   },
   "result": {
     "id": "final_frontier:aluminum_ingot"

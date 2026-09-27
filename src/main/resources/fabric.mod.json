@@ -29,6 +29,7 @@
 			"environment": "client"
 		}
 	],
+	"accessWidener": "final_frontier.classtweaker",
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.2",

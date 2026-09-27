@@ -3,7 +3,8 @@
 	"package": "net.tws.final_frontier.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"DimensionTypeSkyboxExtension"
 	],
 	"injectors": {
 		"defaultRequire": 1

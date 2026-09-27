@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "aluminum_ingot",
   "ingredients": [
-    {
-      "item": "final_frontier:alumina_block"
-    }
+    "final_frontier:alumina_block"
   ],
   "result": {
     "count": 9,

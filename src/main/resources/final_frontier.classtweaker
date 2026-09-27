@@ -1,0 +1,3 @@
+classTweaker  v1  official
+
+extend-enum net/minecraft/world/level/dimension/DimensionType FINAL_FRONTIER_MOON

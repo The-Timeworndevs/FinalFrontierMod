@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "tag": "c:aluminum_ingots"
-    },
-    "A": {
-      "item": "final_frontier:aluminum_ingot"
-    }
+    "#": "#c:aluminum_ingots",
+    "A": "final_frontier:aluminum_ingot"
   },
   "pattern": [
     "###",
