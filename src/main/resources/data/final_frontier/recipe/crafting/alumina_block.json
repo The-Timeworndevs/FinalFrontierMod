@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "c:raw_alumina",
+    "#": "#c:raw_alumina",
     "A": "final_frontier:raw_alumina"
   },
   "pattern": [

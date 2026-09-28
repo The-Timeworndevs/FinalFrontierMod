@@ -3,10 +3,7 @@
   "category": "misc",
   "cookingtime": 400,
   "experience": 0.1,
-  "group": "coal",
-  "ingredient": {
-    "tag": "#c:raw_alumina"
-  },
+  "ingredient": "final_frontier:raw_alumina",
   "result": {
     "id": "final_frontier:aluminum_nugget"
   }

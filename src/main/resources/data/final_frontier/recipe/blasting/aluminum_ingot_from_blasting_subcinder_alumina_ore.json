@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 400,
   "experience": 0.1,
-  "ingredient": "final_frontier:alumina_ore",
+  "ingredient": "final_frontier:subcinder_alumina_ore",
   "result": {
     "id": "final_frontier:aluminum_ingot"
   }
