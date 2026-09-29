@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.7,
+  "group": "iron_ingot",
+  "ingredient": "final_frontier:subcinder_gold_ore",
+  "result": {
+    "id": "minecraft:gold_ingot"
+  }
+}

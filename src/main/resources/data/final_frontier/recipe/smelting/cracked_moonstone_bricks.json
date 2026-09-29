@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "ingredient": "final_frontier:moonstone_bricks",
+  "result": {
+    "id": "final_frontier:cracked_moonstone_bricks"
+  }
+}
