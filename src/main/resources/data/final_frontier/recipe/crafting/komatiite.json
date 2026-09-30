@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "final_frontier:moonstone",
+    "O": "final_frontier:olivine"
+  },
+  "pattern": [
+    "#O",
+    "O#"
+  ],
+  "result": {
+    "count": 2,
+    "id": "final_frontier:komatiite"
+  }
+}

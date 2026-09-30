@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "olivine",
+  "ingredients": [
+    "final_frontier:olivine_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "final_frontier:olivine"
+  }
+}

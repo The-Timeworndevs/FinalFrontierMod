@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "olivine",
+  "key": {
+    "#": "#c:olivine",
+    "A": "final_frontier:olivine"
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "final_frontier:olivine_block"
+  }
+}

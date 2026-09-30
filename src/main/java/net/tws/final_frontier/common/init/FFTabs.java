@@ -23,13 +23,21 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_MOONSTONE_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_WALL.asItem());
+        output.accept(FFBlocks.POLISHED_MOONSTONE_PRESSURE_PLATE.asItem());
+        output.accept(FFBlocks.POLISHED_MOONSTONE_BUTTON.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS.asItem());
         output.accept(FFBlocks.CRACKED_MOONSTONE_BRICKS.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_STAIRS.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_SLAB.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_WALL.asItem());
         output.accept(FFBlocks.KOMATIITE.asItem());
+        output.accept(FFBlocks.KOMATIITE_STAIRS.asItem());
+        output.accept(FFBlocks.KOMATIITE_SLAB.asItem());
+        output.accept(FFBlocks.KOMATIITE_WALL.asItem());
         output.accept(FFBlocks.POLISHED_KOMATIITE.asItem());
+        output.accept(FFBlocks.POLISHED_KOMATIITE_STAIRS.asItem());
+        output.accept(FFBlocks.POLISHED_KOMATIITE_SLAB.asItem());
+        output.accept(FFBlocks.POLISHED_KOMATIITE_WALL.asItem());
         output.accept(FFBlocks.SUBCINDER.asItem());
         output.accept(FFBlocks.SUBCINDER_STAIRS.asItem());
         output.accept(FFBlocks.SUBCINDER_SLAB.asItem());
@@ -39,15 +47,24 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_SUBCINDER_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_WALL.asItem());
+        output.accept(FFBlocks.POLISHED_SUBCINDER_PRESSURE_PLATE.asItem());
+        output.accept(FFBlocks.POLISHED_SUBCINDER_BUTTON.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS.asItem());
         output.accept(FFBlocks.CRACKED_SUBCINDER_BRICKS.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_STAIRS.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_SLAB.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_WALL.asItem());
         output.accept(FFBlocks.PYROXENITE.asItem());
+        output.accept(FFBlocks.PYROXENITE_STAIRS.asItem());
+        output.accept(FFBlocks.PYROXENITE_SLAB.asItem());
+        output.accept(FFBlocks.PYROXENITE_WALL.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE.asItem());
+        output.accept(FFBlocks.POLISHED_PYROXENITE_STAIRS.asItem());
+        output.accept(FFBlocks.POLISHED_PYROXENITE_SLAB.asItem());
+        output.accept(FFBlocks.POLISHED_PYROXENITE_WALL.asItem());
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
+        output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
@@ -63,6 +80,7 @@ public class FFTabs {
         output.accept(FFBlocks.MOONSTONE_DIAMOND_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_ALUMINA_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_QUARTZ_ORE.asItem());
+        output.accept(FFBlocks.MOONSTONE_OLIVINE_ORE.asItem());
         output.accept(FFBlocks.KOMATIITE.asItem());
         output.accept(FFBlocks.SUBCINDER.asItem());
         output.accept(FFBlocks.SUBCINDER_IRON_ORE.asItem());
@@ -71,6 +89,7 @@ public class FFTabs {
         output.accept(FFBlocks.SUBCINDER_DIAMOND_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_ALUMINA_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_QUARTZ_ORE.asItem());
+        output.accept(FFBlocks.SUBCINDER_OLIVINE_ORE.asItem());
         output.accept(FFBlocks.PYROXENITE.asItem());
     }).build();
 
@@ -99,8 +118,29 @@ public class FFTabs {
     public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.DURAFABRIC)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
         output.accept(FFItems.DURAFABRIC);
         output.accept(FFItems.RAW_ALUMINA);
+        output.accept(FFItems.OLIVINE);
+        output.accept(FFItems.IRON_ROD);
         output.accept(FFItems.ALUMINUM_NUGGET);
         output.accept(FFItems.ALUMINUM_INGOT);
+    }).build();
+
+    public static final ResourceKey<CreativeModeTab> FF_TOOLS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_tools"));
+    public static final CreativeModeTab FF_TOOLS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.OLIVINE_PICKAXE)).title(Component.translatable("itemGroup.final_frontier.ff_tools")).displayItems((parameters, output) -> {
+        output.accept(FFItems.OLIVINE_SHOVEL);
+        output.accept(FFItems.OLIVINE_PICKAXE);
+        output.accept(FFItems.OLIVINE_AXE);
+        output.accept(FFItems.OLIVINE_HOE);
+    }).build();
+
+    public static final ResourceKey<CreativeModeTab> FF_COMBAT_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_combat"));
+    public static final CreativeModeTab FF_COMBAT = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.OLIVINE_SWORD)).title(Component.translatable("itemGroup.final_frontier.ff_combat")).displayItems((parameters, output) -> {
+        output.accept(FFItems.OLIVINE_SWORD);
+        output.accept(FFItems.OLIVINE_SPEAR);
+        output.accept(FFItems.OLIVINE_AXE);
+        output.accept(FFItems.OLIVINE_HELMET);
+        output.accept(FFItems.OLIVINE_CHESTPLATE);
+        output.accept(FFItems.OLIVINE_LEGGINGS);
+        output.accept(FFItems.OLIVINE_BOOTS);
     }).build();
 
     public static void init() {
@@ -109,6 +149,8 @@ public class FFTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_NATURAL_BLOCKS_KEY, FF_NATURAL_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_COLORED_BLOCKS_KEY, FF_COLORED_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_MATERIALS_KEY, FF_MATERIALS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_TOOLS_KEY, FF_TOOLS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_COMBAT_KEY, FF_COMBAT);
 
         Main.LOGGER.info("Tab Registry Successful");
     }

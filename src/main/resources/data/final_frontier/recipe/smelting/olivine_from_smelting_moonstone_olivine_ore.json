@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:moonstone_olivine_ore",
+  "result": {
+    "id": "final_frontier:olivine"
+  }
+}

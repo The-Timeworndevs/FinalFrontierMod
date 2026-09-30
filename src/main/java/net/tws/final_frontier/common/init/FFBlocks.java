@@ -14,8 +14,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.tws.final_frontier.Main;
+import net.tws.final_frontier.common.block.FFBlockSetTypes;
 
 import java.util.function.Function;
 
@@ -56,6 +60,7 @@ public class FFBlocks {
     public static final Block MOONSTONE_DIAMOND_ORE = registerBlock("moonstone_diamond_ore", (properties)-> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_ALUMINA_ORE = registerBlock("moonstone_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_QUARTZ_ORE = registerBlock("moonstone_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final Block MOONSTONE_OLIVINE_ORE = registerBlock("moonstone_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block KOMATIITE = registerBlock("komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER = registerBlock("subcinder", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_IRON_ORE = registerBlock("subcinder_iron_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
@@ -64,6 +69,7 @@ public class FFBlocks {
     public static final Block SUBCINDER_DIAMOND_ORE = registerBlock("subcinder_diamond_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_ALUMINA_ORE = registerBlock("subcinder_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_QUARTZ_ORE = registerBlock("subcinder_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
+    public static final Block SUBCINDER_OLIVINE_ORE = registerBlock("subcinder_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block PYROXENITE = registerBlock("pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
 
@@ -77,6 +83,8 @@ public class FFBlocks {
     public static final Block POLISHED_MOONSTONE_STAIRS = registerBlock("polished_moonstone_stairs", (properties) -> new StairBlock(POLISHED_MOONSTONE.defaultBlockState(), properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_MOONSTONE_SLAB = registerBlock("polished_moonstone_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_MOONSTONE_WALL = registerBlock("polished_moonstone_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_MOONSTONE_PRESSURE_PLATE = registerBlock("polished_moonstone_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.MOONSTONE, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY))));
+    public static final Block POLISHED_MOONSTONE_BUTTON = registerBlock("polished_moonstone_button", (properties) -> new ButtonBlock(FFBlockSetTypes.MOONSTONE, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     public static final Block MOONSTONE_BRICKS = registerBlock("moonstone_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block CRACKED_MOONSTONE_BRICKS = registerBlock("cracked_moonstone_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -84,7 +92,13 @@ public class FFBlocks {
     public static final Block MOONSTONE_BRICKS_SLAB = registerBlock("moonstone_bricks_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_BRICKS_WALL = registerBlock("moonstone_bricks_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
+    public static final Block KOMATIITE_STAIRS = registerBlock("komatiite_stairs", (properties) -> new StairBlock(KOMATIITE.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block KOMATIITE_SLAB = registerBlock("komatiite_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block KOMATIITE_WALL = registerBlock("komatiite_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_KOMATIITE = registerBlock("polished_komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_KOMATIITE_STAIRS = registerBlock("polished_komatiite_stairs", (properties) -> new StairBlock(POLISHED_KOMATIITE.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_KOMATIITE_SLAB = registerBlock("polished_komatiite_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_KOMATIITE_WALL = registerBlock("polished_komatiite_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
     public static final Block SUBCINDER_STAIRS = registerBlock("subcinder_stairs", (properties) -> new StairBlock(SUBCINDER.defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_SLAB = registerBlock("subcinder_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -95,6 +109,8 @@ public class FFBlocks {
     public static final Block POLISHED_SUBCINDER_STAIRS = registerBlock("polished_subcinder_stairs", (properties) -> new StairBlock(POLISHED_SUBCINDER.defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_SUBCINDER_SLAB = registerBlock("polished_subcinder_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_SUBCINDER_WALL = registerBlock("polished_subcinder_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_SUBCINDER_PRESSURE_PLATE = registerBlock("polished_subcinder_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.SUBCINDER, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY))));
+    public static final Block POLISHED_SUBCINDER_BUTTON = registerBlock("polished_subcinder_button", (properties) -> new ButtonBlock(FFBlockSetTypes.SUBCINDER, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     public static final Block SUBCINDER_BRICKS = registerBlock("subcinder_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block CRACKED_SUBCINDER_BRICKS = registerBlock("cracked_subcinder_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -102,10 +118,17 @@ public class FFBlocks {
     public static final Block SUBCINDER_BRICKS_SLAB = registerBlock("subcinder_bricks_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_BRICKS_WALL = registerBlock("subcinder_bricks_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
+    public static final Block PYROXENITE_STAIRS = registerBlock("pyroxenite_stairs", (properties) -> new StairBlock(PYROXENITE.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block PYROXENITE_SLAB = registerBlock("pyroxenite_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block PYROXENITE_WALL = registerBlock("pyroxenite_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_PYROXENITE = registerBlock("polished_pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_PYROXENITE_STAIRS = registerBlock("polished_pyroxenite_stairs", (properties) -> new StairBlock(POLISHED_PYROXENITE.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_PYROXENITE_SLAB = registerBlock("polished_pyroxenite_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
+    public static final Block POLISHED_PYROXENITE_WALL = registerBlock("polished_pyroxenite_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
     public static final Block ALUMINA_BLOCK = registerBlock("alumina_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.METAL).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block OLIVINE_BLOCK = registerBlock("olivine_block", (properties) -> new Block(properties.mapColor(MapColor.EMERALD).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     //Colored Blocks
     public static final Block DURAFABRIC_BLOCK = registerBlock("durafabric_block", (properties) -> new Block(properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
@@ -126,9 +149,6 @@ public class FFBlocks {
     public static final Block MAGENTA_DURAFABRIC_BLOCK = registerBlock("magenta_durafabric_block", (properties) -> new Block(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
     public static final Block PINK_DURAFABRIC_BLOCK = registerBlock("pink_durafabric_block", (properties) -> new Block(properties.mapColor(DyeColor.PINK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
 
-    //Building Blocks
-
-    //Colored Blocks
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));

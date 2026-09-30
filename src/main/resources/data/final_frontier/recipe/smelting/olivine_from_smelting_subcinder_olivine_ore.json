@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:subcinder_olivine_ore",
+  "result": {
+    "id": "final_frontier:olivine"
+  }
+}

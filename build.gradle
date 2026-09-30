@@ -7,6 +7,23 @@ repositories {
 	maven {
 		url = "https://api.modrinth.com/maven"
 	}
+
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Cassian's Maven"
+				url = uri("https://maven.cassian.cc")
+			}
+		}
+		filter {
+			includeGroupAndSubgroups("cc.cassian")
+		}
+
+		maven {
+			name = "Nucleoid"
+			url = 'https://maven.nucleoid.xyz/releases'
+		}
+	}
 }
 
 loom {
@@ -33,6 +50,8 @@ dependencies {
 
 	implementation "maven.modrinth:lithostitched:${project.ls_version}"
 	implementation "maven.modrinth:datapatched:${project.dp_version}"
+	implementation("cc.cassian.rrv:reliable-recipe-viewer-fabric:${rrv_version}+${minecraft_version}")
+	implementation "eu.pb4:trinkets:${trinkets_version}"
 }
 
 processResources {
