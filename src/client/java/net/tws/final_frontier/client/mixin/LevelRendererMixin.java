@@ -28,7 +28,7 @@ public class LevelRendererMixin {
     @Shadow private @Nullable SkyRenderer skyRenderer;
 
     /**
-     * Wrap the render pass lambda method
+     * Wrap the render pass lambda method.
      */
     @WrapMethod(method = "lambda$addSkyPass$0")
     private void addFinalFrontierSkyPass(GpuBufferSlice skyFog, SkyRenderState state, Operation<Void> original) {
@@ -40,7 +40,7 @@ public class LevelRendererMixin {
     }
 
     /**
-     * Initialize the Final Frontier sky renderer after the vanilla sky renderer
+     * Initialize the Final Frontier sky renderer after the vanilla sky renderer.
      */
     @Inject(method = "addSkyPass", at = @At(value = "FIELD", target = "Lnet/minecraft/client/renderer/LevelRenderer;skyRenderer:Lnet/minecraft/client/renderer/SkyRenderer;", shift = At.Shift.AFTER))
     private void initializeSkyRenderer(FrameGraphBuilder frame, CameraRenderState cameraState, GpuBufferSlice skyFog, CallbackInfo ci) throws Exception {
