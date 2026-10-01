@@ -64,7 +64,7 @@ public class FFSkyRenderer implements AutoCloseable {
         this.skyRenderer = skyRenderer;
 
         // Build Celestial Buffers
-        this.vacuumSunBuffer = buildCelestialQuad("Vacuum Sun","vacuum_sun");
+        this.vacuumSunBuffer = buildCelestialQuad("Vacuum Sun", "vacuum_sun");
         this.earthBuffer = buildCelestialPhases("Earth", "earth");
     }
 
@@ -75,34 +75,39 @@ public class FFSkyRenderer implements AutoCloseable {
     public boolean renderSky(GpuBufferSlice skyFog, SkyRenderState state) {
         if (state.skybox == DimensionType.Skybox.FINAL_FRONTIER_MOON) {
             RenderSystem.setShaderFog(skyFog);
-            this.renderMoonSky(state.sunAngle, state.starAngle, state.moonPhase);
+            this.renderMoonSky(state);
             return true;
         }
         else
             return false;
     }
 
-    public void renderMoonSky(float sunAngle, float starAngle, MoonPhase phase) {
+    public void renderMoonSky(SkyRenderState state) {
+        // Sky Disc
+        this.skyRenderer.renderSkyDisc(state.skyColor);
+        // Start Rendering Celestials
         PoseStack poseStack = new PoseStack();
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(90.0f));
         // Stars
         poseStack.pushPose();
-        poseStack.mulPose(Axis.XP.rotation(starAngle));
+        poseStack.mulPose(Axis.XP.rotation(state.starAngle));
         this.renderStars(1.0f, poseStack);
         poseStack.popPose();
         // Sun
         poseStack.pushPose();
-        poseStack.mulPose(Axis.XP.rotation(sunAngle));
+        poseStack.mulPose(Axis.XP.rotation(state.sunAngle));
         this.renderCelestial("Sun", this.vacuumSunBuffer, 30.0f, 1.0f, poseStack);
         poseStack.popPose();
         // Earth
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(-90.0f));
-        this.renderCelestialPhase("Earth", this.earthBuffer, phase.index(), 100.0f, 1.0f, poseStack);
+        this.renderCelestialPhase("Earth", this.earthBuffer, state.moonPhase.index(), 100.0f, 1.0f, poseStack);
         poseStack.popPose();
-        // Final pop
         poseStack.popPose();
+        // Dark Disc
+        if(state.shouldRenderDarkDisc)
+            this.skyRenderer.renderDarkDisc();
     }
 
     /**
@@ -191,7 +196,7 @@ public class FFSkyRenderer implements AutoCloseable {
     }
 
     /**
-     * Invoke the vanilla renderStars method
+     * Invoke the vanilla renderStars method.
      */
     private void renderStars(float starBrightness, PoseStack poseStack) {
         ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderStars(starBrightness, poseStack);
