@@ -3,7 +3,8 @@
 	"package": "net.tws.final_frontier.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"ExampleClientMixin"
+		"LevelRendererMixin",
+		"SkyRendererAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
