@@ -60,6 +60,7 @@ public class FFBlocks {
     public static final Block MOONSTONE_DIAMOND_ORE = registerBlock("moonstone_diamond_ore", (properties)-> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_ALUMINA_ORE = registerBlock("moonstone_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_QUARTZ_ORE = registerBlock("moonstone_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final Block MOONSTONE_REDSTONE_ORE = registerBlock("moonstone_redstone_ore", (properties) -> new RedStoneOreBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_OLIVINE_ORE = registerBlock("moonstone_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block KOMATIITE = registerBlock("komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER = registerBlock("subcinder", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(6,3).requiresCorrectToolForDrops()));
@@ -69,6 +70,7 @@ public class FFBlocks {
     public static final Block SUBCINDER_DIAMOND_ORE = registerBlock("subcinder_diamond_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_ALUMINA_ORE = registerBlock("subcinder_alumina_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_QUARTZ_ORE = registerBlock("subcinder_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
+    public static final Block SUBCINDER_REDSTONE_ORE = registerBlock("subcinder_redstone_ore", (properties) -> new RedStoneOreBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_OLIVINE_ORE = registerBlock("subcinder_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block PYROXENITE = registerBlock("pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
 

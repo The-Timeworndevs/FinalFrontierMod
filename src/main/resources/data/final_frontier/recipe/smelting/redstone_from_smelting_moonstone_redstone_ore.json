@@ -2,8 +2,8 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "experience": 0.1,
-  "ingredient": "final_frontier:subcinder_olivine_ore",
+  "ingredient": "final_frontier:moonstone_redstone_ore",
   "result": {
-    "id": "final_frontier:olivine"
+    "id": "minecraft:redstone"
   }
 }

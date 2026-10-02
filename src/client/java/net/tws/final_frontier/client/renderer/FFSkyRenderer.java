@@ -87,7 +87,7 @@ public class FFSkyRenderer implements AutoCloseable {
         // Start Rendering Celestials
         PoseStack poseStack = new PoseStack();
         poseStack.pushPose();
-        poseStack.mulPose(Axis.YP.rotationDegrees(90.0f));
+        poseStack.mulPose(Axis.YP.rotationDegrees(-90.0f));
         // Stars
         poseStack.pushPose();
         poseStack.mulPose(Axis.XP.rotation(state.starAngle));
@@ -100,7 +100,7 @@ public class FFSkyRenderer implements AutoCloseable {
         poseStack.popPose();
         // Earth
         poseStack.pushPose();
-        poseStack.mulPose(Axis.YP.rotationDegrees(-90.0f));
+        poseStack.mulPose(Axis.YP.rotationDegrees(90.0f));
         this.renderCelestialPhase("Earth", this.earthBuffer, state.moonPhase.index(), 100.0f, 1.0f, poseStack);
         poseStack.popPose();
         poseStack.popPose();

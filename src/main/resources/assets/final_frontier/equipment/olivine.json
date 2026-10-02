@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "final_frontier:olivine"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "final_frontier:olivine"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "final_frontier:olivine"
+      }
+    ]
+  }
+}

@@ -80,6 +80,7 @@ public class FFTabs {
         output.accept(FFBlocks.MOONSTONE_DIAMOND_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_ALUMINA_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_QUARTZ_ORE.asItem());
+        output.accept(FFBlocks.MOONSTONE_REDSTONE_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_OLIVINE_ORE.asItem());
         output.accept(FFBlocks.KOMATIITE.asItem());
         output.accept(FFBlocks.SUBCINDER.asItem());
@@ -89,6 +90,7 @@ public class FFTabs {
         output.accept(FFBlocks.SUBCINDER_DIAMOND_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_ALUMINA_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_QUARTZ_ORE.asItem());
+        output.accept(FFBlocks.SUBCINDER_REDSTONE_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_OLIVINE_ORE.asItem());
         output.accept(FFBlocks.PYROXENITE.asItem());
     }).build();

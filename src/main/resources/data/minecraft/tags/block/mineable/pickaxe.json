@@ -11,6 +11,7 @@
     "final_frontier:moonstone_diamond_ore",
     "final_frontier:moonstone_alumina_ore",
     "final_frontier:moonstone_quartz_ore",
+    "final_frontier:moonstone_redstone_ore",
     "final_frontier:moonstone_olivine_ore",
 
     "final_frontier:subcinder_iron_ore",
@@ -19,6 +20,7 @@
     "final_frontier:subcinder_diamond_ore",
     "final_frontier:subcinder_alumina_ore",
     "final_frontier:subcinder_quartz_ore",
+    "final_frontier:subcinder_redstone_ore",
     "final_frontier:subcinder_olivine_ore",
 
     "final_frontier:moonstone",
