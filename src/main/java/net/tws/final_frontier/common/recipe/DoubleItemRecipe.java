@@ -3,6 +3,7 @@ package net.tws.final_frontier.common.recipe;
 import com.mojang.datafixers.Products;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemStackTemplate;
@@ -64,25 +65,30 @@ public abstract class DoubleItemRecipe implements Recipe<DoubleRecipeInput> {
         return this.result.create();
     }
 
-    public static <T extends DoubleItemRecipe> MapCodec<T> simpleMapCodec(final Factory<T> factory) {
-        return RecordCodecBuilder.mapCodec((i) -> {
-            Products.P4 products = i.group(CommonInfo.MAP_CODEC.forGetter(o -> o.commonInfo), Ingredient.CODEC.fieldOf("ingredient1").forGetter(DoubleItemRecipe::input1), Ingredient.CODEC.fieldOf("ingredient2").forGetter(DoubleItemRecipe::input2), ItemStackTemplate.CODEC.fieldOf("result").forGetter(DoubleItemRecipe::output));
-            Objects.requireNonNull(factory);
-            return products.apply(i, factory::create);
-        });
+    public static <T extends DoubleItemRecipe> MapCodec<T> simpleMapCodec(final DoubleItemRecipe.Factory<T> factory) {
+        return RecordCodecBuilder.mapCodec(
+                i -> i.group(
+                                Recipe.CommonInfo.MAP_CODEC.forGetter(o -> o.commonInfo),
+                                Ingredient.CODEC.fieldOf("ingredient").forGetter(DoubleItemRecipe::input1),
+                                Ingredient.CODEC.fieldOf("ingredient2").forGetter(DoubleItemRecipe::input2),
+                                ItemStackTemplate.CODEC.fieldOf("result").forGetter(DoubleItemRecipe::output)
+                        )
+                        .apply(i, factory::create)
+        );
     }
 
-    public static <T extends DoubleItemRecipe> StreamCodec simpleStreamCodec(final Factory<T> factory) {
-        StreamCodec streamCodec = CommonInfo.STREAM_CODEC;
-        Function commonInformation = (o) -> o.commonInfo;
-        StreamCodec streamCodecContent = Ingredient.CONTENTS_STREAM_CODEC;
-        Function recipeInput1 = DoubleItemRecipe::input1;
-        StreamCodec streamCodecContent2 = Ingredient.CONTENTS_STREAM_CODEC;
-        Function recipeInput2 = DoubleItemRecipe::input2;
-        StreamCodec itemTemplate = ItemStackTemplate.STREAM_CODEC;
-        Function outputItem = DoubleItemRecipe::output;
-        Objects.requireNonNull(factory);
-        return StreamCodec.composite(streamCodec, commonInformation, streamCodecContent, recipeInput1, streamCodecContent2, recipeInput2, itemTemplate, outputItem, factory::create);
+    public static <T extends DoubleItemRecipe> StreamCodec<RegistryFriendlyByteBuf, T> simpleStreamCodec(final DoubleItemRecipe.Factory<T> factory) {
+        return StreamCodec.composite(
+                Recipe.CommonInfo.STREAM_CODEC,
+                o -> o.commonInfo,
+                Ingredient.CONTENTS_STREAM_CODEC,
+                DoubleItemRecipe::input1,
+                Ingredient.CONTENTS_STREAM_CODEC,
+                DoubleItemRecipe::input2,
+                ItemStackTemplate.STREAM_CODEC,
+                DoubleItemRecipe::output,
+                factory::create
+        );
     }
 
     @FunctionalInterface
