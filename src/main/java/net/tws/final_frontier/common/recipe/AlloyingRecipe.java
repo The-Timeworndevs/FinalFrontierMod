@@ -1,8 +1,10 @@
 package net.tws.final_frontier.common.recipe;
 
+import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemStackTemplate;
@@ -13,11 +15,15 @@ import net.tws.final_frontier.common.init.FFRecipes;
 public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
     private final Ingredient input1;
     private final Ingredient input2;
+    private final int cookingTime;
+    private final float experience;
     private final ItemStackTemplate result;
 
-    public  AlloyingRecipe(Ingredient input1, Ingredient input2, ItemStackTemplate result) {
+    public  AlloyingRecipe(Ingredient input1, Ingredient input2, final int cookingTime, final float experience, ItemStackTemplate result) {
         this.input1 = input1;
         this.input2 = input2;
+        this.cookingTime = cookingTime;
+        this.experience = experience;
         this.result = result;
     }
 
@@ -28,6 +34,10 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
     public Ingredient getInput2() {
         return input2;
     }
+
+    public int getCookingTime() {return cookingTime;}
+
+    public float getExperience() {return experience;}
 
     public ItemStackTemplate getResult() {
         return result;
@@ -82,6 +92,8 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
             instance.group(
                     Ingredient.CODEC.fieldOf("input1").forGetter(AlloyingRecipe::getInput1),
                     Ingredient.CODEC.fieldOf("input2").forGetter(AlloyingRecipe::getInput2),
+                    Codec.INT.optionalFieldOf("cookingtime", 200).forGetter(AlloyingRecipe::getCookingTime),
+                    Codec.FLOAT.optionalFieldOf("experience", 0.0f).forGetter(AlloyingRecipe::getExperience),
                     ItemStackTemplate.CODEC.fieldOf("result").forGetter(AlloyingRecipe::getResult)
             ).apply(instance, AlloyingRecipe::new)
     );
@@ -91,6 +103,10 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
             AlloyingRecipe::getInput1,
             Ingredient.CONTENTS_STREAM_CODEC,
             AlloyingRecipe::getInput2,
+            ByteBufCodecs.INT,
+            AlloyingRecipe::getCookingTime,
+            ByteBufCodecs.FLOAT,
+            AlloyingRecipe::getExperience,
             ItemStackTemplate.STREAM_CODEC,
             AlloyingRecipe::getResult,
             AlloyingRecipe::new
