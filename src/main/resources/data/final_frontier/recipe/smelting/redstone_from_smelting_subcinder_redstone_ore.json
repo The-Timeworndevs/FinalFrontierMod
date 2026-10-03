@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "experience": 0.1,
-  "ingredient": "final_frontiersubcinder_redstone_ore",
+  "ingredient": "final_frontier:subcinder_redstone_ore",
   "result": {
     "id": "minecraft:redstone"
   }

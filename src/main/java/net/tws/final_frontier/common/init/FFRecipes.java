@@ -22,6 +22,6 @@ public class FFRecipes {
 
     public static void init() {
         RecipeSynchronization.synchronizeRecipeSerializer(ALLOYING_RECIPE_SERIALIZER);
-        Main.LOGGER.info("Initialized and Synchronized recipes");
+        Main.LOGGER.info("Recipe Registry and Synchronization Successful");
     }
 }

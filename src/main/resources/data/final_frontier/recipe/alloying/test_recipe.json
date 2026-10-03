@@ -1,0 +1,6 @@
+{
+  "type": "final_frontier:alloying",
+  "input1": "minecraft:iron_ore",
+  "input2": "minecraft:raw_gold",
+  "result": "minecraft:netherite_ingot"
+}
