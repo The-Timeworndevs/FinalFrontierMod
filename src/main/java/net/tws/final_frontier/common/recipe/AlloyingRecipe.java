@@ -2,10 +2,13 @@ package net.tws.final_frontier.common.recipe;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
+import net.tws.final_frontier.common.init.FFRecipes;
 
 public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
     private final Ingredient input1;
@@ -18,10 +21,6 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
         this.result = result;
     }
 
-    public ItemStackTemplate getResult() {
-        return result;
-    }
-
     public Ingredient getInput1() {
         return input1;
     }
@@ -30,13 +29,9 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
         return input2;
     }
 
-    public static final MapCodec<AlloyingRecipe> CODEC = RecordCodecBuilder.mapCodec(instance ->
-            instance.group(
-                    ItemStackTemplate.CODEC.fieldOf("result").forGetter(AlloyingRecipe::getResult),
-                    Ingredient.CODEC.fieldOf("input1").forGetter(AlloyingRecipe::getInput1),
-                    Ingredient.CODEC.fieldOf("input2").forGetter(AlloyingRecipe::getInput2)
-            ).apply(instance, AlloyingRecipe::new)
-    );
+    public ItemStackTemplate getResult() {
+        return result;
+    }
 
     @Override
     public boolean matches(AlloyingRecipeInput input, Level level) {
@@ -50,27 +45,17 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
 
     @Override
     public boolean showNotification() {
-        return false;
+        return true;
     }
 
     @Override
     public String group() {
-        return "";
-    }
-
-    @Override
-    public RecipeSerializer<? extends Recipe<AlloyingRecipeInput>> getSerializer() {
-        return null;
-    }
-
-    @Override
-    public RecipeType<? extends Recipe<AlloyingRecipeInput>> getType() {
-        return null;
+        return "alloying";
     }
 
     @Override
     public PlacementInfo placementInfo() {
-        return null;
+        return PlacementInfo.NOT_PLACEABLE;
     }
 
     @Override
@@ -78,5 +63,37 @@ public class AlloyingRecipe implements Recipe<AlloyingRecipeInput> {
         return null;
     }
 
+    @Override
+    public RecipeSerializer<? extends Recipe<AlloyingRecipeInput>> getSerializer() {
+        return FFRecipes.ALLOYING_RECIPE_SERIALIZER;
+    }
+
+    @Override
+    public RecipeType<? extends Recipe<AlloyingRecipeInput>> getType() {
+        return FFRecipes.ALLOYING_RECIPE_TYPE;
+    }
+
+    @Override
+    public boolean isSpecial() {
+        return true;
+    }
+
+    public static final MapCodec<AlloyingRecipe> CODEC = RecordCodecBuilder.mapCodec(instance ->
+            instance.group(
+                    Ingredient.CODEC.fieldOf("input1").forGetter(AlloyingRecipe::getInput1),
+                    Ingredient.CODEC.fieldOf("input2").forGetter(AlloyingRecipe::getInput2),
+                    ItemStackTemplate.CODEC.fieldOf("result").forGetter(AlloyingRecipe::getResult)
+            ).apply(instance, AlloyingRecipe::new)
+    );
+
+    public static final StreamCodec<RegistryFriendlyByteBuf, AlloyingRecipe> STREAM_CODEC = StreamCodec.composite(
+            Ingredient.CONTENTS_STREAM_CODEC,
+            AlloyingRecipe::getInput1,
+            Ingredient.CONTENTS_STREAM_CODEC,
+            AlloyingRecipe::getInput2,
+            ItemStackTemplate.STREAM_CODEC,
+            AlloyingRecipe::getResult,
+            AlloyingRecipe::new
+    );
 
 }
