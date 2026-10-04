@@ -32,6 +32,22 @@
   "block.final_frontier.alumina_block": "Block Of Alumina",
   "block.final_frontier.aluminum_block": "Block Of Aluminum",
   "block.final_frontier.olivine_block": "Block Of Olivine",
+
+  "block.final_frontier.steel_block": "Block Of Steel",
+  "block.final_frontier.steel_panel": "Steel Panel",
+  "block.final_frontier.cut_steel": "Cut Steel",
+  "block.final_frontier.steel_pillar": "Steel Pillar",
+  "block.final_frontier.steel_pillar_hazard": "Steel Hazard Line",
+
+  "block.final_frontier.iron_panel": "Iron Panel",
+  "block.final_frontier.cut_iron": "Cut Iron",
+  "block.final_frontier.iron_pillar": "Iron Pillar",
+  "block.final_frontier.iron_pillar_hazard": "Iron Hazard Line",
+
+  "block.final_frontier.copper_panel": "Copper Panel",
+  "block.final_frontier.copper_pillar": "Copper Pillar",
+  "block.final_frontier.copper_pillar_hazard": "Copper Hazard Line",
+
   "block.final_frontier.durafabric_block": "Block Of Durafabric",
   "block.final_frontier.white_durafabric_block": "White Durafabric",
   "block.final_frontier.light_gray_durafabric_block": "Light Gray Durafabric",
@@ -91,9 +107,23 @@
   "item.final_frontier.durafabric": "Durafabric",
   "item.final_frontier.raw_alumina": "Raw Alumina",
   "item.final_frontier.olivine": "Olivine",
+
+  "item.final_frontier.copper_rod": "Copper Rod",
+  "item.final_frontier.copper_plate": "Copper Plate",
+
   "item.final_frontier.iron_rod": "Iron Rod",
+  "item.final_frontier.iron_plate": "Iron Plate",
+
   "item.final_frontier.aluminum_nugget": "Aluminum Nugget",
   "item.final_frontier.aluminum_ingot": "Aluminum Ingot",
+  "item.final_frontier.aluminum_rod": "Aluminum Rod",
+  "item.final_frontier.aluminum_plate": "Aluminum Plate",
+
+  "item.final_frontier.steel_nugget": "Steel Nugget",
+  "item.final_frontier.steel_ingot": "Steel Ingot",
+  "item.final_frontier.steel_rod": "Steel Rod",
+  "item.final_frontier.steel_plate": "steel Plate",
+
   "item.final_frontier.olivine_shovel": "Olivine Shovel",
   "item.final_frontier.olivine_pickaxe": "Olivine Pickaxe",
   "item.final_frontier.olivine_axe": "Olivine Axe",

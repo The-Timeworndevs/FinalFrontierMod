@@ -8,6 +8,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.tws.final_frontier.Main;
 
 public class FFTabs {
@@ -65,6 +66,24 @@ public class FFTabs {
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
+
+        output.accept(FFBlocks.STEEL_BLOCK.asItem());
+        output.accept(FFBlocks.STEEL_PANEL.asItem());
+        output.accept(FFBlocks.CUT_STEEL.asItem());
+        output.accept(FFBlocks.STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.STEEL_PILLAR_HAZARD.asItem());
+
+        output.accept(Items.IRON_BLOCK.asItem());
+        output.accept(FFBlocks.IRON_PANEL.asItem());
+        output.accept(FFBlocks.CUT_IRON.asItem());
+        output.accept(FFBlocks.IRON_PILLAR.asItem());
+        output.accept(FFBlocks.IRON_PILLAR_HAZARD.asItem());
+
+        output.accept(Items.COPPER_BLOCK.weathering().unaffected());
+        output.accept(FFBlocks.COPPER_PANEL.asItem());
+        output.accept(Items.CUT_COPPER.weathering().unaffected());
+        output.accept(FFBlocks.COPPER_PILLAR.asItem());
+        output.accept(FFBlocks.COPPER_PILLAR_HAZARD.asItem());
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
@@ -117,13 +136,36 @@ public class FFTabs {
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));
-    public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.DURAFABRIC)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
+    public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.STEEL_INGOT)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
+
         output.accept(FFItems.DURAFABRIC);
         output.accept(FFItems.RAW_ALUMINA);
         output.accept(FFItems.OLIVINE);
+
+        //Copper
+        output.accept(Items.COPPER_NUGGET);
+        output.accept(Items.COPPER_INGOT);
+        output.accept(FFItems.COPPER_ROD);
+        output.accept(FFItems.COPPER_PLATE);
+
+        //Iron
+        output.accept(Items.IRON_NUGGET);
+        output.accept(Items.IRON_INGOT);
         output.accept(FFItems.IRON_ROD);
+        output.accept(FFItems.IRON_PLATE);
+
+        //Aluminum
         output.accept(FFItems.ALUMINUM_NUGGET);
         output.accept(FFItems.ALUMINUM_INGOT);
+        output.accept(FFItems.ALUMINUM_ROD);
+        output.accept(FFItems.ALUMINUM_PLATE);
+
+        //Steel
+        output.accept(FFItems.STEEL_NUGGET);
+        output.accept(FFItems.STEEL_INGOT);
+        output.accept(FFItems.STEEL_ROD);
+        output.accept(FFItems.STEEL_PLATE);
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_TOOLS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_tools"));

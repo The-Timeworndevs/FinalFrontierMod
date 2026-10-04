@@ -21,10 +21,24 @@ public class FFItems {
     //materials
     public static final Item DURAFABRIC = registerItem("durafabric", Item::new);
     public static final Item OLIVINE = registerItem("olivine", Item::new);
+
+    public static final Item COPPER_ROD = registerItem("copper_rod", Item::new);
+    public static final Item COPPER_PLATE = registerItem("copper_plate", Item::new);
+
     public static final Item IRON_ROD = registerItem("iron_rod", Item::new);
-    public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", Item::new);
+    public static final Item IRON_PLATE = registerItem("iron_plate", Item::new);
+
     public static final Item RAW_ALUMINA = registerItem("raw_alumina", Item::new);
+
+    public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", Item::new);
     public static final Item ALUMINUM_NUGGET = registerItem("aluminum_nugget", Item::new);
+    public static final Item ALUMINUM_ROD = registerItem("aluminum_rod", Item::new);
+    public static final Item ALUMINUM_PLATE = registerItem("aluminum_plate", Item::new);
+
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", Item::new);
+    public static final Item STEEL_NUGGET = registerItem("steel_nugget", Item::new);
+    public static final Item STEEL_ROD = registerItem("steel_rod", Item::new);
+    public static final Item STEEL_PLATE = registerItem("steel_plate", Item::new);
 
     //tools
     public static final Item OLIVINE_SHOVEL = registerItem("olivine_shovel", properties -> new ShovelItem(FFToolMaterials.OLIVINE, 1.5f, -2.0f, properties));

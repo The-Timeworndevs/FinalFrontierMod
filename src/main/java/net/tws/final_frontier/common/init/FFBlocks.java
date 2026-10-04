@@ -132,6 +132,21 @@ public class FFBlocks {
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.METAL).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block OLIVINE_BLOCK = registerBlock("olivine_block", (properties) -> new Block(properties.mapColor(MapColor.EMERALD).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
+    public static final Block STEEL_BLOCK = registerBlock("steel_block", (properties) -> new Block(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block STEEL_PANEL = registerBlock("steel_panel", (properties) -> new Block(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block CUT_STEEL = registerBlock("cut_steel", (properties) -> new Block(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block STEEL_PILLAR = registerBlock("steel_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block STEEL_PILLAR_HAZARD = registerBlock("steel_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    public static final Block IRON_PANEL = registerBlock("iron_panel", (properties) -> new Block(properties.mapColor(MapColor.METAL).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block CUT_IRON = registerBlock("cut_iron", (properties) -> new Block(properties.mapColor(MapColor.METAL).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block IRON_PILLAR = registerBlock("iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.METAL).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block IRON_PILLAR_HAZARD = registerBlock("iron_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.METAL).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    public static final Block COPPER_PANEL = registerBlock("copper_panel", (properties) -> new Block(properties.mapColor(MapColor.COLOR_ORANGE).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block COPPER_PILLAR = registerBlock("copper_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.COLOR_ORANGE).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block COPPER_PILLAR_HAZARD = registerBlock("copper_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.COLOR_ORANGE).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
     //Colored Blocks
     public static final Block DURAFABRIC_BLOCK = registerBlock("durafabric_block", (properties) -> new Block(properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
     public static final Block WHITE_DURAFABRIC_BLOCK = registerBlock("white_durafabric_block", (properties) -> new Block(properties.mapColor(DyeColor.WHITE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
