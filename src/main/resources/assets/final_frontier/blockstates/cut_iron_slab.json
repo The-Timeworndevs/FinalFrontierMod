@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/cut_iron_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/cut_iron"
+    },
+    "type=top": {
+      "model": "final_frontier:block/cut_iron_slab_top"
+    }
+  }
+}

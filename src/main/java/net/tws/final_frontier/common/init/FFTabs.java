@@ -64,13 +64,23 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_PYROXENITE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_WALL.asItem());
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
-        output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
+
+        //Aluminum
+        output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
+        output.accept(FFBlocks.ALUMINUM_PANEL.asItem());
+        output.accept(FFBlocks.CUT_ALUMINUM.asItem());
+        output.accept(FFBlocks.CUT_ALUMINUM_SLAB.asItem());
+        output.accept(FFBlocks.CUT_ALUMINUM_STAIRS.asItem());
+        //output.accept(FFBlocks.ALUMINUM_PILLAR.asItem());
+        //output.accept(FFBlocks.ALUMINUM_PILLAR_HAZARD.asItem());
 
         //Steel
         output.accept(FFBlocks.STEEL_BLOCK.asItem());
         output.accept(FFBlocks.STEEL_PANEL.asItem());
         output.accept(FFBlocks.CUT_STEEL.asItem());
+        output.accept(FFBlocks.CUT_STEEL_SLAB.asItem());
+        output.accept(FFBlocks.CUT_STEEL_STAIRS.asItem());
         output.accept(FFBlocks.STEEL_PILLAR.asItem());
         output.accept(FFBlocks.STEEL_PILLAR_HAZARD.asItem());
 
@@ -95,6 +105,8 @@ public class FFTabs {
         output.accept(Items.IRON_BLOCK.asItem());
         output.accept(FFBlocks.IRON_PANEL.asItem());
         output.accept(FFBlocks.CUT_IRON.asItem());
+        output.accept(FFBlocks.CUT_IRON_SLAB.asItem());
+        output.accept(FFBlocks.CUT_IRON_STAIRS.asItem());
         output.accept(FFBlocks.IRON_PILLAR.asItem());
         output.accept(FFBlocks.IRON_PILLAR_HAZARD.asItem());
 
