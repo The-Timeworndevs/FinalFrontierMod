@@ -101,7 +101,7 @@ public class FFSkyRenderer implements AutoCloseable {
         // Earth
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(90.0f));
-        this.renderCelestialPhase("Earth", this.earthBuffer, state.moonPhase.index(), 100.0f, 1.0f, poseStack);
+        this.renderCelestialPhase("Earth", this.earthBuffer, state.moonPhase.index(), 75.0f, 1.0f, poseStack);
         poseStack.popPose();
         poseStack.popPose();
         // Dark Disc

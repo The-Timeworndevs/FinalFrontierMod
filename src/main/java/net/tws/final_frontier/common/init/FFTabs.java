@@ -185,6 +185,24 @@ public class FFTabs {
         output.accept(FFBlocks.MAGENTA_GLOWING_STEEL_PILLAR.asItem());
         output.accept(FFBlocks.PINK_GLOWING_STEEL_PILLAR.asItem());
 
+        //Glowing Iron Pillars
+        output.accept(FFBlocks.WHITE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_IRON_PILLAR.asItem());
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));

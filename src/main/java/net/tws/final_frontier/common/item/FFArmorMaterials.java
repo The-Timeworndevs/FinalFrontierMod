@@ -15,6 +15,6 @@ public class FFArmorMaterials {
 
     public static final ResourceKey<EquipmentAsset> OLIVINE_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(Main.MOD_ID, "olivine"));
 
-    public static final ArmorMaterial OLIVINE = new ArmorMaterial(28, ArmorMaterials.makeDefense(3, 6, 8, 3, 11), 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, FFItemTags.OLIVINE_TOOL_MATERIALS, OLIVINE_KEY);
+    public static final ArmorMaterial OLIVINE = new ArmorMaterial(33, ArmorMaterials.makeDefense(3, 6, 8, 3, 11), 11, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, FFItemTags.OLIVINE_TOOL_MATERIALS, OLIVINE_KEY);
 
 }
