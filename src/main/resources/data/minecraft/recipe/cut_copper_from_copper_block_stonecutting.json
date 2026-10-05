@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "final_frontier:copper_panel",
-  "result": {
-    "count": 4,
-    "id": "minecraft:cut_copper"
-  }
-}

@@ -67,23 +67,54 @@ public class FFTabs {
         output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
 
+        //Steel
         output.accept(FFBlocks.STEEL_BLOCK.asItem());
         output.accept(FFBlocks.STEEL_PANEL.asItem());
         output.accept(FFBlocks.CUT_STEEL.asItem());
         output.accept(FFBlocks.STEEL_PILLAR.asItem());
         output.accept(FFBlocks.STEEL_PILLAR_HAZARD.asItem());
 
+        output.accept(FFBlocks.WHITE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_STEEL_PILLAR.asItem());
+
+        //Iron
         output.accept(Items.IRON_BLOCK.asItem());
         output.accept(FFBlocks.IRON_PANEL.asItem());
         output.accept(FFBlocks.CUT_IRON.asItem());
         output.accept(FFBlocks.IRON_PILLAR.asItem());
         output.accept(FFBlocks.IRON_PILLAR_HAZARD.asItem());
 
-        output.accept(Items.COPPER_BLOCK.weathering().unaffected());
-        output.accept(FFBlocks.COPPER_PANEL.asItem());
-        output.accept(Items.CUT_COPPER.weathering().unaffected());
-        output.accept(FFBlocks.COPPER_PILLAR.asItem());
-        output.accept(FFBlocks.COPPER_PILLAR_HAZARD.asItem());
+        output.accept(FFBlocks.WHITE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_IRON_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_IRON_PILLAR.asItem());
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
@@ -115,7 +146,9 @@ public class FFTabs {
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_COLORED_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_colored_blocks"));
-    public static final CreativeModeTab FF_COLORED_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
+    public static final CreativeModeTab FF_COLORED_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.DURAFABRIC_BLOCK)).title(Component.translatable("itemGroup.final_frontier.ff_colored_blocks")).displayItems((parameters, output) -> {
+
+        //Durafabrics
         output.accept(FFBlocks.DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.WHITE_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.LIGHT_GRAY_DURAFABRIC_BLOCK.asItem());
@@ -133,6 +166,25 @@ public class FFTabs {
         output.accept(FFBlocks.PURPLE_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
+
+        //Glowing Steel Pillars
+        output.accept(FFBlocks.WHITE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_STEEL_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_STEEL_PILLAR.asItem());
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));
