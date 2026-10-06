@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "final_frontier:block/komatiite",
-    "side": "final_frontier:block/komatiite",
-    "top": "final_frontier:block/komatiite"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "final_frontier:block/cut_aluminum",
-    "side": "final_frontier:block/cut_aluminum",
-    "top": "final_frontier:block/cut_aluminum"
-  }
-}
