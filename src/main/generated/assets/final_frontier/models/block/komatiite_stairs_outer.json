@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "final_frontier:block/komatiite",
+    "side": "final_frontier:block/komatiite",
+    "top": "final_frontier:block/komatiite"
+  }
+}

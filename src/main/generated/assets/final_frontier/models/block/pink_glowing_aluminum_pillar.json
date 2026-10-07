@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "final_frontier:block/pink_glowing_aluminum_pillar_top",
+    "side": "final_frontier:block/pink_glowing_aluminum_pillar"
+  }
+}

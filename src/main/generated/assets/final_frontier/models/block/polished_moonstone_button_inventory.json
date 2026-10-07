@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "final_frontier:block/polished_moonstone"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/polished_subcinder_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/polished_subcinder"
+    },
+    "type=top": {
+      "model": "final_frontier:block/polished_subcinder_slab_top"
+    }
+  }
+}

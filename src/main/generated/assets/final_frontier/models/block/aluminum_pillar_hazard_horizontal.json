@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "final_frontier:block/aluminum_pillar_hazard_top",
+    "side": "final_frontier:block/aluminum_pillar_hazard"
+  }
+}

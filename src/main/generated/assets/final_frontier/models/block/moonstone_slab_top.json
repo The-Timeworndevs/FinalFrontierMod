@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "final_frontier:block/moonstone",
+    "side": "final_frontier:block/moonstone",
+    "top": "final_frontier:block/moonstone"
+  }
+}

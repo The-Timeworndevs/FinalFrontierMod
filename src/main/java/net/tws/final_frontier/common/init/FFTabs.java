@@ -72,8 +72,25 @@ public class FFTabs {
         output.accept(FFBlocks.CUT_ALUMINUM.asItem());
         output.accept(FFBlocks.CUT_ALUMINUM_SLAB.asItem());
         output.accept(FFBlocks.CUT_ALUMINUM_STAIRS.asItem());
-        //output.accept(FFBlocks.ALUMINUM_PILLAR.asItem());
-        //output.accept(FFBlocks.ALUMINUM_PILLAR_HAZARD.asItem());
+        output.accept(FFBlocks.ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.ALUMINUM_PILLAR_HAZARD.asItem());
+
+        output.accept(FFBlocks.WHITE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_ALUMINUM_PILLAR.asItem());
 
         //Steel
         output.accept(FFBlocks.STEEL_BLOCK.asItem());
@@ -178,6 +195,24 @@ public class FFTabs {
         output.accept(FFBlocks.PURPLE_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
+
+        //Glowing Aluminum Pillars
+        output.accept(FFBlocks.WHITE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_ALUMINUM_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_ALUMINUM_PILLAR.asItem());
 
         //Glowing Steel Pillars
         output.accept(FFBlocks.WHITE_GLOWING_STEEL_PILLAR.asItem());

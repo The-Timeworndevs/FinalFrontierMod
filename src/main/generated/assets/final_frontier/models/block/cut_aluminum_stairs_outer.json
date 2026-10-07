@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "final_frontier:block/cut_aluminum",
+    "side": "final_frontier:block/cut_aluminum",
+    "top": "final_frontier:block/cut_aluminum"
+  }
+}

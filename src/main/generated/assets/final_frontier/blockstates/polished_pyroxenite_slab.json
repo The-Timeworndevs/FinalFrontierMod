@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/polished_pyroxenite_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/polished_pyroxenite"
+    },
+    "type=top": {
+      "model": "final_frontier:block/polished_pyroxenite_slab_top"
+    }
+  }
+}

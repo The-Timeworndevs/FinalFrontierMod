@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "final_frontier:block/polished_komatiite",
+    "side": "final_frontier:block/polished_komatiite",
+    "top": "final_frontier:block/polished_komatiite"
+  }
+}

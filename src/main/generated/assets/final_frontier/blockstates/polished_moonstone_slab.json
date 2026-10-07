@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/polished_moonstone_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/polished_moonstone"
+    },
+    "type=top": {
+      "model": "final_frontier:block/polished_moonstone_slab_top"
+    }
+  }
+}
