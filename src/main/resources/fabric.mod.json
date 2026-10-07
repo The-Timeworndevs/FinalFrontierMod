@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"net.tws.final_frontier.client.Client"
+		],
+		"fabric-datagen": [
+			"net.tws.final_frontier.client.data.DataGenerator"
 		]
 	},
 	"mixins": [

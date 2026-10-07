@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "final_frontier:block/polished_moonstone",
-    "side": "final_frontier:block/polished_moonstone",
-    "top": "final_frontier:block/polished_moonstone"
-  }
-}
