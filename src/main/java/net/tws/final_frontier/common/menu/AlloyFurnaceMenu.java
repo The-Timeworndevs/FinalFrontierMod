@@ -102,6 +102,6 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
     }
 
     public boolean isFuel(final ItemStack stack) {
-        return stack.has(DataComponents.);
+        return stack.has(DataComponents.COOKING_FUEL);
     }
 }
