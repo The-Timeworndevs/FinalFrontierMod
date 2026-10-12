@@ -1,15 +1,11 @@
 package net.tws.final_frontier.common.init;
 
-import net.fabricmc.fabric.api.registry.FuelValueEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.tws.final_frontier.Main;
 import net.tws.final_frontier.common.item.FFArmorMaterials;
@@ -45,10 +41,10 @@ public class FFItems {
     public static final Item COKE = registerItem("coke", Item::new);
 
     //tools
-    public static final Item OLIVINE_SHOVEL = registerItem("olivine_shovel", properties -> new ShovelItem(FFToolMaterials.OLIVINE, 1.5f, -2.0f, properties));
+    public static final Item OLIVINE_SHOVEL = registerItem("olivine_shovel", properties -> new Item(properties.shovel(FFToolMaterials.OLIVINE, 1.5f, -2.0f)));
     public static final Item OLIVINE_PICKAXE = registerItem("olivine_pickaxe", properties -> new Item(properties.pickaxe(FFToolMaterials.OLIVINE, 1.0f, -2.8f)));
-    public static final Item OLIVINE_AXE = registerItem("olivine_axe", properties -> new AxeItem(FFToolMaterials.OLIVINE, 5.0F, -3.0F, properties));
-    public static final Item OLIVINE_HOE = registerItem("olivine_hoe", properties -> new HoeItem(FFToolMaterials.OLIVINE, -3.0f, 0.0f, properties));
+    public static final Item OLIVINE_AXE = registerItem("olivine_axe", properties -> new Item(properties.axe(FFToolMaterials.OLIVINE, 5.0F, -3.0F)));
+    public static final Item OLIVINE_HOE = registerItem("olivine_hoe", properties -> new Item(properties.hoe(FFToolMaterials.OLIVINE, -3.0f, 0.0f)));
 
     //weapons and armor
     public static final Item OLIVINE_SWORD = registerItem("olivine_sword", properties -> new Item(properties.sword(FFToolMaterials.OLIVINE, 3.0F, -2.4F)));
@@ -69,10 +65,6 @@ public class FFItems {
     }
 
     public static void init() {
-
-        FuelValueEvents.BUILD.register(((builder, context) -> {
-            builder.add(COKE, 160 * 20);
-        }));
 
         Main.LOGGER.info("Item Registry Successful");
     }

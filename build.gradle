@@ -49,7 +49,7 @@ dependencies {
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	implementation "maven.modrinth:lithostitched:${project.ls_version}"
-	implementation "maven.modrinth:datapatched:${project.dp_version}"
+	//implementation "maven.modrinth:datapatched:${project.dp_version}"
 	implementation("cc.cassian.rrv:reliable-recipe-viewer-fabric:${rrv_version}+${minecraft_version}")
 	implementation "eu.pb4:trinkets:${trinkets_version}"
 }

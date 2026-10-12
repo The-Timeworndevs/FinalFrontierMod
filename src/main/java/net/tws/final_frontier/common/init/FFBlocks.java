@@ -34,21 +34,11 @@ public class FFBlocks {
     //Regoliths
     public static final Block HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
         @Override
-        protected MapCodec<? extends FallingBlock> codec() {
-            return null;
-        }
-
-        @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 7895160;
         }
     });
     public static final Block MARIA_REGOLITH = registerBlock("maria_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
-        @Override
-        protected MapCodec<? extends FallingBlock> codec() {
-            return null;
-        }
-
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 5329233;
@@ -97,8 +87,8 @@ public class FFBlocks {
     public static final Block POLISHED_MOONSTONE_STAIRS = registerBlock("polished_moonstone_stairs", (properties) -> new StairBlock(POLISHED_MOONSTONE.defaultBlockState(), properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_MOONSTONE_SLAB = registerBlock("polished_moonstone_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_MOONSTONE_WALL = registerBlock("polished_moonstone_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
-    public static final Block POLISHED_MOONSTONE_PRESSURE_PLATE = registerBlock("polished_moonstone_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.MOONSTONE, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY))));
-    public static final Block POLISHED_MOONSTONE_BUTTON = registerBlock("polished_moonstone_button", (properties) -> new ButtonBlock(FFBlockSetTypes.MOONSTONE, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final Block POLISHED_MOONSTONE_PRESSURE_PLATE = registerBlock("polished_moonstone_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.MOONSTONE, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.POPPED))));
+    public static final Block POLISHED_MOONSTONE_BUTTON = registerBlock("polished_moonstone_button", (properties) -> new ButtonBlock(FFBlockSetTypes.MOONSTONE, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.POPPED)));
 
     //Moonstone Bricks set
     public static final Block MOONSTONE_BRICKS = registerBlock("moonstone_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -130,8 +120,8 @@ public class FFBlocks {
     public static final Block POLISHED_SUBCINDER_STAIRS = registerBlock("polished_subcinder_stairs", (properties) -> new StairBlock(POLISHED_SUBCINDER.defaultBlockState(), properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_SUBCINDER_SLAB = registerBlock("polished_subcinder_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
     public static final Block POLISHED_SUBCINDER_WALL = registerBlock("polished_subcinder_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
-    public static final Block POLISHED_SUBCINDER_PRESSURE_PLATE = registerBlock("polished_subcinder_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.SUBCINDER, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY))));
-    public static final Block POLISHED_SUBCINDER_BUTTON = registerBlock("polished_subcinder_button", (properties) -> new ButtonBlock(FFBlockSetTypes.SUBCINDER, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final Block POLISHED_SUBCINDER_PRESSURE_PLATE = registerBlock("polished_subcinder_pressure_plate", (properties -> new PressurePlateBlock(FFBlockSetTypes.SUBCINDER, properties.mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noCollision().strength(0.5F).pushReaction(PushReaction.POPPED))));
+    public static final Block POLISHED_SUBCINDER_BUTTON = registerBlock("polished_subcinder_button", (properties) -> new ButtonBlock(FFBlockSetTypes.SUBCINDER, 20, properties.noCollision().strength(0.5F).pushReaction(PushReaction.POPPED)));
 
     //Subcinder Bricks Set
     public static final Block SUBCINDER_BRICKS = registerBlock("subcinder_bricks", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.BASALT).strength(1.5f, 6).requiresCorrectToolForDrops()));
