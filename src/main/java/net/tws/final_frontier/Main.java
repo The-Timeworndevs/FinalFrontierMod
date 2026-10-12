@@ -4,10 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
 
-import net.tws.final_frontier.common.init.FFBlocks;
-import net.tws.final_frontier.common.init.FFItems;
-import net.tws.final_frontier.common.init.FFRecipes;
-import net.tws.final_frontier.common.init.FFTabs;
+import net.tws.final_frontier.common.init.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +24,8 @@ public class Main implements ModInitializer {
 		FFBlocks.init();
 		FFItems.init();
 		FFTabs.init();
+		FFMenus.init();
+		FFBlockEntities.init();
 		FFRecipes.init();
 
 		LOGGER.info("Initialized");

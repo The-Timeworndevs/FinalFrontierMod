@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.tws.final_frontier.Main;
+import net.tws.final_frontier.common.block.AlloyFurnaceBlock;
 import net.tws.final_frontier.common.block.FFBlockSetTypes;
 
 import java.util.function.Function;
@@ -256,6 +257,8 @@ public class FFBlocks {
     public static final Block MAGENTA_GLOWING_IRON_PILLAR = registerBlock("magenta_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
     public static final Block PINK_GLOWING_IRON_PILLAR = registerBlock("pink_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PINK).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
 
+    //Functional Blocks
+    public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace", (properties) -> new AlloyFurnaceBlock(properties.mapColor(MapColor.TERRACOTTA_RED)));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));
