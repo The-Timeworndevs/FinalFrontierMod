@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:bauxite_ore",
+  "result": {
+    "id": "final_frontier:raw_bauxite"
+  }
+}

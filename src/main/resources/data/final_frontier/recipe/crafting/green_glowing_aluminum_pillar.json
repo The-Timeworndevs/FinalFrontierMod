@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:green_stained_glass_pane",
+    "i": "final_frontier:aluminum_panel",
+    "g": "minecraft:glowstone"
+  },
+  "pattern": [
+    "i#i",
+    "#g#",
+    "i#i"
+  ],
+  "result": {
+    "id": "final_frontier:green_glowing_aluminum_pillar",
+    "count": 4
+  }
+}

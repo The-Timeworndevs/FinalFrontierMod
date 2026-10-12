@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:raw_bauxite",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "count": 2
+  }
+}

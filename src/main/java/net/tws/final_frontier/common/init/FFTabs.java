@@ -21,6 +21,7 @@ public class FFTabs {
         output.accept(FFBlocks.MOONSTONE_WALL.asItem());
         output.accept(FFBlocks.CHISELED_POLISHED_MOONSTONE.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
+        output.accept(FFBlocks.MOONSTONE_PILLAR.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_WALL.asItem());
@@ -45,6 +46,7 @@ public class FFTabs {
         output.accept(FFBlocks.SUBCINDER_WALL.asItem());
         output.accept(FFBlocks.CHISELED_POLISHED_SUBCINDER.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER.asItem());
+        output.accept(FFBlocks.SUBCINDER_PILLAR.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_WALL.asItem());
@@ -63,6 +65,7 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_PYROXENITE_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_WALL.asItem());
+        output.accept(FFBlocks.BAUXITE_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
 
@@ -148,8 +151,8 @@ public class FFTabs {
 
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
     public static final CreativeModeTab FF_NATURAL_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.HIGHLANDS_REGOLITH)).title(Component.translatable("itemGroup.final_frontier.ff_natural_blocks")).displayItems((parameters, output) -> {
-        output.accept(FFBlocks.ALUMINA_ORE.asItem());
-        output.accept(FFBlocks.DEEPSLATE_ALUMINA_ORE.asItem());
+        output.accept(FFBlocks.BAUXITE_ORE.asItem());
+        output.accept(FFBlocks.DEEPSLATE_BAUXITE_ORE.asItem());
         output.accept(FFBlocks.HIGHLANDS_REGOLITH.asItem());
         output.accept(FFBlocks.MARIA_REGOLITH.asItem());
         output.accept(FFBlocks.MOONSTONE.asItem());
@@ -256,8 +259,10 @@ public class FFTabs {
     public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.STEEL_INGOT)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
 
         output.accept(FFItems.DURAFABRIC);
+        output.accept(FFItems.RAW_BAUXITE);
         output.accept(FFItems.RAW_ALUMINA);
         output.accept(FFItems.OLIVINE);
+        output.accept(FFItems.COKE);
 
         //Copper
         output.accept(Items.COPPER_NUGGET);

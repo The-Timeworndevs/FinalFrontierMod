@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "final_frontier:alumina_ore",
-    "final_frontier:deepslate_alumina_ore",
     "final_frontier:moonstone_alumina_ore",
     "final_frontier:subcinder_alumina_ore"
   ]

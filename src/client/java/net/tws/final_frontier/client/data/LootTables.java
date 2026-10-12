@@ -49,6 +49,7 @@ public class LootTables {
             FFBlocks.PYROXENITE_WALL,
 
             FFBlocks.POLISHED_MOONSTONE,
+            FFBlocks.MOONSTONE_PILLAR,
             FFBlocks.CHISELED_POLISHED_MOONSTONE,
             FFBlocks.POLISHED_MOONSTONE_STAIRS,
             FFBlocks.POLISHED_MOONSTONE_WALL,
@@ -60,6 +61,7 @@ public class LootTables {
             FFBlocks.POLISHED_KOMATIITE_WALL,
 
             FFBlocks.POLISHED_SUBCINDER,
+            FFBlocks.SUBCINDER_PILLAR,
             FFBlocks.CHISELED_POLISHED_SUBCINDER,
             FFBlocks.POLISHED_SUBCINDER_STAIRS,
             FFBlocks.POLISHED_SUBCINDER_WALL,
@@ -82,6 +84,7 @@ public class LootTables {
             FFBlocks.SUBCINDER_BRICKS_STAIRS,
             FFBlocks.SUBCINDER_BRICKS_WALL,
 
+            FFBlocks.BAUXITE_BLOCK,
             FFBlocks.ALUMINA_BLOCK,
             FFBlocks.OLIVINE_BLOCK,
 

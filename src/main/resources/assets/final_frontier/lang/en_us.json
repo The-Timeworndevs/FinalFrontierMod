@@ -1,6 +1,6 @@
 {
-  "block.final_frontier.alumina_ore": "Alumina Ore",
-  "block.final_frontier.deepslate_alumina_ore": "Deepslate Alumina Ore",
+  "block.final_frontier.bauxite_ore": "Bauxite Ore",
+  "block.final_frontier.deepslate_bauxite_ore": "Deepslate Bauxite Ore",
   "block.final_frontier.highlands_regolith": "Lunar Highlands Regolith",
   "block.final_frontier.maria_regolith": "Lunar Maria Regolith",
   "block.final_frontier.moonstone": "Moonstone",
@@ -29,6 +29,7 @@
   "block.final_frontier.pyroxenite_stairs": "Pyroxenite Stairs",
   "block.final_frontier.pyroxenite_slab": "Pyroxenite Slab",
   "block.final_frontier.pyroxenite_wall": "Pyroxenite Wall",
+  "block.final_frontier.bauxite_block": "Block Of Bauxite",
   "block.final_frontier.alumina_block": "Block Of Alumina",
   "block.final_frontier.olivine_block": "Block Of Olivine",
 
@@ -132,6 +133,7 @@
   "block.final_frontier.moonstone_slab": "Moonstone Slab",
   "block.final_frontier.moonstone_wall": "Moonstone Wall",
   "block.final_frontier.polished_moonstone": "Polished Moonstone",
+  "block.final_frontier.moonstone_pillar": "Moonstone Pillar",
   "block.final_frontier.polished_moonstone_stairs": "Polished Moonstone Stairs",
   "block.final_frontier.polished_moonstone_slab": "Polished Moonstone Slab",
   "block.final_frontier.polished_moonstone_wall": "Polished Moonstone Wall",
@@ -151,6 +153,7 @@
   "block.final_frontier.subcinder_slab": "Subcinder Slab",
   "block.final_frontier.subcinder_wall": "Subcinder Wall",
   "block.final_frontier.polished_subcinder": "Polished Subcinder",
+  "block.final_frontier.subcinder_pillar": "Subcinder Pillar",
   "block.final_frontier.polished_subcinder_stairs": "Polished Subcinder Stairs",
   "block.final_frontier.polished_subcinder_slab": "Polished Subcinder Slab",
   "block.final_frontier.polished_subcinder_wall": "Polished Subcinder Wall",
@@ -168,8 +171,10 @@
   "block.final_frontier.polished_pyroxenite_wall": "Polished Pyroxenite Wall",
 
   "item.final_frontier.durafabric": "Durafabric",
+  "item.final_frontier.raw_bauxite": "Raw Bauxite",
   "item.final_frontier.raw_alumina": "Raw Alumina",
   "item.final_frontier.olivine": "Olivine",
+  "item.final_frontier.coke": "Coke",
 
   "item.final_frontier.copper_rod": "Copper Rod",
   "item.final_frontier.copper_plate": "Copper Plate",

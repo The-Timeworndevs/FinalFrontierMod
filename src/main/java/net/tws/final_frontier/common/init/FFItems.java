@@ -1,5 +1,6 @@
 package net.tws.final_frontier.common.init;
 
+import net.fabricmc.fabric.api.registry.FuelValueEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -28,6 +29,7 @@ public class FFItems {
     public static final Item IRON_ROD = registerItem("iron_rod", Item::new);
     public static final Item IRON_PLATE = registerItem("iron_plate", Item::new);
 
+    public static final Item RAW_BAUXITE = registerItem("raw_bauxite", Item::new);
     public static final Item RAW_ALUMINA = registerItem("raw_alumina", Item::new);
 
     public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", Item::new);
@@ -39,6 +41,8 @@ public class FFItems {
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", Item::new);
     public static final Item STEEL_ROD = registerItem("steel_rod", Item::new);
     public static final Item STEEL_PLATE = registerItem("steel_plate", Item::new);
+
+    public static final Item COKE = registerItem("coke", Item::new);
 
     //tools
     public static final Item OLIVINE_SHOVEL = registerItem("olivine_shovel", properties -> new ShovelItem(FFToolMaterials.OLIVINE, 1.5f, -2.0f, properties));
@@ -65,6 +69,11 @@ public class FFItems {
     }
 
     public static void init() {
+
+        FuelValueEvents.BUILD.register(((builder, context) -> {
+            builder.add(COKE, 160 * 20);
+        }));
+
         Main.LOGGER.info("Item Registry Successful");
     }
 }

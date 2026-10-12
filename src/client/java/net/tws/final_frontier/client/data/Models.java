@@ -8,6 +8,8 @@ import static net.tws.final_frontier.common.init.FFItems.*;
 
 public final class Models {
     static final Block[] PILLARS = new Block[]{
+            MOONSTONE_PILLAR,
+            SUBCINDER_PILLAR,
             ALUMINUM_PILLAR,
             ALUMINUM_PILLAR_HAZARD,
             STEEL_PILLAR,
@@ -74,8 +76,8 @@ public final class Models {
             STEEL_BLOCK,
             HIGHLANDS_REGOLITH,
             MARIA_REGOLITH,
-            ALUMINA_ORE,
-            DEEPSLATE_ALUMINA_ORE,
+            BAUXITE_ORE,
+            DEEPSLATE_BAUXITE_ORE,
             MOONSTONE_IRON_ORE,
             MOONSTONE_GOLD_ORE,
             MOONSTONE_COPPER_ORE,
@@ -92,6 +94,7 @@ public final class Models {
             SUBCINDER_QUARTZ_ORE,
             SUBCINDER_OLIVINE_ORE,
             SUBCINDER_REDSTONE_ORE,
+            BAUXITE_BLOCK,
             ALUMINA_BLOCK,
             OLIVINE_BLOCK,
             STEEL_PANEL,
@@ -118,10 +121,12 @@ public final class Models {
     static final Item[] BASIC_ITEMS = new Item[]{
             DURAFABRIC,
             OLIVINE,
+            COKE,
             COPPER_ROD,
             COPPER_PLATE,
             IRON_ROD,
             IRON_PLATE,
+            RAW_BAUXITE,
             RAW_ALUMINA,
             ALUMINUM_INGOT,
             ALUMINUM_NUGGET,
