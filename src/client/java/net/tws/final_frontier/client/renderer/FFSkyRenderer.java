@@ -198,8 +198,8 @@ public class FFSkyRenderer implements AutoCloseable {
     /**
      * Invoke the vanilla renderStars method.
      */
-    private void renderStars(float starBrightness, PoseStack poseStack) {
-        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderStars(starBrightness, poseStack);
+    private void renderStars(RenderPass renderPass, float starBrightness, PoseStack poseStack) {
+        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderStars(renderPass, starBrightness, poseStack);
     }
 
     @Override
