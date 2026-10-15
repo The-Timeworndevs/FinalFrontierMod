@@ -91,7 +91,7 @@ public class FFSkyRenderer implements AutoCloseable {
 
     public void renderMoonSky(RenderPass renderPass, SkyRenderState state) {
         // Sky Disc
-        this.skyRenderer.renderSkyDisc(renderPass, state.skyColor);
+        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderSkyDisc(renderPass, state.skyColor);
         // Start Rendering Celestials
         PoseStack poseStack = new PoseStack();
         poseStack.pushPose();
@@ -114,7 +114,7 @@ public class FFSkyRenderer implements AutoCloseable {
         poseStack.popPose();
         // Dark Disc
         if(state.shouldRenderDarkDisc)
-            this.skyRenderer.renderDarkDisc(renderPass);
+            ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderDarkDisc(renderPass);
     }
 
     /**

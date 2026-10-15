@@ -2,5 +2,5 @@ classTweaker  v2  official
 
 extend-enum net/minecraft/world/level/dimension/DimensionType$Skybox FINAL_FRONTIER_MOON
 
-accessible method net/minecraft/client/renderer/SkyRenderer renderSkyDisc (Lcom/mojang/renderpearl/api/commands/RenderPass;Lorg/joml/Vector3fc;)V
-accessible method net/minecraft/client/renderer/SkyRenderer renderDarkDisc (Lcom/mojang/renderpearl/api/commands/RenderPass;)V
+# accessible method net/minecraft/client/renderer/SkyRenderer renderSkyDisc (Lcom/mojang/renderpearl/api/commands/RenderPass;Lorg/joml/Vector3fc;)V
+# accessible method net/minecraft/client/renderer/SkyRenderer renderDarkDisc (Lcom/mojang/renderpearl/api/commands/RenderPass;)V
