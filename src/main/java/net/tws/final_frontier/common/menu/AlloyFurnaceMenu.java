@@ -3,35 +3,41 @@ package net.tws.final_frontier.common.menu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.StackedItemContents;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.Level;
 import net.tws.final_frontier.Main;
 import net.tws.final_frontier.common.block.entity.AlloyFurnaceBlockEntity;
 import net.tws.final_frontier.common.init.FFMenus;
 
 public class AlloyFurnaceMenu extends AbstractContainerMenu {
     public final AlloyFurnaceBlockEntity blockEntity;
-    private final Container inventory;
+    private final Container container;
     private final ContainerData data;
+    private final Level level;
 
-    public AlloyFurnaceMenu(int containerId, Inventory inv, BlockPos blockPos) {
-        this(containerId, inv, inv.player.level().getBlockEntity(blockPos), new SimpleContainerData(4));
+    public AlloyFurnaceMenu(int containerId, Inventory inventory, BlockPos blockPos) {
+        this(containerId, inventory, blockPos, new SimpleContainer(4), new SimpleContainerData(4));
     }
 
-    public AlloyFurnaceMenu(int containerId, Inventory inv, BlockEntity entity, ContainerData data) {
+    public AlloyFurnaceMenu(int containerId, Inventory inventory, BlockPos blockPos, Container container, ContainerData data) {
         super(FFMenus.ALLOY_FURNACE_MENU_MENU, containerId);
-        blockEntity = ((AlloyFurnaceBlockEntity) entity);
 
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
+        this.level = inventory.player.level();
+        this.blockEntity = (AlloyFurnaceBlockEntity) this.level.getBlockEntity(blockPos);
+        this.container = container;
+        this.data = data;
+
+        addPlayerInventory(inventory);
+        addPlayerHotbar(inventory);
     }
 
     public void fillCraftSlotsStackedContent(final StackedItemContents stackedContents) {
-        Container var3 = this.inventory;
+        Container var3 = this.container;
 
         if (var3 instanceof StackedContentsCompatible stackedContentsCompatible) {
             stackedContentsCompatible.fillStackedContents(stackedContents);
@@ -54,7 +60,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return this.inventory.stillValid(player);
+        return this.container.stillValid(player);
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

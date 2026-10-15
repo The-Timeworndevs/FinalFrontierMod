@@ -35,7 +35,7 @@ import java.util.OptionalDouble;
 public class FFSkyRenderer implements AutoCloseable {
     public static final RenderPipeline CELESTIAL_TRANSLUCENT = RenderPipelines.register(
             RenderPipeline.builder(RenderPipelines.GLOBALS_SNIPPET)
-                    .withBindGroupLayout(BindGroupLayouts.MATRICES_PROJECTION)
+                    .withBindGroupLayout(BindGroupLayouts.PROJECTION)
                     .withLocation("pipeline/celestial")
                     .withVertexShader("core/position_tex")
                     .withFragmentShader("core/position_tex")
@@ -75,16 +75,24 @@ public class FFSkyRenderer implements AutoCloseable {
     public boolean renderSky(GpuBufferSlice skyFog, SkyRenderState state) {
         if (state.skybox == DimensionType.Skybox.FINAL_FRONTIER_MOON) {
             RenderSystem.setShaderFog(skyFog);
-            this.renderMoonSky(state);
+            GpuTextureView color = this.renderTarget.getColorTextureView();
+            GpuTextureView depth = this.renderTarget.getDepthTextureView();
+
+            assert color != null;
+
+            try (RenderPass renderPass = RenderSystem.getDevice().createCommandEncoder().createRenderPass(() -> "Moon", color, Optional.empty(), depth, OptionalDouble.empty())) {
+                this.renderMoonSky(renderPass, state);
+            }
+
             return true;
         }
         else
             return false;
     }
 
-    public void renderMoonSky(SkyRenderState state) {
+    public void renderMoonSky(RenderPass renderPass, SkyRenderState state) {
         // Sky Disc
-        this.skyRenderer.renderSkyDisc(state.skyColor);
+        this.skyRenderer.renderSkyDisc(renderPass, state.skyColor);
         // Start Rendering Celestials
         PoseStack poseStack = new PoseStack();
         poseStack.pushPose();
@@ -92,22 +100,22 @@ public class FFSkyRenderer implements AutoCloseable {
         // Stars
         poseStack.pushPose();
         poseStack.rotate(Axis.XP, state.starAngle);
-        this.renderStars(1.0f, poseStack);
+        this.renderStars(renderPass, 1.0f, poseStack);
         poseStack.popPose();
         // Sun
         poseStack.pushPose();
         poseStack.rotate(Axis.XP, state.sunAngle);
-        this.renderCelestial("Sun", this.vacuumSunBuffer, 30.0f, 1.0f, poseStack);
+        this.renderCelestial(renderPass, this.vacuumSunBuffer, 30.0f, 1.0f, poseStack);
         poseStack.popPose();
         // Earth
         poseStack.pushPose();
         poseStack.rotate(Axis.YP, 90.0f);
-        this.renderCelestialPhase("Earth", this.earthBuffer, state.moonPhase.index(), 75.0f, 1.0f, poseStack);
+        this.renderCelestialPhase(renderPass, this.earthBuffer, state.moonPhase.index(), 75.0f, 1.0f, poseStack);
         poseStack.popPose();
         poseStack.popPose();
         // Dark Disc
         if(state.shouldRenderDarkDisc)
-            this.skyRenderer.renderDarkDisc();
+            this.skyRenderer.renderDarkDisc(renderPass);
     }
 
     /**
@@ -160,37 +168,33 @@ public class FFSkyRenderer implements AutoCloseable {
         }
     }
 
-    private void renderCelestial(String name, GpuBuffer celestial, float scale, float alpha, PoseStack poseStack) {
-        this.renderCelestialPhase(name, celestial, 0, scale, alpha, poseStack);
+    private void renderCelestial(RenderPass renderPass, GpuBuffer celestial, float scale, float alpha, PoseStack poseStack) {
+        this.renderCelestialPhase(renderPass, celestial, 0, scale, alpha, poseStack);
     }
 
     /**
      * Render a celestial from the GpuBuffer at the phase index.
      * The phase index should be zero if the celestial does not have phases.
      */
-    private void renderCelestialPhase(String name, GpuBuffer celestial, int phase, float scale, float alpha, PoseStack poseStack) {
+    private void renderCelestialPhase(RenderPass renderPass, GpuBuffer celestial, int phase, float scale, float alpha, PoseStack poseStack) {
         int vertexOffset = (phase + 1) * 4; // Offset the base vertex to render the quad for the given phase
         Matrix4fStack stack = RenderSystem.getModelViewStack();
         stack.pushMatrix();
         stack.mul(poseStack.last().pose());
         stack.translate(0.0f, 100.0f, 0.0f);
         stack.scale(scale, 1.0f, scale);
-        GpuBufferSlice dynamicTransforms = RenderSystem.getDynamicUniforms().writeTransform(new Matrix4f(stack), new Vector4f(1.0f, 1.0f, 1.0f, alpha));
-        GpuTextureView color = this.renderTarget.getColorTextureView();
-        GpuTextureView depth = this.renderTarget.getDepthTextureView();
-        GpuBuffer indexBuffer = this.quadIndices.getBuffer(6);
 
-        try (RenderPass renderPass = RenderSystem.getDevice().createCommandEncoder().createRenderPass(() -> name, color, Optional.empty(), depth, OptionalDouble.empty())) {
-            RenderSystem.bindDefaultUniforms(renderPass);
-            renderPass.setUniform("DynamicTransforms", dynamicTransforms);
-            renderPass.bindTexture("Sampler0", this.celestialsAtlas.getTextureView(), this.celestialsAtlas.getSampler());
-            renderPass.setVertexBuffer(0, celestial.slice());
-            renderPass.setIndexBuffer(indexBuffer, this.quadIndices.type());
-            renderPass.setPipeline(RenderPipelines.CELESTIAL);
-            renderPass.drawIndexed(6, 1, 0, 0, 0); // Glow Quad
-            renderPass.setPipeline(CELESTIAL_TRANSLUCENT);
-            renderPass.drawIndexed(6, 1, 0, vertexOffset, 0); // Main Quad
-        }
+        GpuBufferSlice dynamicTransforms = RenderSystem.getDynamicUniforms().writeTransform(new Matrix4f(stack), new Vector4f(1.0f, 1.0f, 1.0f, alpha));
+        GpuBuffer indexBuffer = this.quadIndices.getBuffer(6);
+        RenderSystem.bindDefaultUniforms(renderPass);
+        renderPass.setPipeline(RenderSystem.getCompiledPipeline(RenderPipelines.CELESTIAL));
+        renderPass.setUniform("DynamicTransforms", dynamicTransforms);
+        renderPass.setUniform("Sampler0", this.celestialsAtlas.getTextureView(), this.celestialsAtlas.getSampler());
+        renderPass.setVertexBuffer(0, celestial.slice());
+        renderPass.setIndexBuffer(indexBuffer, this.quadIndices.type());
+        renderPass.drawIndexed(6, 1, 0, 0, 0); // Glow Quad
+        renderPass.setPipeline(RenderSystem.getCompiledPipeline(CELESTIAL_TRANSLUCENT));
+        renderPass.drawIndexed(6, 1, 0, vertexOffset, 0); // Main Quad
 
         stack.popMatrix();
     }
