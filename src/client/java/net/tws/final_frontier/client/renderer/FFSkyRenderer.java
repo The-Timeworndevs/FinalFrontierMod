@@ -19,7 +19,6 @@ import net.minecraft.client.renderer.SkyRenderer;
 import net.minecraft.client.renderer.state.level.SkyRenderState;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.resources.model.sprite.AtlasManager;
 import net.minecraft.data.AtlasIds;
 import net.minecraft.world.level.dimension.DimensionType;
@@ -57,7 +56,7 @@ public class FFSkyRenderer implements AutoCloseable {
     private final GpuBuffer vacuumSunBuffer;
     private final GpuBuffer earthBuffer;
 
-    public FFSkyRenderer(TextureManager textureManager, AtlasManager atlasManager, RenderTarget renderTarget, SkyRenderer skyRenderer) {
+    public FFSkyRenderer(AtlasManager atlasManager, RenderTarget renderTarget, SkyRenderer skyRenderer) {
         this.celestialsAtlas = atlasManager.getAtlasOrThrow(AtlasIds.CELESTIALS);
         this.quadIndices = RenderSystem.getSequentialBuffer(PrimitiveTopology.QUADS);
         this.renderTarget = renderTarget;
