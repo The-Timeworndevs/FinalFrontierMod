@@ -6,7 +6,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Recipe;
@@ -103,6 +106,11 @@ public class AlloyFurnaceBlockEntity extends BaseContainerBlockEntity implements
     }
 
     @Override
+    protected AbstractContainerMenu createMenu(int containerId, Inventory inventory) {
+        return null;
+    }
+
+    @Override
     protected void saveAdditional(ValueOutput output) {
         super.saveAdditional(output);
         output.putInt("alloy_furnace.progress", cookingTimer);
@@ -121,4 +129,13 @@ public class AlloyFurnaceBlockEntity extends BaseContainerBlockEntity implements
     }
 
 
+    @Override
+    public BlockPos getScreenOpeningData(ServerPlayer player) {
+        return null;
+    }
+
+    @Override
+    public int getContainerSize() {
+        return 0;
+    }
 }
