@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "cookingtime": 200,
   "category": "misc",
   "experience": 0.1,
   "ingredient": "final_frontier:subcinder_olivine_ore",

@@ -47,6 +47,6 @@ public class LevelRendererMixin {
         if (FFSkyRenderer.instance != null)
             FFSkyRenderer.instance.close();
 
-        FFSkyRenderer.instance = new FFSkyRenderer(this.textureManager, this.atlasManager, this.gameRenderer.mainRenderTarget(), this.skyRenderer);
+        FFSkyRenderer.instance = new FFSkyRenderer(this.atlasManager, this.gameRenderer.mainRenderTarget(), this.skyRenderer);
     }
 }

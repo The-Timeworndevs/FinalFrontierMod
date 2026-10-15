@@ -1,11 +1,6 @@
 {
   "type": "minecraft:simple_block",
-  "config": {
     "to_place": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "final_frontier:subcinder"
-      }
+        "id": "final_frontier:subcinder"
     }
-  }
 }

@@ -9,26 +9,6 @@
   "effects": {
     "water_color": "#3f76e4"
   },
-  "spawn_costs": {},
-  "spawners": {
-    "ambient": [
-    ],
-    "axolotls": [
-
-    ],
-    "creature": [
-
-    ],
-    "underground_water_creature": [
-
-    ],
-    "water_ambient": [
-
-    ],
-    "water_creature": [
-      
-    ]
-  },
   "carvers": [],
   "features": [
     [
@@ -37,8 +17,7 @@
     [
     ],
     [
-      "final_frontier:moonstone_deposit",
-      "final_frontier:scattered_moonstone"
+      "final_frontier:moonstone_deposit"
     ],
     [
     ],

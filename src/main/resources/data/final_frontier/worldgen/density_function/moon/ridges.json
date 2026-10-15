@@ -1,10 +1,9 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:shifted_noise",
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:noise",
     "noise": "final_frontier:ridge",
     "shift_x": "final_frontier:shift_x",
-    "shift_y": 0.0,
     "shift_z": "final_frontier:shift_z",
     "xz_scale": 0.25,
     "y_scale": 0.0

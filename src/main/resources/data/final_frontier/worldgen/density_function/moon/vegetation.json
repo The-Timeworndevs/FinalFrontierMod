@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:noise",
+  "noise": "final_frontier:vegetation",
+  "shift_x": "final_frontier:shift_x",
+  "shift_z": "final_frontier:shift_z",
+  "xz_scale": 0.25,
+  "y_scale": 0.0
+}
