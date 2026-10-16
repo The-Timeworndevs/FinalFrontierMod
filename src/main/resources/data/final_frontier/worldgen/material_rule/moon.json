@@ -7,8 +7,8 @@
       "if_true": {
         "type": "minecraft:above_preliminary_surface"
       },
-      "then_run": "minecraft:overworld/surface"
+      "then_run": "final_frontier:moon/surface"
     },
-    "minecraft:overworld/underground"
+    "final_frontier:moon/underground"
   ]
 }
