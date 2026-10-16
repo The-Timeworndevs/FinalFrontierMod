@@ -35,7 +35,7 @@ public class LevelRendererMixin {
         FFSkyRenderer ffSkyRenderer = FFSkyRenderer.instance;
 
         // Render the Final Frontier sky or continue vanilla sky rendering
-        if (!ffSkyRenderer.renderSky(skyFog, state))
+        if (ffSkyRenderer == null || !ffSkyRenderer.renderSky(skyFog, state))
             original.call(skyFog, state);
     }
 

@@ -26,16 +26,19 @@ import net.tws.final_frontier.Main;
 import net.tws.final_frontier.client.mixin.SkyRendererAccessor;
 import org.joml.Matrix4f;
 import org.joml.Matrix4fStack;
+import org.joml.Vector3fc;
 import org.joml.Vector4f;
 
 import java.util.Optional;
 import java.util.OptionalDouble;
+import java.util.function.Supplier;
 
 public class FFSkyRenderer implements AutoCloseable {
     public static final RenderPipeline CELESTIAL_TRANSLUCENT = RenderPipelines.register(
             RenderPipeline.builder(RenderPipelines.GLOBALS_SNIPPET)
                     .withBindGroupLayout(BindGroupLayouts.PROJECTION)
-                    .withLocation("pipeline/celestial")
+                    .withBindGroupLayout(BindGroupLayouts.DYNAMIC_TRANSFORMS)
+                    .withLocation(Main.id("pipeline/celestial_translucent"))
                     .withVertexShader("core/position_tex")
                     .withFragmentShader("core/position_tex")
                     .withBindGroupLayout(BindGroupLayouts.SAMPLER0)
@@ -79,7 +82,8 @@ public class FFSkyRenderer implements AutoCloseable {
 
             assert color != null;
 
-            try (RenderPass renderPass = RenderSystem.getDevice().createCommandEncoder().createRenderPass(() -> "Moon", color, Optional.empty(), depth, OptionalDouble.empty())) {
+            try (RenderPass renderPass = RenderSystem.getDevice().createCommandEncoder().createRenderPass(() -> "Moon Sky", color, Optional.empty(), depth, OptionalDouble.empty())) {
+                RenderSystem.bindDefaultUniforms(renderPass);
                 this.renderMoonSky(renderPass, state);
             }
 
@@ -91,7 +95,7 @@ public class FFSkyRenderer implements AutoCloseable {
 
     public void renderMoonSky(RenderPass renderPass, SkyRenderState state) {
         // Sky Disc
-        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderSkyDisc(renderPass, state.skyColor);
+        this.renderSkyDisc(renderPass, state.skyColor);
         // Start Rendering Celestials
         PoseStack poseStack = new PoseStack();
         poseStack.pushPose();
@@ -104,17 +108,17 @@ public class FFSkyRenderer implements AutoCloseable {
         // Sun
         poseStack.pushPose();
         poseStack.rotate(Axis.XP, state.sunAngle);
-        this.renderCelestial(renderPass, this.vacuumSunBuffer, 30.0f, 1.0f, poseStack);
+        this.renderCelestial(() -> "Vacuum Sun", renderPass, this.vacuumSunBuffer, 30.0f, 1.0f, poseStack);
         poseStack.popPose();
         // Earth
         poseStack.pushPose();
-        poseStack.rotate(Axis.YP, 90.0f);
-        this.renderCelestialPhase(renderPass, this.earthBuffer, state.moonPhase.index(), 75.0f, 1.0f, poseStack);
+        poseStack.rotateDegrees(Axis.YP, 90.0f);
+        this.renderCelestialPhase(() -> "Earth", renderPass, this.earthBuffer, state.moonPhase.index(), 75.0f, 1.0f, poseStack);
         poseStack.popPose();
         poseStack.popPose();
         // Dark Disc
         if(state.shouldRenderDarkDisc)
-            ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderDarkDisc(renderPass);
+            this.renderDarkDisc(renderPass);
     }
 
     /**
@@ -167,42 +171,47 @@ public class FFSkyRenderer implements AutoCloseable {
         }
     }
 
-    private void renderCelestial(RenderPass renderPass, GpuBuffer celestial, float scale, float alpha, PoseStack poseStack) {
-        this.renderCelestialPhase(renderPass, celestial, 0, scale, alpha, poseStack);
+    private void renderCelestial(Supplier<String> label, RenderPass renderPass, GpuBuffer celestial, float scale, float alpha, PoseStack poseStack) {
+        this.renderCelestialPhase(label, renderPass, celestial, 0, scale, alpha, poseStack);
     }
 
     /**
      * Render a celestial from the GpuBuffer at the phase index.
      * The phase index should be zero if the celestial does not have phases.
      */
-    private void renderCelestialPhase(RenderPass renderPass, GpuBuffer celestial, int phase, float scale, float alpha, PoseStack poseStack) {
-        int vertexOffset = (phase + 1) * 4; // Offset the base vertex to render the quad for the given phase
+    private void renderCelestialPhase(Supplier<String> label, RenderPass renderPass, GpuBuffer celestial, int phase, float scale, float alpha, PoseStack poseStack) {
+        // Transforms
         Matrix4fStack stack = RenderSystem.getModelViewStack();
         stack.pushMatrix();
         stack.mul(poseStack.last().pose());
         stack.translate(0.0f, 100.0f, 0.0f);
         stack.scale(scale, 1.0f, scale);
-
         GpuBufferSlice dynamicTransforms = RenderSystem.getDynamicUniforms().writeTransform(new Matrix4f(stack), new Vector4f(1.0f, 1.0f, 1.0f, alpha));
-        GpuBuffer indexBuffer = this.quadIndices.getBuffer(6);
-        RenderSystem.bindDefaultUniforms(renderPass);
+        stack.popMatrix();
+        // Draw
+        renderPass.pushDebugGroup(label);
         renderPass.setPipeline(RenderSystem.getCompiledPipeline(RenderPipelines.CELESTIAL));
         renderPass.setUniform("DynamicTransforms", dynamicTransforms);
         renderPass.setUniform("Sampler0", this.celestialsAtlas.getTextureView(), this.celestialsAtlas.getSampler());
         renderPass.setVertexBuffer(0, celestial.slice());
-        renderPass.setIndexBuffer(indexBuffer, this.quadIndices.type());
+        renderPass.setIndexBuffer(this.quadIndices.getBuffer(6), this.quadIndices.type());
         renderPass.drawIndexed(6, 1, 0, 0, 0); // Glow Quad
         renderPass.setPipeline(RenderSystem.getCompiledPipeline(CELESTIAL_TRANSLUCENT));
+        int vertexOffset = (phase + 1) * 4; // Offset the base vertex to render the quad for the given phase
         renderPass.drawIndexed(6, 1, 0, vertexOffset, 0); // Main Quad
-
-        stack.popMatrix();
+        renderPass.popDebugGroup();
     }
 
-    /**
-     * Invoke the vanilla renderStars method.
-     */
     private void renderStars(RenderPass renderPass, float starBrightness, PoseStack poseStack) {
         ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderStars(renderPass, starBrightness, poseStack);
+    }
+
+    private void renderSkyDisc(RenderPass renderPass, Vector3fc skyColor) {
+        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderSkyDisc(renderPass, skyColor);
+    }
+
+    private void renderDarkDisc(RenderPass renderPass) {
+        ((SkyRendererAccessor) this.skyRenderer).final_frontier$renderDarkDisc(renderPass);
     }
 
     @Override
