@@ -197,6 +197,42 @@ public class FFTabs {
         output.accept(FFBlocks.MAGENTA_DURAFABRIC_BLOCK.asItem());
         output.accept(FFBlocks.PINK_DURAFABRIC_BLOCK.asItem());
 
+        output.accept(FFBlocks.DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.WHITE_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.GRAY_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.BLACK_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.BROWN_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.RED_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.ORANGE_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.YELLOW_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.LIME_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.GREEN_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.CYAN_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.BLUE_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.PURPLE_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.MAGENTA_DURAFABRIC_STAIRS.asItem());
+        output.accept(FFBlocks.PINK_DURAFABRIC_STAIRS.asItem());
+
+        output.accept(FFBlocks.DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.WHITE_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.GRAY_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.BLACK_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.BROWN_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.RED_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.ORANGE_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.YELLOW_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.LIME_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.GREEN_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.CYAN_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.BLUE_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.PURPLE_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.MAGENTA_DURAFABRIC_SLAB.asItem());
+        output.accept(FFBlocks.PINK_DURAFABRIC_SLAB.asItem());
+
         //Glowing Aluminum Pillars
         output.accept(FFBlocks.WHITE_GLOWING_ALUMINUM_PILLAR.asItem());
         output.accept(FFBlocks.LIGHT_GRAY_GLOWING_ALUMINUM_PILLAR.asItem());
@@ -252,6 +288,11 @@ public class FFTabs {
         output.accept(FFBlocks.PINK_GLOWING_IRON_PILLAR.asItem());
 
     }).build();
+
+    public static final ResourceKey<CreativeModeTab> FF_FUNCTIONAL_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_functional"));
+    public static final CreativeModeTab FF_FUNCTIONAL = FabricCreativeModeTab.builder().icon(() -> new ItemStack(FFBlocks.ALLOY_FURNACE.asItem())).title(Component.translatable("itemGroup.final_frontier.ff_functional")).displayItems(((parameters, output) -> {
+        output.accept(FFBlocks.ALLOY_FURNACE.asItem());
+    })).build();
 
     public static final ResourceKey<CreativeModeTab> FF_MATERIALS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_materials"));
     public static final CreativeModeTab FF_MATERIALS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFItems.STEEL_INGOT)).title(Component.translatable("itemGroup.final_frontier.ff_materials")).displayItems((parameters, output) -> {
@@ -312,6 +353,7 @@ public class FFTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_BUILDING_BLOCKS_KEY, FF_BUILDING_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_NATURAL_BLOCKS_KEY, FF_NATURAL_BLOCKS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_COLORED_BLOCKS_KEY, FF_COLORED_BLOCKS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_FUNCTIONAL_KEY, FF_FUNCTIONAL);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_MATERIALS_KEY, FF_MATERIALS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_TOOLS_KEY, FF_TOOLS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, FF_COMBAT_KEY, FF_COMBAT);

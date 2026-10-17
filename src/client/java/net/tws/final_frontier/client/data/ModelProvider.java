@@ -108,6 +108,76 @@ public class ModelProvider extends FabricModelProvider {
                 .stairs(POLISHED_PYROXENITE_STAIRS)
                 .slab(POLISHED_PYROXENITE_SLAB)
                 .wall(POLISHED_PYROXENITE_WALL);
+
+        blockModelGenerators.family(DURAFABRIC_BLOCK)
+                .stairs(DURAFABRIC_STAIRS)
+                .slab(DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(WHITE_DURAFABRIC_BLOCK)
+                .stairs(WHITE_DURAFABRIC_STAIRS)
+                .slab(WHITE_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(LIGHT_GRAY_DURAFABRIC_BLOCK)
+                .stairs(LIGHT_GRAY_DURAFABRIC_STAIRS)
+                .slab(LIGHT_GRAY_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(GRAY_DURAFABRIC_BLOCK)
+                .stairs(GRAY_DURAFABRIC_STAIRS)
+                .slab(GRAY_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(BLACK_DURAFABRIC_BLOCK)
+                .stairs(BLACK_DURAFABRIC_STAIRS)
+                .slab(BLACK_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(BROWN_DURAFABRIC_BLOCK)
+                .stairs(BROWN_DURAFABRIC_STAIRS)
+                .slab(BROWN_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(RED_DURAFABRIC_BLOCK)
+                .stairs(RED_DURAFABRIC_STAIRS)
+                .slab(RED_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(ORANGE_DURAFABRIC_BLOCK)
+                .stairs(ORANGE_DURAFABRIC_STAIRS)
+                .slab(ORANGE_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(YELLOW_DURAFABRIC_BLOCK)
+                .stairs(YELLOW_DURAFABRIC_STAIRS)
+                .slab(YELLOW_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(LIME_DURAFABRIC_BLOCK)
+                .stairs(LIME_DURAFABRIC_STAIRS)
+                .slab(LIME_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(GREEN_DURAFABRIC_BLOCK)
+                .stairs(GREEN_DURAFABRIC_STAIRS)
+                .slab(GREEN_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(LIGHT_BLUE_DURAFABRIC_BLOCK)
+                .stairs(LIGHT_BLUE_DURAFABRIC_STAIRS)
+                .slab(LIGHT_BLUE_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(CYAN_DURAFABRIC_BLOCK)
+                .stairs(CYAN_DURAFABRIC_STAIRS)
+                .slab(CYAN_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(BLUE_DURAFABRIC_BLOCK)
+                .stairs(BLUE_DURAFABRIC_STAIRS)
+                .slab(BLUE_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(PURPLE_DURAFABRIC_BLOCK)
+                .stairs(PURPLE_DURAFABRIC_STAIRS)
+                .slab(PURPLE_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(MAGENTA_DURAFABRIC_BLOCK)
+                .stairs(MAGENTA_DURAFABRIC_STAIRS)
+                .slab(MAGENTA_DURAFABRIC_SLAB);
+
+        blockModelGenerators.family(PINK_DURAFABRIC_BLOCK)
+                .stairs(PINK_DURAFABRIC_STAIRS)
+                .slab(PINK_DURAFABRIC_SLAB);
+
+        blockModelGenerators.createFurnace(ALLOY_FURNACE, TexturedModel.ORIENTABLE_ONLY_TOP);
     }
 
     @Override

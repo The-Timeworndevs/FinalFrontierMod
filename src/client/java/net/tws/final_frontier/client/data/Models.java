@@ -96,24 +96,7 @@ public final class Models {
             ALUMINA_BLOCK,
             OLIVINE_BLOCK,
             STEEL_PANEL,
-            IRON_PANEL,
-            DURAFABRIC_BLOCK,
-            WHITE_DURAFABRIC_BLOCK,
-            LIGHT_GRAY_DURAFABRIC_BLOCK,
-            GRAY_DURAFABRIC_BLOCK,
-            BLACK_DURAFABRIC_BLOCK,
-            BROWN_DURAFABRIC_BLOCK,
-            RED_DURAFABRIC_BLOCK,
-            ORANGE_DURAFABRIC_BLOCK,
-            YELLOW_DURAFABRIC_BLOCK,
-            LIME_DURAFABRIC_BLOCK,
-            GREEN_DURAFABRIC_BLOCK,
-            LIGHT_BLUE_DURAFABRIC_BLOCK,
-            CYAN_DURAFABRIC_BLOCK,
-            BLUE_DURAFABRIC_BLOCK,
-            PURPLE_DURAFABRIC_BLOCK,
-            MAGENTA_DURAFABRIC_BLOCK,
-            PINK_DURAFABRIC_BLOCK
+            IRON_PANEL
     };
 
     static final Item[] BASIC_ITEMS = new Item[]{

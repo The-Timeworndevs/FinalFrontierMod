@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "final_frontier:moonstone_stairs",
+    "final_frontier:polished_moonstone_stairs",
+    "final_frontier:moonstone_bricks_stairs",
+    "final_frontier:komatiite_stairs",
+    "final_frontier:polished_komatiite_stairs",
+    "final_frontier:subcinder_stairs",
+    "final_frontier:polished_subcinder_stairs",
+    "final_frontier:subcinder_bricks_stairs",
+    "final_frontier:pyroxenite_stairs",
+    "final_frontier:polished_pyroxenite_stairs",
+    "final_frontier:durafabric_stairs",
+    "final_frontier:white_durafabric_stairs",
+    "final_frontier:light_gray_durafabric_stairs",
+    "final_frontier:gray_durafabric_stairs",
+    "final_frontier:black_durafabric_stairs",
+    "final_frontier:brown_durafabric_stairs",
+    "final_frontier:red_durafabric_stairs",
+    "final_frontier:orange_durafabric_stairs",
+    "final_frontier:yellow_durafabric_stairs",
+    "final_frontier:lime_durafabric_stairs",
+    "final_frontier:green_durafabric_stairs",
+    "final_frontier:light_blue_durafabric_stairs",
+    "final_frontier:cyan_durafabric_stairs",
+    "final_frontier:blue_durafabric_stairs",
+    "final_frontier:purple_durafabric_stairs",
+    "final_frontier:magenta_durafabric_stairs",
+    "final_frontier:pink_durafabric_stairs"
+  ]
+}

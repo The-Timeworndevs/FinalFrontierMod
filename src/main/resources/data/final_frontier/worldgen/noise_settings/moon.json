@@ -23,12 +23,7 @@
         "right": 0.0
       }
     },
-    "fluid_level_floodedness": {
-      "type": "minecraft:noise",
-      "noise": "final_frontier:aquifer_fluid_level_floodedness",
-      "xz_scale": 1.0,
-      "y_scale": 0.67
-    },
+    "fluid_level_floodedness": -1,
     "fluid_level_spread": {
       "type": "minecraft:noise",
       "noise": "final_frontier:aquifer_fluid_level_spread",
@@ -118,7 +113,7 @@
     "temperature": "final_frontier:moon/temperature",
     "vegetation": "final_frontier:moon/vegetation"
   },
-  "sea_level": 0,
+  "sea_level": -64,
   "spawn_target": [
     {
       "final_frontier:moon/continents": [

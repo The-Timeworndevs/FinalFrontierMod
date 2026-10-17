@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "final_frontier:block/light_blue_durafabric_slab"
+    },
+    "type=double": {
+      "model": "final_frontier:block/light_blue_durafabric_block"
+    },
+    "type=top": {
+      "model": "final_frontier:block/light_blue_durafabric_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "final_frontier:block/durafabric_block",
+    "side": "final_frontier:block/durafabric_block",
+    "top": "final_frontier:block/durafabric_block"
+  }
+}

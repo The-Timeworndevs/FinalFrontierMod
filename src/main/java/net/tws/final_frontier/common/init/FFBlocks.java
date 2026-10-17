@@ -14,6 +14,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -22,8 +23,14 @@ import net.tws.final_frontier.common.block.AlloyFurnaceBlock;
 import net.tws.final_frontier.common.block.FFBlockSetTypes;
 
 import java.util.function.Function;
+import java.util.function.ToIntFunction;
 
 public class FFBlocks {
+
+    //Light Levels
+    public static ToIntFunction<BlockState> litBlockEmission(final int lightEmission) {
+        return (state) -> (Boolean)state.getValue(BlockStateProperties.LIT) ? lightEmission : 0;
+    }
 
     //Natural Blocks
 
@@ -191,6 +198,43 @@ public class FFBlocks {
     public static final Block MAGENTA_DURAFABRIC_BLOCK = registerBlock("magenta_durafabric_block", (properties) -> new Block(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
     public static final Block PINK_DURAFABRIC_BLOCK = registerBlock("pink_durafabric_block", (properties) -> new Block(properties.mapColor(DyeColor.PINK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
 
+    public static final Block DURAFABRIC_STAIRS = registerBlock("durafabric_stairs", (properties) -> new StairBlock(DURAFABRIC_BLOCK.defaultBlockState(), properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block WHITE_DURAFABRIC_STAIRS = registerBlock("white_durafabric_stairs", (properties) -> new StairBlock(WHITE_DURAFABRIC_BLOCK.defaultBlockState(), properties.mapColor(DyeColor.WHITE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIGHT_GRAY_DURAFABRIC_STAIRS = registerBlock("light_gray_durafabric_stairs", (properties) -> new StairBlock(LIGHT_GRAY_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block GRAY_DURAFABRIC_STAIRS = registerBlock("gray_durafabric_stairs", (properties) -> new StairBlock(GRAY_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.GRAY).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BLACK_DURAFABRIC_STAIRS = registerBlock("black_durafabric_stairs", (properties) -> new StairBlock(BLACK_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.BLACK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BROWN_DURAFABRIC_STAIRS = registerBlock("brown_durafabric_stairs", (properties) -> new StairBlock(BROWN_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.BROWN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block RED_DURAFABRIC_STAIRS = registerBlock("red_durafabric_stairs", (properties) -> new StairBlock(RED_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.RED).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block ORANGE_DURAFABRIC_STAIRS = registerBlock("orange_durafabric_stairs", (properties) -> new StairBlock(ORANGE_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.ORANGE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block YELLOW_DURAFABRIC_STAIRS = registerBlock("yellow_durafabric_stairs", (properties) -> new StairBlock(YELLOW_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.YELLOW).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIME_DURAFABRIC_STAIRS = registerBlock("lime_durafabric_stairs", (properties) -> new StairBlock(LIME_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.LIME).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block GREEN_DURAFABRIC_STAIRS = registerBlock("green_durafabric_stairs", (properties) -> new StairBlock(GREEN_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.GREEN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIGHT_BLUE_DURAFABRIC_STAIRS = registerBlock("light_blue_durafabric_stairs", (properties) -> new StairBlock(LIGHT_BLUE_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block CYAN_DURAFABRIC_STAIRS = registerBlock("cyan_durafabric_stairs", (properties) -> new StairBlock(CYAN_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.CYAN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BLUE_DURAFABRIC_STAIRS = registerBlock("blue_durafabric_stairs", (properties) -> new StairBlock(BLUE_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.BLUE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block PURPLE_DURAFABRIC_STAIRS = registerBlock("purple_durafabric_stairs", (properties) -> new StairBlock(PURPLE_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.PURPLE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block MAGENTA_DURAFABRIC_STAIRS = registerBlock("magenta_durafabric_stairs", (properties) -> new StairBlock(MAGENTA_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block PINK_DURAFABRIC_STAIRS = registerBlock("pink_durafabric_stairs", (properties) -> new StairBlock(PINK_DURAFABRIC_BLOCK.defaultBlockState(),properties.mapColor(DyeColor.PINK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+
+    public static final Block DURAFABRIC_SLAB = registerBlock("durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block WHITE_DURAFABRIC_SLAB = registerBlock("white_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.WHITE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIGHT_GRAY_DURAFABRIC_SLAB = registerBlock("light_gray_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block GRAY_DURAFABRIC_SLAB = registerBlock("gray_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.GRAY).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BLACK_DURAFABRIC_SLAB = registerBlock("black_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.BLACK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BROWN_DURAFABRIC_SLAB = registerBlock("brown_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.BROWN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block RED_DURAFABRIC_SLAB = registerBlock("red_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.RED).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block ORANGE_DURAFABRIC_SLAB = registerBlock("orange_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.ORANGE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block YELLOW_DURAFABRIC_SLAB = registerBlock("yellow_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.YELLOW).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIME_DURAFABRIC_SLAB = registerBlock("lime_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.LIME).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block GREEN_DURAFABRIC_SLAB = registerBlock("green_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.GREEN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block LIGHT_BLUE_DURAFABRIC_SLAB = registerBlock("light_blue_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block CYAN_DURAFABRIC_SLAB = registerBlock("cyan_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.CYAN).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block BLUE_DURAFABRIC_SLAB = registerBlock("blue_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.BLUE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block PURPLE_DURAFABRIC_SLAB = registerBlock("purple_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.PURPLE).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block MAGENTA_DURAFABRIC_SLAB = registerBlock("magenta_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+    public static final Block PINK_DURAFABRIC_SLAB = registerBlock("pink_durafabric_slab", (properties) -> new SlabBlock(properties.mapColor(DyeColor.PINK).sound(SoundType.WOOL).strength(0.8f, 0.8f)));
+
+
     //Aluminum Pillar Lights
     public static final Block WHITE_GLOWING_ALUMINUM_PILLAR = registerBlock("white_glowing_aluminum_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.WHITE).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
     public static final Block LIGHT_GRAY_GLOWING_ALUMINUM_PILLAR = registerBlock("light_gray_glowing_aluminum_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
@@ -246,7 +290,7 @@ public class FFBlocks {
     public static final Block PINK_GLOWING_IRON_PILLAR = registerBlock("pink_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PINK).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
 
     //Functional Blocks
-    public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace", (properties) -> new AlloyFurnaceBlock(properties.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace", (properties) -> new AlloyFurnaceBlock(properties.mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.NETHER_BRICKS).strength(2.0F, 6.0F).requiresCorrectToolForDrops().lightLevel(litBlockEmission(13))));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));

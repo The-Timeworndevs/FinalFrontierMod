@@ -78,6 +78,42 @@
   "block.final_frontier.magenta_durafabric_block": "Magenta Durafabric",
   "block.final_frontier.pink_durafabric_block": "Pink Durafabric",
 
+  "block.final_frontier.durafabric_stairs": "Durafabric Stairs",
+  "block.final_frontier.white_durafabric_stairs": "White Durafabric Stairs",
+  "block.final_frontier.light_gray_durafabric_stairs": "Light Gray Durafabric Stairs",
+  "block.final_frontier.gray_durafabric_stairs": "Gray Durafabric Stairs",
+  "block.final_frontier.black_durafabric_stairs": "Black Durafabric Stairs",
+  "block.final_frontier.brown_durafabric_stairs": "Brown Durafabric Stairs",
+  "block.final_frontier.red_durafabric_stairs": "Red Durafabric Stairs",
+  "block.final_frontier.orange_durafabric_stairs": "Orange Durafabric Stairs",
+  "block.final_frontier.yellow_durafabric_stairs": "Yellow Durafabric Stairs",
+  "block.final_frontier.lime_durafabric_stairs": "Lime Durafabric Stairs",
+  "block.final_frontier.green_durafabric_stairs": "Green Durafabric Stairs",
+  "block.final_frontier.light_blue_durafabric_stairs": "Light Blue Durafabric Stairs",
+  "block.final_frontier.cyan_durafabric_stairs": "Cyan Durafabric Stairs",
+  "block.final_frontier.blue_durafabric_stairs": "Blue Durafabric Stairs",
+  "block.final_frontier.purple_durafabric_stairs": "Purple Durafabric Stairs",
+  "block.final_frontier.magenta_durafabric_stairs": "Magenta Durafabric Stairs",
+  "block.final_frontier.pink_durafabric_stairs": "Pink Durafabric Stairs",
+
+  "block.final_frontier.durafabric_slab": "Durafabric Slab",
+  "block.final_frontier.white_durafabric_slab": "White Durafabric Slab",
+  "block.final_frontier.light_gray_durafabric_slab": "Light Gray Durafabric Slab",
+  "block.final_frontier.gray_durafabric_slab": "Gray Durafabric Slab",
+  "block.final_frontier.black_durafabric_slab": "Black Durafabric Slab",
+  "block.final_frontier.brown_durafabric_slab": "Brown Durafabric Slab",
+  "block.final_frontier.red_durafabric_slab": "Red Durafabric Slab",
+  "block.final_frontier.orange_durafabric_slab": "Orange Durafabric Slab",
+  "block.final_frontier.yellow_durafabric_slab": "Yellow Durafabric Slab",
+  "block.final_frontier.lime_durafabric_slab": "Lime Durafabric Slab",
+  "block.final_frontier.green_durafabric_slab": "Green Durafabric Slab",
+  "block.final_frontier.light_blue_durafabric_slab": "Light Blue Durafabric Slab",
+  "block.final_frontier.cyan_durafabric_slab": "Cyan Durafabric Slab",
+  "block.final_frontier.blue_durafabric_slab": "Blue Durafabric Slab",
+  "block.final_frontier.purple_durafabric_slab": "Purple Durafabric Slab",
+  "block.final_frontier.magenta_durafabric_slab": "Magenta Durafabric Slab",
+  "block.final_frontier.pink_durafabric_slab": "Pink Durafabric Slab",
+
   "block.final_frontier.white_glowing_aluminum_pillar": "White Glowing Aluminum Pillar",
   "block.final_frontier.light_gray_glowing_aluminum_pillar": "Light Gray Glowing Aluminum Pillar",
   "block.final_frontier.gray_glowing_aluminum_pillar": "Gray Glowing Aluminum Pillar",
@@ -128,6 +164,8 @@
   "block.final_frontier.purple_glowing_iron_pillar": "Purple Glowing Iron Pillar",
   "block.final_frontier.magenta_glowing_iron_pillar": "Magenta Glowing Iron Pillar",
   "block.final_frontier.pink_glowing_iron_pillar": "Pink Glowing Iron Pillar",
+
+  "block.final_frontier.alloy_furnace": "Alloy Furnace",
 
   "block.final_frontier.moonstone_stairs": "Moonstone Stairs",
   "block.final_frontier.moonstone_slab": "Moonstone Slab",
@@ -206,6 +244,7 @@
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
   "itemGroup.final_frontier.ff_natural_blocks": "Final Frontier Natural Blocks",
   "itemGroup.final_frontier.ff_colored_blocks": "Final Frontier Colored Blocks",
+  "itemGroup.final_frontier.ff_functional": "Final Frontier Functional Blocks",
   "itemGroup.final_frontier.ff_materials": "Final Frontier Materials",
   "itemGroup.final_frontier.ff_tools": "Final Frontier Tools",
   "itemGroup.final_frontier.ff_combat": "Final Frontier Combat",
@@ -214,6 +253,13 @@
   "biome.final_frontier.lunar_highlands": "[FF] Lunar Highlands",
   "biome.final_frontier.lunar_maria_empty": "[FF] Empty Lunar Maria",
   "biome.final_frontier.lunar_highlands_empty": "[FF] Empty Lunar Highlands",
+
+  "tag.block.final_frontier.moonstone_ore_replacables": "Moonstone Ore Replaceables",
+  "tag.block.final_frontier.subcinder_ore_replacables": "Subcinder Ore Replaceables",
+  "tag.block.final_frontier.regoliths": "Regoliths",
+
+  "tag.item.final_frontier.lunar_regoliths" : "Lunar Regoliths",
+  "tag.item.final_frontier.olivine_tool_materials": "Olivine Tool Materials",
 
   "death.attack.depressurization": "%s suffered explosive decompression"
 }

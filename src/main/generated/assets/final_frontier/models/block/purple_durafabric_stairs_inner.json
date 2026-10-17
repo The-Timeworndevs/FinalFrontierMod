@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "final_frontier:block/purple_durafabric_block",
+    "side": "final_frontier:block/purple_durafabric_block",
+    "top": "final_frontier:block/purple_durafabric_block"
+  }
+}

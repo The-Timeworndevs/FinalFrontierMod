@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "concrete",
+  "ingredients": [
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "#final_frontier:lunar_regoliths",
+    "minecraft:orange_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:orange_concrete_powder"
+  }
+}

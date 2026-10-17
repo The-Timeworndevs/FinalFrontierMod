@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "final_frontier:moonstone_slab",
+    "final_frontier:polished_moonstone_slab",
+    "final_frontier:moonstone_bricks_slab",
+    "final_frontier:komatiite_slab",
+    "final_frontier:polished_komatiite_slab",
+    "final_frontier:subcinder_slab",
+    "final_frontier:polished_subcinder_slab",
+    "final_frontier:subcinder_bricks_slab",
+    "final_frontier:pyroxenite_slab",
+    "final_frontier:polished_pyroxenite_slab",
+    "final_frontier:durafabric_slab",
+    "final_frontier:white_durafabric_slab",
+    "final_frontier:light_gray_durafabric_slab",
+    "final_frontier:gray_durafabric_slab",
+    "final_frontier:black_durafabric_slab",
+    "final_frontier:brown_durafabric_slab",
+    "final_frontier:red_durafabric_slab",
+    "final_frontier:orange_durafabric_slab",
+    "final_frontier:yellow_durafabric_slab",
+    "final_frontier:lime_durafabric_slab",
+    "final_frontier:green_durafabric_slab",
+    "final_frontier:light_blue_durafabric_slab",
+    "final_frontier:cyan_durafabric_slab",
+    "final_frontier:blue_durafabric_slab",
+    "final_frontier:purple_durafabric_slab",
+    "final_frontier:magenta_durafabric_slab",
+    "final_frontier:pink_durafabric_slab"
+  ]
+}

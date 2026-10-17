@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "aluminum_ingot",
+  "group": "steel_ingot",
   "ingredients": [
     "final_frontier:coke",
     "final_frontier:coke",
