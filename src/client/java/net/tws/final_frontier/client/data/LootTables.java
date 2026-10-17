@@ -129,6 +129,8 @@ public class LootTables {
             IRON_PILLAR,
             IRON_PILLAR_HAZARD,
 
+            ALLOY_FURNACE,
+
             DURAFABRIC_BLOCK,
             WHITE_DURAFABRIC_BLOCK,
             LIGHT_GRAY_DURAFABRIC_BLOCK,

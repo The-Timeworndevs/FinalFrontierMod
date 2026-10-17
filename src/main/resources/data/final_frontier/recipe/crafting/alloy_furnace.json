@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aluminum_ingot",
+  "key": {
+    "n": "minecraft:netherite_ingot",
+    "b": "minecraft:blast_furnace",
+    "s": "minecraft:polished_blackstone",
+    "r": "minecraft:nether_bricks"
+  },
+  "pattern": [
+    "nnn",
+    "rbr",
+    "sss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "final_frontier:alloy_furnace"
+  }
+}
