@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:orange_stained_glass_pane",
+    "i": "final_frontier:titanium_panel",
+    "g": "minecraft:glowstone"
+  },
+  "pattern": [
+    "i#i",
+    "#g#",
+    "i#i"
+  ],
+  "result": {
+    "id": "final_frontier:orange_glowing_titanium_pillar",
+    "count": 4
+  }
+}

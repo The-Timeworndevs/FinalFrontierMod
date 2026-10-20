@@ -34,18 +34,21 @@ public class FFBlocks {
 
     //Natural Blocks
 
-    //Overworld Alumina Ores
-    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
-    public static final Block DEEPSLATE_BAUXITE_ORE = registerBlock("deepslate_bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
+    //Overworld Bauxite Ores
+    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.STONE).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final Block DEEPSLATE_BAUXITE_ORE = registerBlock("deepslate_bauxite_ore", (properties) -> new Block(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE).strength(3, 3).requiresCorrectToolForDrops()));
+
+    //Nether Ilmenite Ore
+    public static final Block NETHER_ILMENITE_ORE = registerBlock("nether_ilmenite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.NETHER_ORE).strength(3, 3).requiresCorrectToolForDrops()));
 
     //Regoliths
-    public static final Block HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
+    public static final Block HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.POWDER_SNOW).strength(0.5F, 0.5F)){
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 7895160;
         }
     });
-    public static final Block MARIA_REGOLITH = registerBlock("maria_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
+    public static final Block MARIA_REGOLITH = registerBlock("maria_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.POWDER_SNOW).strength(0.5F, 0.5F)){
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 5329233;
@@ -61,6 +64,7 @@ public class FFBlocks {
     public static final Block MOONSTONE_QUARTZ_ORE = registerBlock("moonstone_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_REDSTONE_ORE = registerBlock("moonstone_redstone_ore", (properties) -> new RedStoneOreBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
     public static final Block MOONSTONE_OLIVINE_ORE = registerBlock("moonstone_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
+    public static final Block MOONSTONE_ILMENITE_ORE = registerBlock("moonstone_ilmenite_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.STONE).strength(3, 3).requiresCorrectToolForDrops()));
 
     //Komatiite
     public static final Block KOMATIITE = registerBlock("komatiite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).sound(SoundType.STONE).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -74,6 +78,7 @@ public class FFBlocks {
     public static final Block SUBCINDER_QUARTZ_ORE = registerBlock("subcinder_quartz_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_REDSTONE_ORE = registerBlock("subcinder_redstone_ore", (properties) -> new RedStoneOreBlock(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
     public static final Block SUBCINDER_OLIVINE_ORE = registerBlock("subcinder_olivine_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
+    public static final Block SUBCINDER_ILMENITE_ORE = registerBlock("subcinder_ilmenite_ore", (properties) -> new Block(properties.mapColor(MapColor.COLOR_GRAY).sound(SoundType.ANCIENT_DEBRIS).strength(3, 4.5f).requiresCorrectToolForDrops()));
 
     //Pyroxenite
     public static final Block PYROXENITE = registerBlock("pyroxenite", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
@@ -147,9 +152,12 @@ public class FFBlocks {
     public static final Block POLISHED_PYROXENITE_WALL = registerBlock("polished_pyroxenite_wall", (properties) -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.TUFF).strength(1.5f, 6).requiresCorrectToolForDrops()));
 
     //Non-metal Resource Blocks
-    public static final Block BAUXITE_BLOCK = registerBlock("bauxite_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block BAUXITE_BLOCK = registerBlock("bauxite_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block ALUMINA_BLOCK = registerBlock("alumina_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
-    public static final Block OLIVINE_BLOCK = registerBlock("olivine_block", (properties) -> new Block(properties.mapColor(MapColor.EMERALD).sound(SoundType.STONE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block OLIVINE_BLOCK = registerBlock("olivine_block", (properties) -> new Block(properties.mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    //Raw Metal Blocks
+    public static final Block RAW_ILMENITE_BLOCK = registerBlock("raw_ilmenite_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.METAL).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
 
     //Aluminum Set
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
@@ -168,6 +176,16 @@ public class FFBlocks {
     public static final Block CUT_STEEL_SLAB = registerBlock("cut_steel_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block STEEL_PILLAR = registerBlock("steel_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block STEEL_PILLAR_HAZARD = registerBlock("steel_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    //Titanium Set
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).strength(50.0F, 1200.0F).sound(SoundType.HEAVY_CORE).requiresCorrectToolForDrops()));
+    public static final Block TITANIUM_PANEL = registerBlock("titanium_panel", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block CUT_TITANIUM = registerBlock("cut_titanium", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block CUT_TITANIUM_STAIRS = registerBlock("cut_titanium_stairs", (properties) -> new StairBlock(CUT_TITANIUM.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block CUT_TITANIUM_SLAB = registerBlock("cut_titanium_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block TITANIUM_PILLAR = registerBlock("titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block TITANIUM_PILLAR_HAZARD = registerBlock("titanium_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+
 
     //Iron Set
     public static final Block IRON_PANEL = registerBlock("iron_panel", (properties) -> new Block(properties.mapColor(MapColor.METAL).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
@@ -288,6 +306,24 @@ public class FFBlocks {
     public static final Block PURPLE_GLOWING_IRON_PILLAR = registerBlock("purple_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PURPLE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
     public static final Block MAGENTA_GLOWING_IRON_PILLAR = registerBlock("magenta_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
     public static final Block PINK_GLOWING_IRON_PILLAR = registerBlock("pink_glowing_iron_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PINK).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+
+    //Titanium Pillar Lights
+    public static final Block WHITE_GLOWING_TITANIUM_PILLAR = registerBlock("white_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.WHITE).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block LIGHT_GRAY_GLOWING_TITANIUM_PILLAR = registerBlock("light_gray_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block GRAY_GLOWING_TITANIUM_PILLAR = registerBlock("gray_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.GRAY).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block BLACK_GLOWING_TITANIUM_PILLAR = registerBlock("black_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.BLACK).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block BROWN_GLOWING_TITANIUM_PILLAR = registerBlock("brown_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.BROWN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block RED_GLOWING_TITANIUM_PILLAR = registerBlock("red_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.RED).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block ORANGE_GLOWING_TITANIUM_PILLAR = registerBlock("orange_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.ORANGE).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block YELLOW_GLOWING_TITANIUM_PILLAR = registerBlock("yellow_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.YELLOW).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block LIME_GLOWING_TITANIUM_PILLAR = registerBlock("lime_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.LIME).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block GREEN_GLOWING_TITANIUM_PILLAR = registerBlock("green_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.GREEN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block LIGHT_BLUE_GLOWING_TITANIUM_PILLAR = registerBlock("light_blue_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block CYAN_GLOWING_TITANIUM_PILLAR = registerBlock("cyan_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.CYAN).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block BLUE_GLOWING_TITANIUM_PILLAR = registerBlock("blue_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.BLUE).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block PURPLE_GLOWING_TITANIUM_PILLAR = registerBlock("purple_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PURPLE).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block MAGENTA_GLOWING_TITANIUM_PILLAR = registerBlock("magenta_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.MAGENTA).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
+    public static final Block PINK_GLOWING_TITANIUM_PILLAR = registerBlock("pink_glowing_titanium_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(DyeColor.PINK).sound(SoundType.HEAVY_CORE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops().lightLevel((statex) -> 15)));
 
     //Functional Blocks
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace", (properties) -> new AlloyFurnaceBlock(properties.mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.NETHER_BRICKS).strength(2.0F, 6.0F).requiresCorrectToolForDrops().lightLevel(litBlockEmission(13))));

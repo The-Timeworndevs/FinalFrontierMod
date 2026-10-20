@@ -1,5 +1,15 @@
 {
   "replace": false,
   "values": [
+    "final_frontier:nether_ilmenite_ore",
+    "final_frontier:moonstone_ilmenite_ore",
+    "final_frontier:subcinder_ilmenite_ore",
+    "final_frontier:titanium_block",
+    "final_frontier:titanium_panel",
+    "final_frontier:cut_titanium",
+    "final_frontier:cut_titanium_stairs",
+    "final_frontier:cut_titanium_slab",
+    "final_frontier:titanium_pillar",
+    "final_frontier:titanium_pillar_hazard"
   ]
 }

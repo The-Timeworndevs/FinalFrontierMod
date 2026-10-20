@@ -10,12 +10,19 @@ public final class Models {
     static final Block[] PILLARS = new Block[]{
             MOONSTONE_PILLAR,
             SUBCINDER_PILLAR,
+
             ALUMINUM_PILLAR,
             ALUMINUM_PILLAR_HAZARD,
+
             STEEL_PILLAR,
             STEEL_PILLAR_HAZARD,
+
             IRON_PILLAR,
             IRON_PILLAR_HAZARD,
+
+            TITANIUM_PILLAR,
+            TITANIUM_PILLAR_HAZARD,
+
             WHITE_GLOWING_ALUMINUM_PILLAR,
             LIGHT_GRAY_GLOWING_ALUMINUM_PILLAR,
             GRAY_GLOWING_ALUMINUM_PILLAR,
@@ -32,6 +39,7 @@ public final class Models {
             PURPLE_GLOWING_ALUMINUM_PILLAR,
             MAGENTA_GLOWING_ALUMINUM_PILLAR,
             PINK_GLOWING_ALUMINUM_PILLAR,
+
             WHITE_GLOWING_STEEL_PILLAR,
             LIGHT_GRAY_GLOWING_STEEL_PILLAR,
             GRAY_GLOWING_STEEL_PILLAR,
@@ -48,6 +56,7 @@ public final class Models {
             PURPLE_GLOWING_STEEL_PILLAR,
             MAGENTA_GLOWING_STEEL_PILLAR,
             PINK_GLOWING_STEEL_PILLAR,
+
             WHITE_GLOWING_IRON_PILLAR,
             LIGHT_GRAY_GLOWING_IRON_PILLAR,
             GRAY_GLOWING_IRON_PILLAR,
@@ -64,6 +73,23 @@ public final class Models {
             PURPLE_GLOWING_IRON_PILLAR,
             MAGENTA_GLOWING_IRON_PILLAR,
             PINK_GLOWING_IRON_PILLAR,
+
+            WHITE_GLOWING_TITANIUM_PILLAR,
+            LIGHT_GRAY_GLOWING_TITANIUM_PILLAR,
+            GRAY_GLOWING_TITANIUM_PILLAR,
+            BLACK_GLOWING_TITANIUM_PILLAR,
+            BROWN_GLOWING_TITANIUM_PILLAR,
+            RED_GLOWING_TITANIUM_PILLAR,
+            ORANGE_GLOWING_TITANIUM_PILLAR,
+            YELLOW_GLOWING_TITANIUM_PILLAR,
+            LIME_GLOWING_TITANIUM_PILLAR,
+            GREEN_GLOWING_TITANIUM_PILLAR,
+            LIGHT_BLUE_GLOWING_TITANIUM_PILLAR,
+            CYAN_GLOWING_TITANIUM_PILLAR,
+            BLUE_GLOWING_TITANIUM_PILLAR,
+            PURPLE_GLOWING_TITANIUM_PILLAR,
+            MAGENTA_GLOWING_TITANIUM_PILLAR,
+            PINK_GLOWING_TITANIUM_PILLAR,
     };
 
     static final Block[] BASIC_BLOCKS = new Block[]{
@@ -71,13 +97,18 @@ public final class Models {
             CRACKED_MOONSTONE_BRICKS,
             CRACKED_SUBCINDER_BRICKS,
             CHISELED_POLISHED_SUBCINDER,
+
             ALUMINUM_BLOCK,
-            ALUMINUM_PANEL,
             STEEL_BLOCK,
+            TITANIUM_BLOCK,
+
             HIGHLANDS_REGOLITH,
             MARIA_REGOLITH,
+
             BAUXITE_ORE,
             DEEPSLATE_BAUXITE_ORE,
+            NETHER_ILMENITE_ORE,
+
             MOONSTONE_IRON_ORE,
             MOONSTONE_GOLD_ORE,
             MOONSTONE_COPPER_ORE,
@@ -85,6 +116,8 @@ public final class Models {
             MOONSTONE_ALUMINA_ORE,
             MOONSTONE_QUARTZ_ORE,
             MOONSTONE_OLIVINE_ORE,
+            MOONSTONE_ILMENITE_ORE,
+
             SUBCINDER_IRON_ORE,
             SUBCINDER_GOLD_ORE,
             SUBCINDER_COPPER_ORE,
@@ -92,31 +125,48 @@ public final class Models {
             SUBCINDER_QUARTZ_ORE,
             SUBCINDER_OLIVINE_ORE,
             SUBCINDER_REDSTONE_ORE,
+            SUBCINDER_ILMENITE_ORE,
+
             BAUXITE_BLOCK,
             ALUMINA_BLOCK,
             OLIVINE_BLOCK,
+            RAW_ILMENITE_BLOCK,
+
+            ALUMINUM_PANEL,
             STEEL_PANEL,
-            IRON_PANEL
+            IRON_PANEL,
+            TITANIUM_PANEL
     };
 
     static final Item[] BASIC_ITEMS = new Item[]{
             DURAFABRIC,
             OLIVINE,
             COKE,
+
             COPPER_ROD,
             COPPER_PLATE,
             IRON_ROD,
             IRON_PLATE,
+
             RAW_BAUXITE,
             RAW_ALUMINA,
+            RAW_ILMENITE,
+
             ALUMINUM_INGOT,
             ALUMINUM_NUGGET,
             ALUMINUM_ROD,
             ALUMINUM_PLATE,
+
             STEEL_INGOT,
             STEEL_NUGGET,
             STEEL_ROD,
             STEEL_PLATE,
+
+            TITANIUM_INGOT,
+            TITANIUM_NUGGET,
+            TITANIUM_ROD,
+            TITANIUM_PLATE,
+
             OLIVINE_SHOVEL,
             OLIVINE_PICKAXE,
             OLIVINE_AXE,

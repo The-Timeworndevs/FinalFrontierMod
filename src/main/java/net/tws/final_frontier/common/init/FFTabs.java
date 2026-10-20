@@ -15,10 +15,12 @@ public class FFTabs {
 
     public static final ResourceKey<CreativeModeTab> FF_BUILDING_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_building_blocks"));
     public static final CreativeModeTab FF_BUILDING_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.POLISHED_KOMATIITE)).title(Component.translatable("itemGroup.final_frontier.ff_building_blocks")).displayItems((parameters, output) -> {
+
         output.accept(FFBlocks.MOONSTONE.asItem());
         output.accept(FFBlocks.MOONSTONE_STAIRS.asItem());
         output.accept(FFBlocks.MOONSTONE_SLAB.asItem());
         output.accept(FFBlocks.MOONSTONE_WALL.asItem());
+
         output.accept(FFBlocks.CHISELED_POLISHED_MOONSTONE.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE.asItem());
         output.accept(FFBlocks.MOONSTONE_PILLAR.asItem());
@@ -27,11 +29,13 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_MOONSTONE_WALL.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_PRESSURE_PLATE.asItem());
         output.accept(FFBlocks.POLISHED_MOONSTONE_BUTTON.asItem());
+
         output.accept(FFBlocks.MOONSTONE_BRICKS.asItem());
         output.accept(FFBlocks.CRACKED_MOONSTONE_BRICKS.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_STAIRS.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_SLAB.asItem());
         output.accept(FFBlocks.MOONSTONE_BRICKS_WALL.asItem());
+
         output.accept(FFBlocks.KOMATIITE.asItem());
         output.accept(FFBlocks.KOMATIITE_STAIRS.asItem());
         output.accept(FFBlocks.KOMATIITE_SLAB.asItem());
@@ -40,10 +44,12 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_KOMATIITE_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_KOMATIITE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_KOMATIITE_WALL.asItem());
+
         output.accept(FFBlocks.SUBCINDER.asItem());
         output.accept(FFBlocks.SUBCINDER_STAIRS.asItem());
         output.accept(FFBlocks.SUBCINDER_SLAB.asItem());
         output.accept(FFBlocks.SUBCINDER_WALL.asItem());
+
         output.accept(FFBlocks.CHISELED_POLISHED_SUBCINDER.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER.asItem());
         output.accept(FFBlocks.SUBCINDER_PILLAR.asItem());
@@ -52,22 +58,28 @@ public class FFTabs {
         output.accept(FFBlocks.POLISHED_SUBCINDER_WALL.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_PRESSURE_PLATE.asItem());
         output.accept(FFBlocks.POLISHED_SUBCINDER_BUTTON.asItem());
+
         output.accept(FFBlocks.SUBCINDER_BRICKS.asItem());
         output.accept(FFBlocks.CRACKED_SUBCINDER_BRICKS.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_STAIRS.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_SLAB.asItem());
         output.accept(FFBlocks.SUBCINDER_BRICKS_WALL.asItem());
+
         output.accept(FFBlocks.PYROXENITE.asItem());
         output.accept(FFBlocks.PYROXENITE_STAIRS.asItem());
         output.accept(FFBlocks.PYROXENITE_SLAB.asItem());
         output.accept(FFBlocks.PYROXENITE_WALL.asItem());
+
         output.accept(FFBlocks.POLISHED_PYROXENITE.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_STAIRS.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_SLAB.asItem());
         output.accept(FFBlocks.POLISHED_PYROXENITE_WALL.asItem());
+
         output.accept(FFBlocks.BAUXITE_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
+        output.accept(FFBlocks.RAW_ILMENITE_BLOCK.asItem());
+
 
         //Aluminum
         output.accept(FFBlocks.ALUMINUM_BLOCK.asItem());
@@ -147,14 +159,44 @@ public class FFTabs {
         output.accept(FFBlocks.MAGENTA_GLOWING_IRON_PILLAR.asItem());
         output.accept(FFBlocks.PINK_GLOWING_IRON_PILLAR.asItem());
 
+        //Titanium
+        output.accept(FFBlocks.TITANIUM_BLOCK.asItem());
+        output.accept(FFBlocks.TITANIUM_PANEL.asItem());
+        output.accept(FFBlocks.CUT_TITANIUM.asItem());
+        output.accept(FFBlocks.CUT_TITANIUM_SLAB.asItem());
+        output.accept(FFBlocks.CUT_TITANIUM_STAIRS.asItem());
+        output.accept(FFBlocks.TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.TITANIUM_PILLAR_HAZARD.asItem());
+
+        output.accept(FFBlocks.WHITE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_TITANIUM_PILLAR.asItem());
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_NATURAL_BLOCKS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_natural_blocks"));
     public static final CreativeModeTab FF_NATURAL_BLOCKS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(FFBlocks.HIGHLANDS_REGOLITH)).title(Component.translatable("itemGroup.final_frontier.ff_natural_blocks")).displayItems((parameters, output) -> {
+
         output.accept(FFBlocks.BAUXITE_ORE.asItem());
         output.accept(FFBlocks.DEEPSLATE_BAUXITE_ORE.asItem());
+        output.accept(FFBlocks.NETHER_ILMENITE_ORE.asItem());
+
         output.accept(FFBlocks.HIGHLANDS_REGOLITH.asItem());
         output.accept(FFBlocks.MARIA_REGOLITH.asItem());
+
         output.accept(FFBlocks.MOONSTONE.asItem());
         output.accept(FFBlocks.MOONSTONE_IRON_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_GOLD_ORE.asItem());
@@ -163,7 +205,10 @@ public class FFTabs {
         output.accept(FFBlocks.MOONSTONE_QUARTZ_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_REDSTONE_ORE.asItem());
         output.accept(FFBlocks.MOONSTONE_OLIVINE_ORE.asItem());
+        output.accept(FFBlocks.MOONSTONE_ILMENITE_ORE.asItem());
+
         output.accept(FFBlocks.KOMATIITE.asItem());
+
         output.accept(FFBlocks.SUBCINDER.asItem());
         output.accept(FFBlocks.SUBCINDER_IRON_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_GOLD_ORE.asItem());
@@ -172,6 +217,8 @@ public class FFTabs {
         output.accept(FFBlocks.SUBCINDER_QUARTZ_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_REDSTONE_ORE.asItem());
         output.accept(FFBlocks.SUBCINDER_OLIVINE_ORE.asItem());
+        output.accept(FFBlocks.SUBCINDER_ILMENITE_ORE.asItem());
+
         output.accept(FFBlocks.PYROXENITE.asItem());
     }).build();
 
@@ -287,6 +334,24 @@ public class FFTabs {
         output.accept(FFBlocks.MAGENTA_GLOWING_IRON_PILLAR.asItem());
         output.accept(FFBlocks.PINK_GLOWING_IRON_PILLAR.asItem());
 
+        //Glowing Titanium Pillars
+        output.accept(FFBlocks.WHITE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_GRAY_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.GRAY_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLACK_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BROWN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.RED_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.ORANGE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.YELLOW_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIME_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.GREEN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.LIGHT_BLUE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.CYAN_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.BLUE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.PURPLE_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.MAGENTA_GLOWING_TITANIUM_PILLAR.asItem());
+        output.accept(FFBlocks.PINK_GLOWING_TITANIUM_PILLAR.asItem());
+
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_FUNCTIONAL_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_functional"));
@@ -326,6 +391,12 @@ public class FFTabs {
         output.accept(FFItems.STEEL_INGOT);
         output.accept(FFItems.STEEL_ROD);
         output.accept(FFItems.STEEL_PLATE);
+
+        //Titanium
+        output.accept(FFItems.TITANIUM_NUGGET);
+        output.accept(FFItems.TITANIUM_INGOT);
+        output.accept(FFItems.TITANIUM_ROD);
+        output.accept(FFItems.TITANIUM_PLATE);
 
     }).build();
 

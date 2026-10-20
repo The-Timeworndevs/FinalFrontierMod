@@ -55,6 +55,10 @@ public class ModelProvider extends FabricModelProvider {
                 .stairs(CUT_IRON_STAIRS)
                 .slab(CUT_IRON_SLAB);
 
+        blockModelGenerators.family(CUT_TITANIUM)
+                .stairs(CUT_TITANIUM_STAIRS)
+                .slab(CUT_TITANIUM_SLAB);
+
         blockModelGenerators.family(MOONSTONE)
                 .stairs(MOONSTONE_STAIRS)
                 .slab(MOONSTONE_SLAB)

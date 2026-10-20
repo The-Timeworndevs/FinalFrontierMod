@@ -1,0 +1,8 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "final_frontier:ore_ilmenite_nether"
+  ],
+  "step": "underground_ores"
+}

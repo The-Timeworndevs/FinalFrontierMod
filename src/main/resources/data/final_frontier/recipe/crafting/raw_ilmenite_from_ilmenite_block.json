@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "final_frontier:raw_ilmenite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "final_frontier:raw_ilmenite"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "final_frontier:nether_ilmenite_ore",
+    "final_frontier:moonstone_ilmenite_ore",
+    "final_frontier:subcinder_ilmenite_ore"
+  ]
+}

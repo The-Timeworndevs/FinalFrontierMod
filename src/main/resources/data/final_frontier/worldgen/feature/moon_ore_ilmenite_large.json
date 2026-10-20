@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:ore",
+    "discard_chance_on_air_exposure": 0,
+    "size": 10,
+    "targets": [
+      {
+        "state": {
+          "id": "final_frontier:moonstone_ilmenite_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "final_frontier:moonstone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "id": "final_frontier:subcinder_ilmenite_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "final_frontier:subcinder_ore_replaceables"
+        }
+      }
+    ]
+}

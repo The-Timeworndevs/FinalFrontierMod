@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "final_frontier:titanium_pillar",
+    "minecraft:yellow_dye",
+    "minecraft:black_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "final_frontier:titanium_pillar_hazard"
+  }
+}

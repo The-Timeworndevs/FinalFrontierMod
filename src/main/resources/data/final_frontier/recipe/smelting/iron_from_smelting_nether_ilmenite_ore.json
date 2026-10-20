@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:nether_ilmenite_ore",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "count": 2
+  }
+}

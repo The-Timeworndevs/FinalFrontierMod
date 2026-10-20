@@ -1,6 +1,7 @@
 {
   "block.final_frontier.bauxite_ore": "Bauxite Ore",
   "block.final_frontier.deepslate_bauxite_ore": "Deepslate Bauxite Ore",
+  "block.final_frontier.nether_ilmenite_ore": "Nether Ilmenite Ore",
   "block.final_frontier.highlands_regolith": "Lunar Highlands Regolith",
   "block.final_frontier.maria_regolith": "Lunar Maria Regolith",
   "block.final_frontier.moonstone": "Moonstone",
@@ -16,6 +17,8 @@
   "block.final_frontier.moonstone_quartz_ore": "Moonstone Quartz Ore",
   "block.final_frontier.moonstone_redstone_ore": "Moonstone Redstone Ore",
   "block.final_frontier.moonstone_olivine_ore": "Moonstone Olivine Ore",
+  "block.final_frontier.moonstone_ilmenite_ore": "Moonstone Ilmenite Ore",
+
   "block.final_frontier.subcinder": "Subcinder",
   "block.final_frontier.subcinder_iron_ore": "Subcinder Iron Ore",
   "block.final_frontier.subcinder_gold_ore": "Subcinder Gold Ore",
@@ -25,13 +28,17 @@
   "block.final_frontier.subcinder_quartz_ore": "Subcinder Quartz Ore",
   "block.final_frontier.subcinder_redstone_ore": "Subcinder Redstone Ore",
   "block.final_frontier.subcinder_olivine_ore": "Subcinder Olivine Ore",
+  "block.final_frontier.subcinder_ilmenite_ore": "Subcinder Ilmenite Ore",
+
   "block.final_frontier.pyroxenite": "Pyroxenite",
   "block.final_frontier.pyroxenite_stairs": "Pyroxenite Stairs",
   "block.final_frontier.pyroxenite_slab": "Pyroxenite Slab",
   "block.final_frontier.pyroxenite_wall": "Pyroxenite Wall",
+
   "block.final_frontier.bauxite_block": "Block Of Bauxite",
   "block.final_frontier.alumina_block": "Block Of Alumina",
   "block.final_frontier.olivine_block": "Block Of Olivine",
+  "block.final_frontier.raw_ilmenite_block": "Block Of Raw Ilmenite",
 
   "block.final_frontier.aluminum_block": "Block Of Aluminum",
   "block.final_frontier.aluminum_panel": "Aluminum Panel",
@@ -56,9 +63,13 @@
   "block.final_frontier.iron_pillar": "Iron Pillar",
   "block.final_frontier.iron_pillar_hazard": "Iron Hazard Line",
 
-  "block.final_frontier.copper_panel": "Copper Panel",
-  "block.final_frontier.copper_pillar": "Copper Pillar",
-  "block.final_frontier.copper_pillar_hazard": "Copper Hazard Line",
+  "block.final_frontier.titanium_block": "Block Of Titanium",
+  "block.final_frontier.titanium_panel": "Titanium Panel",
+  "block.final_frontier.cut_titanium": "Cut Titanium",
+  "block.final_frontier.cut_titanium_slab": "Cut Titanium Slab",
+  "block.final_frontier.cut_titanium_stairs": "Cut Titanium Stairs",
+  "block.final_frontier.titanium_pillar": "Titanium Pillar",
+  "block.final_frontier.titanium_pillar_hazard": "Titanium Hazard Line",
 
   "block.final_frontier.durafabric_block": "Block Of Durafabric",
   "block.final_frontier.white_durafabric_block": "White Durafabric",
@@ -165,6 +176,23 @@
   "block.final_frontier.magenta_glowing_iron_pillar": "Magenta Glowing Iron Pillar",
   "block.final_frontier.pink_glowing_iron_pillar": "Pink Glowing Iron Pillar",
 
+  "block.final_frontier.white_glowing_titanium_pillar": "White Glowing Titanium Pillar",
+  "block.final_frontier.light_gray_glowing_titanium_pillar": "Light Gray Glowing Titanium Pillar",
+  "block.final_frontier.gray_glowing_titanium_pillar": "Gray Glowing Titanium Pillar",
+  "block.final_frontier.black_glowing_titanium_pillar": "Black Glowing Titanium Pillar",
+  "block.final_frontier.brown_glowing_titanium_pillar": "Brown Glowing Titanium Pillar",
+  "block.final_frontier.red_glowing_titanium_pillar": "Red Glowing Titanium Pillar",
+  "block.final_frontier.orange_glowing_titanium_pillar": "Orange Glowing Titanium Pillar",
+  "block.final_frontier.yellow_glowing_titanium_pillar": "Yellow Glowing Titanium Pillar",
+  "block.final_frontier.lime_glowing_titanium_pillar": "Lime Glowing Titanium Pillar",
+  "block.final_frontier.green_glowing_titanium_pillar": "Green Glowing Titanium Pillar",
+  "block.final_frontier.light_blue_glowing_titanium_pillar": "Light Blue Glowing Titanium Pillar",
+  "block.final_frontier.cyan_glowing_titanium_pillar": "Cyan Glowing Titanium Pillar",
+  "block.final_frontier.blue_glowing_titanium_pillar": "Blue Glowing Titanium Pillar",
+  "block.final_frontier.purple_glowing_titanium_pillar": "Purple Glowing Titanium Pillar",
+  "block.final_frontier.magenta_glowing_titanium_pillar": "Magenta Glowing Titanium Pillar",
+  "block.final_frontier.pink_glowing_titanium_pillar": "Pink Glowing Titanium Pillar",
+
   "block.final_frontier.alloy_furnace": "Alloy Furnace",
 
   "block.final_frontier.moonstone_stairs": "Moonstone Stairs",
@@ -211,6 +239,7 @@
   "item.final_frontier.durafabric": "Durafabric",
   "item.final_frontier.raw_bauxite": "Raw Bauxite",
   "item.final_frontier.raw_alumina": "Raw Alumina",
+  "item.final_frontier.raw_ilmenite": "Raw Ilmenite",
   "item.final_frontier.olivine": "Olivine",
   "item.final_frontier.coke": "Coke",
 
@@ -228,7 +257,12 @@
   "item.final_frontier.steel_nugget": "Steel Nugget",
   "item.final_frontier.steel_ingot": "Steel Ingot",
   "item.final_frontier.steel_rod": "Steel Rod",
-  "item.final_frontier.steel_plate": "steel Plate",
+  "item.final_frontier.steel_plate": "Steel Plate",
+
+  "item.final_frontier.titanium_nugget": "Titanium Nugget",
+  "item.final_frontier.titanium_ingot": "Titanium Ingot",
+  "item.final_frontier.titanium_rod": "Titanium Rod",
+  "item.final_frontier.titanium_plate": "Titanium Plate",
 
   "item.final_frontier.olivine_shovel": "Olivine Shovel",
   "item.final_frontier.olivine_pickaxe": "Olivine Pickaxe",

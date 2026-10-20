@@ -1,5 +1,5 @@
 {
-  "temperature": 2,
+  "temperature": 0.5,
   "downfall": 0,
   "has_precipitation": false,
   "attributes": {
@@ -33,7 +33,8 @@
       "final_frontier:moon_ore_alumina",
       "final_frontier:komatiite_blob",
       "final_frontier:pyroxenite_blob",
-      "final_frontier:moon_ore_olivine"
+      "final_frontier:moon_ore_olivine",
+      "final_frontier:moon_ore_ilmenite"
     ],
     [
     ],

@@ -27,6 +27,7 @@ public class FFItems {
 
     public static final Item RAW_BAUXITE = registerItem("raw_bauxite", Item::new);
     public static final Item RAW_ALUMINA = registerItem("raw_alumina", Item::new);
+    public static final Item RAW_ILMENITE = registerItem("raw_ilmenite", Item::new);
 
     public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", Item::new);
     public static final Item ALUMINUM_NUGGET = registerItem("aluminum_nugget", Item::new);
@@ -37,6 +38,11 @@ public class FFItems {
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", Item::new);
     public static final Item STEEL_ROD = registerItem("steel_rod", Item::new);
     public static final Item STEEL_PLATE = registerItem("steel_plate", Item::new);
+
+    public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", Item::new);
+    public static final Item TITANIUM_NUGGET = registerItem("titanium_nugget", Item::new);
+    public static final Item TITANIUM_ROD = registerItem("titanium_rod", Item::new);
+    public static final Item TITANIUM_PLATE = registerItem("titanium_plate", Item::new);
 
     public static final Item COKE = registerItem("coke", Item::new);
 

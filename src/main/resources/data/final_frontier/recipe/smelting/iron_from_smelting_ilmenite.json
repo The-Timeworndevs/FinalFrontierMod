@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "category": "misc",
+  "experience": 0.1,
+  "ingredient": "final_frontier:raw_ilmenite",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "count": 2
+  }
+}
