@@ -275,6 +275,17 @@
   "item.final_frontier.olivine_leggings": "Olivine Leggings",
   "item.final_frontier.olivine_boots": "Olivine Boots",
 
+  "item.final_frontier.steel_shovel": "Steel Shovel",
+  "item.final_frontier.steel_pickaxe": "Steel Pickaxe",
+  "item.final_frontier.steel_axe": "Steel Axe",
+  "item.final_frontier.steel_hoe": "Steel Hoe",
+  "item.final_frontier.steel_sword": "Steel Sword",
+  "item.final_frontier.steel_spear": "Steel Spear",
+  "item.final_frontier.steel_helmet": "Steel Helmet",
+  "item.final_frontier.steel_chestplate": "Steel Chestplate",
+  "item.final_frontier.steel_leggings": "Steel Leggings",
+  "item.final_frontier.steel_boots": "Steel Boots",
+
   "itemGroup.final_frontier.ff_building_blocks": "Final Frontier Building Blocks",
   "itemGroup.final_frontier.ff_natural_blocks": "Final Frontier Natural Blocks",
   "itemGroup.final_frontier.ff_colored_blocks": "Final Frontier Colored Blocks",

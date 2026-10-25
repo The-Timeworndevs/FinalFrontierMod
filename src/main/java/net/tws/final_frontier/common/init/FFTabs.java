@@ -406,6 +406,11 @@ public class FFTabs {
         output.accept(FFItems.OLIVINE_PICKAXE);
         output.accept(FFItems.OLIVINE_AXE);
         output.accept(FFItems.OLIVINE_HOE);
+
+        output.accept(FFItems.STEEL_SHOVEL);
+        output.accept(FFItems.STEEL_PICKAXE);
+        output.accept(FFItems.STEEL_AXE);
+        output.accept(FFItems.STEEL_HOE);
     }).build();
 
     public static final ResourceKey<CreativeModeTab> FF_COMBAT_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "ff_combat"));
@@ -417,6 +422,14 @@ public class FFTabs {
         output.accept(FFItems.OLIVINE_CHESTPLATE);
         output.accept(FFItems.OLIVINE_LEGGINGS);
         output.accept(FFItems.OLIVINE_BOOTS);
+
+        output.accept(FFItems.STEEL_SWORD);
+        output.accept(FFItems.STEEL_SPEAR);
+        output.accept(FFItems.STEEL_AXE);
+        output.accept(FFItems.STEEL_HELMET);
+        output.accept(FFItems.STEEL_CHESTPLATE);
+        output.accept(FFItems.STEEL_LEGGINGS);
+        output.accept(FFItems.STEEL_BOOTS);
     }).build();
 
     public static void init() {

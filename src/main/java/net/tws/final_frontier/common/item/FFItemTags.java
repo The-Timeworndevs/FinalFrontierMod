@@ -10,6 +10,8 @@ public class FFItemTags {
 
     public static final TagKey<Item> OLIVINE_TOOL_MATERIALS;
     public static final TagKey<Item> REPAIRS_OLIVINE_ARMOR;
+    public static final TagKey<Item> STEEL_TOOL_MATERIALS;
+    public static final TagKey<Item> REPAIRS_STEEL_ARMOR;
 
     private FFItemTags() {
 
@@ -22,5 +24,7 @@ public class FFItemTags {
     static {
         OLIVINE_TOOL_MATERIALS = bind("olivine_tool_materials");
         REPAIRS_OLIVINE_ARMOR = bind("repairs_olivine_armor");
+        STEEL_TOOL_MATERIALS = bind("steel_tool_materials");
+        REPAIRS_STEEL_ARMOR = bind("repairs_steel_armor");
     }
 }

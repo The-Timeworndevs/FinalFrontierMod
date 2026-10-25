@@ -4,6 +4,10 @@
     "final_frontier:moonstone_gold_ore",
     "final_frontier:subcinder_gold_ore",
     "final_frontier:moonstone_redstone_ore",
-    "final_frontier:subcinder_redstone_ore"
+    "final_frontier:subcinder_redstone_ore",
+    "final_frontier:nether_ilmenite_ore",
+    "final_frontier:moonstone_ilmenite_ore",
+    "final_frontier:subcinder_ilmenite_ore",
+    "final_frontier:titanium_block"
   ]
 }

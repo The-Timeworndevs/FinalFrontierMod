@@ -102,9 +102,6 @@ public final class Models {
             STEEL_BLOCK,
             TITANIUM_BLOCK,
 
-            HIGHLANDS_REGOLITH,
-            MARIA_REGOLITH,
-
             BAUXITE_ORE,
             DEEPSLATE_BAUXITE_ORE,
             NETHER_ILMENITE_ORE,
@@ -167,15 +164,36 @@ public final class Models {
             TITANIUM_ROD,
             TITANIUM_PLATE,
 
+            OLIVINE_HELMET,
+            OLIVINE_CHESTPLATE,
+            OLIVINE_LEGGINGS,
+            OLIVINE_BOOTS,
+
+            STEEL_HELMET,
+            STEEL_CHESTPLATE,
+            STEEL_LEGGINGS,
+            STEEL_BOOTS,
+    };
+
+    static final Item[] HANDHELD_ITEMS = new Item[]{
+
             OLIVINE_SHOVEL,
             OLIVINE_PICKAXE,
             OLIVINE_AXE,
             OLIVINE_HOE,
             OLIVINE_SWORD,
+
+            STEEL_SHOVEL,
+            STEEL_PICKAXE,
+            STEEL_AXE,
+            STEEL_HOE,
+            STEEL_SWORD,
+
+    };
+
+    static final Item[] SPEARS = new Item[]{
+
             OLIVINE_SPEAR,
-            OLIVINE_HELMET,
-            OLIVINE_CHESTPLATE,
-            OLIVINE_LEGGINGS,
-            OLIVINE_BOOTS,
+            STEEL_SPEAR,
     };
 }

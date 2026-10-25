@@ -182,12 +182,22 @@ public class ModelProvider extends FabricModelProvider {
                 .slab(PINK_DURAFABRIC_SLAB);
 
         blockModelGenerators.createFurnace(ALLOY_FURNACE, TexturedModel.ORIENTABLE_ONLY_TOP);
+
+        blockModelGenerators.createRotatedVariantBlock(HIGHLANDS_REGOLITH);
+        blockModelGenerators.createRotatedVariantBlock(MARIA_REGOLITH);
     }
 
     @Override
     public void generateItemModels(@NonNull ItemModelGenerators itemModelGenerators) {
         for (Item item : BASIC_ITEMS) {
             itemModelGenerators.generateFlatItem(item, ModelTemplates.FLAT_ITEM);
+        }
+        for (Item item : HANDHELD_ITEMS) {
+            itemModelGenerators.generateFlatItem(item, ModelTemplates.FLAT_HANDHELD_ITEM);
+        }
+
+        for (Item item : SPEARS) {
+            itemModelGenerators.generateSpear(item);
         }
     }
 }
