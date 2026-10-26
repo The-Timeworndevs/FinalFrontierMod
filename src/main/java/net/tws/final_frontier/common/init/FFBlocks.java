@@ -42,13 +42,13 @@ public class FFBlocks {
     public static final Block NETHER_ILMENITE_ORE = registerBlock("nether_ilmenite_ore", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.NETHER_ORE).strength(3, 3).requiresCorrectToolForDrops()));
 
     //Regoliths
-    public static final Block HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.POWDER_SNOW).strength(0.5F, 0.5F)){
+    public static final Block HIGHLANDS_REGOLITH = registerBlock("highlands_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 7895160;
         }
     });
-    public static final Block MARIA_REGOLITH = registerBlock("maria_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.POWDER_SNOW).strength(0.5F, 0.5F)){
+    public static final Block MARIA_REGOLITH = registerBlock("maria_regolith", (properties)-> new FallingBlock(properties.mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.SAND).strength(0.5F, 0.5F)){
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return 5329233;
