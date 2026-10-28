@@ -109,6 +109,7 @@ public class LootTables {
             BAUXITE_BLOCK,
             ALUMINA_BLOCK,
             OLIVINE_BLOCK,
+            COKE_BLOCK,
 
             ALUMINUM_BLOCK,
             ALUMINUM_PANEL,

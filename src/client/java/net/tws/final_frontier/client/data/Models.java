@@ -127,6 +127,7 @@ public final class Models {
             BAUXITE_BLOCK,
             ALUMINA_BLOCK,
             OLIVINE_BLOCK,
+            COKE_BLOCK,
             RAW_ILMENITE_BLOCK,
 
             ALUMINUM_PANEL,

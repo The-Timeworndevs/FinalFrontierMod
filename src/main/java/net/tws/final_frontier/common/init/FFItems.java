@@ -5,8 +5,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 import net.tws.final_frontier.Main;
 import net.tws.final_frontier.common.item.FFArmorMaterials;
 import net.tws.final_frontier.common.item.FFToolMaterials;
@@ -45,6 +47,9 @@ public class FFItems {
     public static final Item TITANIUM_PLATE = registerItem("titanium_plate", Item::new);
 
     public static final Item COKE = registerItem("coke", Item::new);
+
+    //blockItems
+
 
     //tools
     public static final Item OLIVINE_SHOVEL = registerItem("olivine_shovel", properties -> new Item(properties.shovel(FFToolMaterials.OLIVINE, 1.5f, -2.0f)));

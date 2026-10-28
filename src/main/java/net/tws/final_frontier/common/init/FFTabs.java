@@ -78,6 +78,7 @@ public class FFTabs {
         output.accept(FFBlocks.BAUXITE_BLOCK.asItem());
         output.accept(FFBlocks.ALUMINA_BLOCK.asItem());
         output.accept(FFBlocks.OLIVINE_BLOCK.asItem());
+        output.accept(FFBlocks.COKE_BLOCK.asItem());
         output.accept(FFBlocks.RAW_ILMENITE_BLOCK.asItem());
 
 

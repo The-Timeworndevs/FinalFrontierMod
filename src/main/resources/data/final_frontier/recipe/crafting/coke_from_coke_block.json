@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "final_frontier:coke_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "final_frontier:coke"
+  }
+}
