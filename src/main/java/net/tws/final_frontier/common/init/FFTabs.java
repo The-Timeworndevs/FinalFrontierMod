@@ -116,6 +116,7 @@ public class FFTabs {
         output.accept(FFBlocks.CUT_STEEL_STAIRS.asItem());
         output.accept(FFBlocks.STEEL_PILLAR.asItem());
         output.accept(FFBlocks.STEEL_PILLAR_HAZARD.asItem());
+        output.accept(FFBlocks.STEEL_CHAIN.asItem());
 
         output.accept(FFBlocks.WHITE_GLOWING_STEEL_PILLAR.asItem());
         output.accept(FFBlocks.LIGHT_GRAY_GLOWING_STEEL_PILLAR.asItem());
@@ -368,6 +369,7 @@ public class FFTabs {
         output.accept(FFItems.RAW_ALUMINA);
         output.accept(FFItems.OLIVINE);
         output.accept(FFItems.COKE);
+        output.accept(FFItems.RAW_ILMENITE);
 
         //Copper
         output.accept(Items.COPPER_NUGGET);

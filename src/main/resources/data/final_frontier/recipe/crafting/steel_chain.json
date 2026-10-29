@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aluminum_ingot",
+  "key": {
+    "i": "final_frontier:steel_nugget",
+    "n": "final_frontier:steel_ingot"
+  },
+  "pattern": [
+    "n",
+    "i",
+    "n"
+  ],
+  "result": {
+    "count": 1,
+    "id": "final_frontier:steel_chain"
+  }
+}

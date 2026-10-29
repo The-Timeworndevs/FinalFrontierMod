@@ -111,6 +111,8 @@ public class LootTables {
             OLIVINE_BLOCK,
             COKE_BLOCK,
 
+            RAW_ILMENITE_BLOCK,
+
             ALUMINUM_BLOCK,
             ALUMINUM_PANEL,
             CUT_ALUMINUM,
@@ -124,6 +126,7 @@ public class LootTables {
             CUT_STEEL_STAIRS,
             STEEL_PILLAR,
             STEEL_PILLAR_HAZARD,
+            STEEL_CHAIN,
 
             IRON_PANEL,
             CUT_IRON,

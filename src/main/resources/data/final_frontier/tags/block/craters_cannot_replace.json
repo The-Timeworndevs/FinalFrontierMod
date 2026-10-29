@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:features_cannot_replace",
+        "final_frontier:moonstone",
+        "final_frontier:subcinder"
+    ]    
+}

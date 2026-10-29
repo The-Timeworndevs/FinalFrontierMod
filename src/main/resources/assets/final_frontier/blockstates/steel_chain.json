@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "final_frontier:block/steel_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "final_frontier:block/steel_chain"
+    },
+    "axis=z": {
+      "model": "final_frontier:block/steel_chain",
+      "x": 90
+    }
+  }
+}

@@ -173,7 +173,7 @@ public final class Models {
             STEEL_HELMET,
             STEEL_CHESTPLATE,
             STEEL_LEGGINGS,
-            STEEL_BOOTS,
+            STEEL_BOOTS
     };
 
     static final Item[] HANDHELD_ITEMS = new Item[]{

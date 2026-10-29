@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "final_frontier:raw_ilmenite_block"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

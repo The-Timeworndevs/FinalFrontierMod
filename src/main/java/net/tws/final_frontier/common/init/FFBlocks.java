@@ -158,7 +158,7 @@ public class FFBlocks {
     public static final Block COKE_BLOCK = registerBlock("coke_block", (properties) -> new Block(properties.mapColor(MapColor.COLOR_BLACK).sound(SoundType.DEEPSLATE).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     //Raw Metal Blocks
-    public static final Block RAW_ILMENITE_BLOCK = registerBlock("raw_ilmenite_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.METAL).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
+    public static final Block RAW_ILMENITE_BLOCK = registerBlock("raw_ilmenite_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).sound(SoundType.STONE).strength(50.0F, 1200.0F).requiresCorrectToolForDrops()));
 
     //Aluminum Set
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block", (properties) -> new Block(properties.mapColor(MapColor.QUARTZ).sound(SoundType.COPPER).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
@@ -177,6 +177,7 @@ public class FFBlocks {
     public static final Block CUT_STEEL_SLAB = registerBlock("cut_steel_slab", (properties) -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block STEEL_PILLAR = registerBlock("steel_pillar", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
     public static final Block STEEL_PILLAR_HAZARD = registerBlock("steel_pillar_hazard", (properties) -> new RotatedPillarBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.IRON).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+    public static final Block STEEL_CHAIN = registerBlock("steel_chain", (properties) -> new ChainBlock(properties.mapColor(MapColor.DEEPSLATE).sound(SoundType.CHAIN).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     //Titanium Set
     public static final Block TITANIUM_BLOCK = registerBlock("titanium_block", (properties) -> new Block(properties.mapColor(MapColor.TERRACOTTA_CYAN).strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK).requiresCorrectToolForDrops()));
