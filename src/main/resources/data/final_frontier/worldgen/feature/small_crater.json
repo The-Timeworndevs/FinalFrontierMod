@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:template",
+    "templates":[
+        {
+            "weight": 1,
+            "data": {
+                "id": "final_frontier:moon/crater/small_crater_1"
+            }
+        }
+        
+    ]
+}
