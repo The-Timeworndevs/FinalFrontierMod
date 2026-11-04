@@ -1,9 +1,9 @@
 {
-    "feature": "final_frontier:medium_crater",
+    "feature": "final_frontier:small_crater",
     "placement": [
         {
             "type": "minecraft:rarity_filter",
-            "chance": 5
+            "chance": 7
         },
         {
             "type": "minecraft:in_square"
@@ -16,9 +16,36 @@
             "type": "minecraft:biome"
         },
         {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:volume_match",
+                        "match": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air"
+                            ]
+                        },
+                        "max": [
+                            7,
+                            10,
+                            7
+                        ],
+                        "min": [
+                            -7,
+                            5,
+                            -7
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "type": "offset",
             "x": 0,
-            "y": -5,
+            "y": -6,
             "z": 0
         }
     ]
